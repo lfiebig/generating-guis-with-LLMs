@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "generating-guis-with-llms"
+version = "0.1.0"
+description = ""
+authors = ["lfiebig <fiebiglennart@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+openai = "^0.28.1"
+langchain = "^0.0.329"
+pandas = "^2.1.2"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
