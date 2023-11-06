@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .forecast-types {
+            margin-top: 20px;
+        }
+        
+        .forecast-types input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .temperature-units {
+            margin-top: 20px;
+        }
+        
+        .temperature-units input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        .submit-btn {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Weather App Settings
+    </header>
+    <div class="container">
+        <form>
+            <label for="location">Add Locations:</label>
+            <input type="text" id="location" name="location" placeholder="Enter a location...">
+            
+            <div class="forecast-types">
+                <label for="daily">Daily Forecast:</label>
+                <input type="checkbox" id="daily" name="forecast" checked>
+                
+                <label for="weekly">Weekly Forecast:</label>
+                <input type="checkbox" id="weekly" name="forecast">
+            </div>
+            
+            <div class="temperature-units">
+                <label for="fahrenheit">Fahrenheit:</label>
+                <input type="radio" id="fahrenheit" name="temperature" checked>
+                
+                <label for="celsius">Celsius:</label>
+                <input type="radio" id="celsius" name="temperature">
+            </div>
+            
+            <button class="submit-btn">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
