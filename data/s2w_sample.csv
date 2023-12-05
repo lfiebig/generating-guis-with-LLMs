@@ -1,201 +1,201 @@
 ,App Package Name,Play Store Name,Category,Average Rating,Number of Ratings,Number of Downloads,Date Updated,screenId,Interaction Trace Number,UI Number in Trace,split,tfidf_grouped_sum
-0,com.solvus_lab.android.BibleEN_kjv,Holy Bible (KJV),Books & Reference,4.4,18030,"  1,000,000 - 5,000,000  ","October 20, 2016",71214,1,904,dev,8.168385024840896
-1,cherryapps.pokeguide,Poke Guide,Books & Reference,4.1,2880,"  100,000 - 500,000  ","October 25, 2015",26804,0,314,train,8.674069198362798
-2,com.pleco.chinesesystem,Pleco Chinese Dictionary,Books & Reference,4.6,26679,"  1,000,000 - 5,000,000  ","February 28, 2017",47519,0,2643,test,8.821207078684965
-3,com.supersimpleapps.readerapp,eBook Reader,Books & Reference,3.8,510,"  100,000 - 500,000  ","December 14, 2016",64924,0,28,dev,8.984161866690826
-4,com.gty.macarthurstudybible,The Study Bible,Books & Reference,4.8,10480,"  100,000 - 500,000  ","December 16, 2016",63037,0,621,test,9.026501466999504
+173,com.podbean.app.podcast,Podbean Podcast App,Music & Audio,4.6,19064,"  500,000 - 1,000,000  ","November 29, 2016",486,0,488,train,10.105977953180693
+150,com.muslimtoolbox.app.android.prayertimes,Prayer times: Qibla & Azan,Lifestyle,4.3,64963,"  5,000,000 - 10,000,000  ","June 5, 2016",546,0,781,test,9.593700889270409
+55,com.coderzheaven.englishtenses,English Tenses,Education,4.1,13827,"  1,000,000 - 5,000,000  ","December 12, 2016",661,0,795,train,10.237922401640866
+159,com.kolesnik.feminap,Feminap - Woman Calendar,Lifestyle,4.3,21342,"  1,000,000 - 5,000,000  ","May 19, 2016",865,0,48,train,11.249734483458276
+95,com.ifs.banking.fiid7001,1st Source Bank Mobile,Finance,4.6,1070,"  10,000 - 50,000  ","May 23, 2016",876,2,284,train,10.095400467419882
+89,com.ifs.banking.fiid7001,1st Source Bank Mobile,Finance,4.6,1070,"  10,000 - 50,000  ","May 23, 2016",882,2,274,train,9.57251383639373
+157,com.pinkapp,PINK dating app,Lifestyle,4.4,43241,"  1,000,000 - 5,000,000  ","May 2, 2017",1050,0,1147,train,10.32640751623363
+131,se.perigee.android.seven,Seven - 7 Minute Workout,Health & Fitness,4.4,59695,"  1,000,000 - 5,000,000  ","May 5, 2017",1264,0,2,train,9.804781302203155
+170,com.keerby.mp3converter,MP3 Converter,Music & Audio,3.8,9233,"  1,000,000 - 5,000,000  ","July 1, 2016",1365,0,766,train,9.844689339196677
+181,com.kmart.android,Kmart - Download & Shop Now!,Shopping,4.0,21763,"  1,000,000 - 5,000,000  ","May 5, 2017",1929,0,295,dev,8.48245773449047
+80,com.handynorth.moneywise_free,MoneyWise,Finance,4.3,7364,"  500,000 - 1,000,000  ","September 2, 2014",2185,0,278,test,8.203368191452928
+93,com.ml.mobile.edge,Merrill Edge for Android,Finance,3.7,981,"  100,000 - 500,000  ","May 10, 2017",2385,0,17,train,9.929460925925492
+49,com.busuu.android.es,Learn Spanish - Speak Spanish,Education,4.4,15071,"  1,000,000 - 5,000,000  ","November 22, 2016",2930,0,7381,train,9.672110177166717
+177,com.anghami,Anghami - Free Unlimited Music,Music & Audio,4.4,415908,"  10,000,000 - 50,000,000  ","December 8, 2016",3459,0,662,train,10.525487285917634
+184,com.gpshopper.truereligion,True Religion Brand Jeans,Shopping,4.5,421,"  50,000 - 100,000  ","April 13, 2017",3978,0,81,train,9.239941876089343
+51,com.bravolang.italian,Learn Italian,Education,4.3,15404,"  500,000 - 1,000,000  ","December 3, 2016",4001,0,541,train,9.763895628720638
 5,com.tecarta.kjv2,Holy Bible King James + Audio,Books & Reference,4.7,77311,"  1,000,000 - 5,000,000  ","April 6, 2017",4459,1,2,train,9.133902481401904
-6,com.deviceroot.kingsalldevice.devicerootking,King Mod Root For Coc,Books & Reference,3.8,5612,"  100,000 - 500,000  ","June 27, 2016",70659,0,16,dev,9.247681393318686
-7,com.labs.merlinbirdid.app,Merlin Bird ID by Cornell Lab,Books & Reference,4.2,2683,"  100,000 - 500,000  ","April 24, 2017",48006,0,71,train,9.376085528095576
-8,com.holyclassic.bible,Bible,Books & Reference,4.8,618,"  50,000 - 100,000  ","September 19, 2016",43544,0,414,train,9.41473745213142
-9,com.pleco.chinesesystem,Pleco Chinese Dictionary,Books & Reference,4.6,26679,"  1,000,000 - 5,000,000  ","February 28, 2017",47520,0,2253,test,9.552942077491885
-10,com.csnmedia.android.bg,Bible Gateway,Books & Reference,4.5,24306,"  1,000,000 - 5,000,000  ","April 25, 2017",34381,0,893,test,9.584134142810012
-11,com.leguide.lego.city.mycity,LEGUIDE LEGO City My City,Books & Reference,3.3,1607,"  1,000,000 - 5,000,000  ","February 4, 2017",39989,0,213,train,9.751298371131863
-12,com.duckduckgo.mobile.android,DuckDuckGo Search & Stories,Books & Reference,4.4,22588,"  1,000,000 - 5,000,000  ","May 14, 2017",50200,0,215,train,9.785048462195856
-13,com.acebooks.bookreader,Free Book Reader,Books & Reference,3.4,1489,"  100,000 - 500,000  ","August 19, 2016",7228,0,395,train,9.836716164775268
+115,com.desertstorm.recipebook,Recipe Book,Food & Drink,4.1,10898,"  1,000,000 - 5,000,000  ","May 8, 2017",4784,0,666,train,10.306555275768217
+57,com.gabrielittner.timetable,Timetable,Education,4.2,38144,"  1,000,000 - 5,000,000  ","May 21, 2016",4846,1,633,train,10.505361670404731
+104,com.riatech.diabeticrecipes,Diabetic Recipes Free,Food & Drink,3.9,2018,"  100,000 - 500,000  ","May 4, 2017",4894,0,1157,train,9.2977706196162
+168,com.kane.xplay.activities,Xplay music player,Music & Audio,4.0,20944,"  1,000,000 - 5,000,000  ","July 22, 2013",4968,1,488,dev,9.645980046748084
+33,com.joistapp.android.joist,Contractor Estimate & Invoice,Business,4.6,3507,"  100,000 - 500,000  ","April 26, 2017",5018,0,427,test,9.80279879387071
+197,com.zulily.android,zulily: Deals for Women & Kids,Shopping,4.5,26988,"  1,000,000 - 5,000,000  ","May 10, 2017",5116,0,221,train,10.614378605738318
+125,com.eatthismuch,Eat This Much - Meal Planner,Health & Fitness,4.2,1481,"  100,000 - 500,000  ","May 11, 2017",5268,0,764,train,9.312333473951742
+174,de.smartchord.droid,smart Chords & tools (guitar..,Music & Audio,4.7,33039,"  1,000,000 - 5,000,000  ","November 27, 2016",5664,1,3459,train,10.269041334863148
+123,com.hcmagic.askadoctor,Ask a Doctor,Health & Fitness,4.0,5711,"  100,000 - 500,000  ","April 15, 2014",5779,0,356,train,8.989646285288636
+164,com.desaxedstudios.bassbooster,Bass Booster,Music & Audio,4.3,187824,"  10,000,000 - 50,000,000  ","June 16, 2016",5962,3,225,train,9.295804539509572
 14,com.foobnix.pdf.search,All Magazines,Books & Reference,3.8,15441,"  1,000,000 - 5,000,000  ","January 8, 2015",6373,0,279,train,9.963917346843926
-15,com.oodles.download.free.ebooks.reader,50000 Free eBooks & AudioBooks,Books & Reference,4.1,43258,"  1,000,000 - 5,000,000  ","September 30, 2016",22217,0,4272,dev,10.107751761683392
-16,com.azwstudios.theholybible.kjv,King James Bible (KJV),Books & Reference,4.7,29200,"  1,000,000 - 5,000,000  ","December 24, 2016",17515,2,973,train,10.143592464575882
-17,com.movinapp.dict.enes.free,Offline English Spanish dict.,Books & Reference,4.1,10010,"  1,000,000 - 5,000,000  ","March 29, 2016",43986,0,418,train,10.343066262970773
-18,com.inome.android,Intelius People Search/Call ID,Books & Reference,4.2,6125,"  500,000 - 1,000,000  ","March 3, 2017",48961,0,203,train,10.462092223932345
-19,com.gyc.ace.kjv,Bible KJV,Books & Reference,4.5,40727,"  5,000,000 - 10,000,000  ","November 26, 2014",11953,0,20,test,10.70378483675849
+60,emoji.wallpapers,Emoji wallpapers,Entertainment,4.3,9739,"  1,000,000 - 5,000,000  ","December 10, 2016",6698,1,269,train,8.123777439220873
+129,com.EAGINsoftware.dejaloYa,Quit smoking - QuitNow!,Health & Fitness,4.2,27664,"  1,000,000 - 5,000,000  ","December 13, 2016",7059,0,221,train,9.635227429679444
+13,com.acebooks.bookreader,Free Book Reader,Books & Reference,3.4,1489,"  100,000 - 500,000  ","August 19, 2016",7228,0,395,train,9.836716164775268
+85,com.westernunion.android.mtapp,Western Union Money Transfer,Finance,4.4,53972,"  1,000,000 - 5,000,000  ","April 19, 2017",7253,3,1616,dev,9.138491571126922
+50,com.sololearn.htmltrial,Learn HTML,Education,4.7,56183,"  1,000,000 - 5,000,000  ","May 9, 2017",7288,0,208,train,9.727332698816747
+68,com.wacompany.mydol,"Mydol- Virtual chat, Fanletter",Entertainment,4.4,55962,"  1,000,000 - 5,000,000  ","November 18, 2016",7437,1,4129,train,9.40558438206429
+64,com.wacompany.mydol,"Mydol- Virtual chat, Fanletter",Entertainment,4.4,55962,"  1,000,000 - 5,000,000  ","November 18, 2016",7447,1,5,train,9.068216421439478
+121,com.getsomeheadspace.android,Headspace - meditation,Health & Fitness,4.4,24008,"  1,000,000 - 5,000,000  ","December 13, 2016",7553,0,2191,train,8.703048728265628
+100,com.freerecipes.cakerecipes,Cake Recipes Free,Food & Drink,4.4,161,"  10,000 - 50,000  ","November 18, 2016",8171,0,463,train,8.503437239511896
+134,com.fourtechnologies.mynetdiary.ad,Calorie Counter - MyNetDiary,Health & Fitness,4.5,20733,"  1,000,000 - 5,000,000  ","May 12, 2017",8341,0,374,test,10.114523273327212
+156,com.polyvore,Polyvore Style: Fashion to Buy,Lifestyle,4.7,92086,"  1,000,000 - 5,000,000  ","November 8, 2016",9079,0,438,dev,10.24471221194034
 20,com.citrix.saas.gotowebinar,GoToWebinar,Business,4.7,30442,"  1,000,000 - 5,000,000  ","April 27, 2017",9443,0,613,train,7.579700541811755
-21,com.mobisystems.fileman,File Commander - File Manager,Business,4.2,633666,"  50,000,000 - 100,000,000  ","May 9, 2017",47058,0,450,train,8.192946749096265
-22,com.lotus.sync.traveler,IBM Verse,Business,3.4,11439,"  1,000,000 - 5,000,000  ","May 5, 2017",40266,0,71,train,8.655981641817387
-23,com.google.android.apps.ads.express,AdWords Express,Business,4.1,6191,"  500,000 - 1,000,000  ","April 21, 2017",71435,0,68,dev,8.802221622181241
-24,com.piksoft.turboscan.free,TurboScan: PDF scanner,Business,4.4,3251,"  500,000 - 1,000,000  ","February 10, 2017",68130,0,633,train,8.974490779460119
-25,com.ziprecruiter.android.release,Job Search by ZipRecruiter,Business,4.8,92572,"  1,000,000 - 5,000,000  ","April 27, 2017",53052,0,3103,train,9.119101475141704
-26,com.microsoft.office.lync15,Skype for Business for Android,Business,3.9,61014,"  10,000,000 - 50,000,000  ","May 9, 2017",51952,0,423,test,9.170905621318855
-27,com.cp.mpos,Chase Mobile Checkout,Business,4.1,1720,"  100,000 - 500,000  ","March 3, 2017",46604,0,219,test,9.331880142811755
+141,com.sotg.surveys,Surveys On The Go®,Lifestyle,4.4,34941,"  500,000 - 1,000,000  ","May 3, 2017",9548,1,509,train,8.373580984734815
+154,com.sotg.surveys,Surveys On The Go®,Lifestyle,4.4,34941,"  500,000 - 1,000,000  ","May 3, 2017",9550,1,539,train,10.034567408640283
+81,mediavision.handwallet,Expense Manager,Finance,4.3,19255,"  1,000,000 - 5,000,000  ","October 26, 2016",9570,0,16,train,8.567576102685859
+73,com.fxnetworks.fxnow,FXNOW,Entertainment,3.7,20914,"  1,000,000 - 5,000,000  ","October 3, 2016",9668,0,542,train,9.943565347217625
+59,org.muth.android.conjugator_demo_en,English Verbs,Education,4.2,10317,"  1,000,000 - 5,000,000  ","December 3, 2016",9701,0,2139,test,11.165829546998191
+91,gov.irs,IRS2Go,Finance,4.1,29342,"  5,000,000 - 10,000,000  ","February 14, 2017",11457,1,357,train,9.697194664184035
+48,com.busuu.android.fr,Learn French - Speak French,Education,4.4,15183,"  1,000,000 - 5,000,000  ","November 22, 2016",11734,2,1982,train,9.572873675474202
+69,com.epicurean83.game.isadari,iSadari - Random Game,Entertainment,3.8,2039,"  1,000,000 - 5,000,000  ","December 22, 2013",11905,0,545,train,9.537547942524812
+19,com.gyc.ace.kjv,Bible KJV,Books & Reference,4.5,40727,"  5,000,000 - 10,000,000  ","November 26, 2014",11953,0,20,test,10.70378483675849
+113,com.winesearcher,Wine-Searcher,Food & Drink,4.3,2050,"  100,000 - 500,000  ","April 17, 2017",12576,0,13,train,10.138974239504424
+110,com.winesearcher,Wine-Searcher,Food & Drink,4.3,2050,"  100,000 - 500,000  ","April 17, 2017",12583,0,87,train,9.87283334572366
+196,it.doveconviene.android,Shopfully - Weekly Ads & Deals,Shopping,4.4,243044,"  10,000,000 - 50,000,000  ","December 7, 2016",12632,0,190,train,10.564256460688371
+47,com.naturalsoft.naturalreader,Text to Speech - NaturalReader,Education,3.4,1342,"  100,000 - 500,000  ","November 2, 2016",13003,0,400,train,9.471352102382964
+194,com.quikr,Quikr Free Local Classifieds,Shopping,4.2,534674,"  10,000,000 - 50,000,000  ","December 8, 2016",13578,0,961,test,10.277001303528836
+53,forqan.tech.families1,Preschool Adventures-1,Education,4.2,2172,"  500,000 - 1,000,000  ","April 22, 2017",13901,0,265,train,9.987737815494
+122,org.digitalcure.ccnf.app,Calorie counter Life Balance,Health & Fitness,4.3,9091,"  1,000,000 - 5,000,000  ","November 20, 2016",13952,0,170,train,8.83099409554826
+105,com.tudorspan.recipekeeper,Recipe Keeper,Food & Drink,4.4,1024,"  50,000 - 100,000  ","April 30, 2017",14109,0,75,test,9.361546050340271
+108,com.endless.healthyrecipes,Healthy Recipes,Food & Drink,3.9,1605,"  100,000 - 500,000  ","April 10, 2017",14228,0,18,train,9.637021531825406
+117,com.omniluxtrade.healthyrecipes,Healthy Recipes Free,Food & Drink,4.0,1008,"  100,000 - 500,000  ","November 16, 2016",14281,0,22,test,10.518479448597969
+152,com.dylvian.mango.activities,MANGO,Lifestyle,3.6,13044,"  1,000,000 - 5,000,000  ","November 15, 2016",14870,0,1064,train,9.808342512765028
+70,com.ciskroapps.boyskinsminecraft,HD Boy Skins for Minecraft PE,Entertainment,4.0,10521,"  500,000 - 1,000,000  ","June 22, 2016",15463,0,1041,train,9.641494400374484
+179,com.eliferun.music,Music Player for Android,Music & Audio,4.0,130542,"  10,000,000 - 50,000,000  ","March 31, 2017",15479,0,1656,train,11.11532239946748
+120,com.caynax.hiit,HIIT - interval training timer,Health & Fitness,3.8,16518,"  1,000,000 - 5,000,000  ","September 21, 2016",15482,0,512,train,8.29751346121355
+83,com.appxy.checkbook2,Checkbook - Account Tracker,Finance,4.5,2554,"  100,000 - 500,000  ","May 12, 2017",16007,0,1203,train,8.876786521585698
+132,de.aktiwir.aktibmi,"Weight Loss Tracker, BMI",Health & Fitness,4.5,34975,"  1,000,000 - 5,000,000  ","January 4, 2017",16563,0,1392,train,9.89722250114135
+127,com.glow.android.eve,Eve - Period Tracker,Health & Fitness,4.6,15493,"  500,000 - 1,000,000  ","May 12, 2017",16951,0,142,train,9.48007023684576
+16,com.azwstudios.theholybible.kjv,King James Bible (KJV),Books & Reference,4.7,29200,"  1,000,000 - 5,000,000  ","December 24, 2016",17515,2,973,train,10.143592464575882
+178,com.amp.android,AmpMe - Social Music Party,Music & Audio,4.2,13851,"  1,000,000 - 5,000,000  ","December 7, 2016",17788,0,276,train,10.731796178675555
+82,com.wageworks.ezreceipts,EZ Receipts,Finance,3.6,1124,"  100,000 - 500,000  ","May 11, 2017",18010,0,65,train,8.785693144971088
+74,com.piviandco.bimbobooth,BimboBooth,Entertainment,3.5,14684,"  1,000,000 - 5,000,000  ","August 9, 2016",18317,0,70,train,10.01857270326547
+114,com.foodbooking.clientapp,FoodBooking,Food & Drink,4.1,80,"  5,000 - 10,000  ","December 15, 2016",20422,0,2672,train,10.209633723274424
+39,com.dteenergy.mydte,DTE Energy,Business,4.6,12688,"  100,000 - 500,000  ","April 27, 2017",20944,0,370,train,11.102124108518238
+140,com.mywebgrocer.JewelOscoCircular,Jewel-Osco,Lifestyle,3.5,1417,"  100,000 - 500,000  ","March 28, 2017",21187,1,90,test,7.79705126321116
+63,com.gi.playingteddybear,Talking Teddy Bear Free,Entertainment,4.2,3880,"  500,000 - 1,000,000  ","November 4, 2016",21385,0,655,train,8.918948590261834
+148,com.familyandco.framilywall,FamilyWall for Sprint,Lifestyle,3.9,1283,"  100,000 - 500,000  ","April 14, 2016",21510,0,1808,train,9.45822729252552
+101,com.mcdeliveryonline.app,McDelivery India – North&East,Food & Drink,3.3,2598,"  100,000 - 500,000  ","December 6, 2015",21548,0,939,train,8.615217767046373
+15,com.oodles.download.free.ebooks.reader,50000 Free eBooks & AudioBooks,Books & Reference,4.1,43258,"  1,000,000 - 5,000,000  ","September 30, 2016",22217,0,4272,dev,10.107751761683392
+66,com.piviandco.baldbooth,BaldBooth,Entertainment,3.8,23288,"  5,000,000 - 10,000,000  ","August 9, 2016",22846,0,110,test,9.26453601063032
+195,com.iherb,iHerb,Shopping,4.5,21220,"  1,000,000 - 5,000,000  ","May 8, 2017",23206,0,92,train,10.367145150877816
+38,com.godaddy.mobile.android,GoDaddy,Business,4.1,32925,"  1,000,000 - 5,000,000  ","May 4, 2017",23501,0,164,train,10.395503011536404
+96,digit.android,Digit Save Money Automatically,Finance,4.3,3601,"  100,000 - 500,000  ","April 10, 2017",24188,0,408,test,10.17533628195303
+56,com.howtodrawnew17pokemon.app,Draw POKE characters  ✏️,Education,3.8,1164,"  100,000 - 500,000  ","July 21, 2016",24203,0,315,test,10.29426890014399
+94,com.Vertifi.Mobile.P211391825,DCU Mobile Banking,Finance,4.2,2184,"  100,000 - 500,000  ","December 6, 2016",24753,0,625,train,10.06832454696659
+61,tv.pluto.android,Pluto TV - It’s Free TV,Entertainment,3.9,14345,"  1,000,000 - 5,000,000  ","May 5, 2017",24900,0,5,dev,8.464305037424468
+67,com.gi.talkingpocoyofree,Talking Pocoyo Free,Entertainment,4.1,66911,"  5,000,000 - 10,000,000  ","November 11, 2016",25239,0,1921,train,9.342933530834046
+40,com.dictionary.flashcards,Dictionary.com Flashcards,Education,4.2,6351,"  1,000,000 - 5,000,000  ","September 18, 2013",25591,0,129,test,8.017648963504909
+153,com.trovit.android.apps.cars,Used cars for sale - Trovit,Lifestyle,4.2,43198,"  1,000,000 - 5,000,000  ","December 12, 2016",25663,0,855,train,9.919458784114722
+34,sandhills.auctiontime.app,AuctionTime,Business,4.3,233,"  50,000 - 100,000  ","October 14, 2016",26215,0,530,train,9.968396425311834
+1,cherryapps.pokeguide,Poke Guide,Books & Reference,4.1,2880,"  100,000 - 500,000  ","October 25, 2015",26804,0,314,train,8.674069198362798
 28,com.bzzzapp,BZ Reminder,Business,4.6,22881,"  500,000 - 1,000,000  ","October 23, 2016",27707,0,295,dev,9.40821367347968
-29,com.nitrodesk.droid20.nitroid,TouchDown for Smartphones,Business,4.0,20847,"  1,000,000 - 5,000,000  ","August 23, 2016",68305,0,683,test,9.458608077074125
+42,com.studyblue,StudyBlue Flashcards & Quizzes,Education,3.9,9821,"  1,000,000 - 5,000,000  ","May 5, 2017",28135,0,1349,test,8.728176172698914
+45,com.studyblue,StudyBlue Flashcards & Quizzes,Education,3.9,9821,"  1,000,000 - 5,000,000  ","May 5, 2017",28154,0,950,test,9.211211989200224
+54,com.yobimi.bbclearningenglish,Learn English Listening,Education,4.7,10165,"  500,000 - 1,000,000  ","May 6, 2017",28476,0,1440,train,10.101756368053572
+98,ru.yandex.money,Yandex.Money: online payments,Finance,4.6,86819,"  1,000,000 - 5,000,000  ","November 8, 2016",28533,0,1025,test,10.625625412412516
+160,com.freedomlabs.free.music.archive,Free Music Downloader,Music & Audio,2.6,12748,"  1,000,000 - 5,000,000  ","November 21, 2016",29397,0,3812,train,8.421005611298167
+128,com.sparkpeople.androidtracker,Calorie Counter & Diet Tracker,Health & Fitness,4.4,27875,"  1,000,000 - 5,000,000  ","April 17, 2017",29921,0,541,test,9.52160904263713
+111,com.yummly.android,Yummly Recipes & Shopping List,Food & Drink,4.5,71355,"  1,000,000 - 5,000,000  ","December 5, 2016",30144,1,4694,train,9.91302593454445
+79,com.kissanime.jpanime.v9.gogoanime,JP Anime ~ KissAnime,Entertainment,4.2,5439,"  100,000 - 500,000  ","May 21, 2016",30226,0,1500,train,10.997971012233393
+75,com.mtvn.mtvPrimeAndroid,MTV,Entertainment,3.8,31162,"  1,000,000 - 5,000,000  ","April 27, 2017",30779,0,298,train,10.11447225021977
+35,pkg.rop,ROP - Royal Oman Police,Business,4.5,19956,"  1,000,000 - 5,000,000  ","June 5, 2016",30995,0,192,train,10.03126274543582
+87,net.metaquotes.metatrader5,MetaTrader 5,Finance,4.4,17832,"  1,000,000 - 5,000,000  ","September 27, 2016",31066,0,125,train,9.335626401904136
+58,com.QuranReading.SurahYaseen,Surah Yasin,Education,4.6,14316,"  1,000,000 - 5,000,000  ","April 18, 2016",32777,0,106,train,10.662410842578186
+189,com.ebay.mobile,"eBay - Buy, Sell & Save Money",Shopping,4.3,2335538,"  100,000,000 - 500,000,000  ","April 26, 2017",33617,1,528,train,9.756143505617452
+10,com.csnmedia.android.bg,Bible Gateway,Books & Reference,4.5,24306,"  1,000,000 - 5,000,000  ","April 25, 2017",34381,0,893,test,9.584134142810012
+139,com.dailybits.foodjournal,Food Diary,Health & Fitness,4.0,2615,"  500,000 - 1,000,000  ","March 26, 2017",34645,0,1398,test,11.13044030328784
 30,com.nitrodesk.honey.nitroid,TouchDown HD,Business,3.4,5651,"  500,000 - 1,000,000  ","January 17, 2017",34787,2,45,train,9.523703433127867
 31,com.nitrodesk.honey.nitroid,TouchDown HD,Business,3.4,5651,"  500,000 - 1,000,000  ","January 17, 2017",34791,2,87,train,9.65095403122054
-32,com.asana.app,Asana: organize team projects,Business,4.1,16211,"  1,000,000 - 5,000,000  ","May 11, 2017",43887,0,758,train,9.737884795790825
-33,com.joistapp.android.joist,Contractor Estimate & Invoice,Business,4.6,3507,"  100,000 - 500,000  ","April 26, 2017",5018,0,427,test,9.80279879387071
-34,sandhills.auctiontime.app,AuctionTime,Business,4.3,233,"  50,000 - 100,000  ","October 14, 2016",26215,0,530,train,9.968396425311834
-35,pkg.rop,ROP - Royal Oman Police,Business,4.5,19956,"  1,000,000 - 5,000,000  ","June 5, 2016",30995,0,192,train,10.03126274543582
-36,com.tux.client,Parallels Client (legacy),Business,4.4,11503,"  1,000,000 - 5,000,000  ","October 25, 2016",43030,0,1147,train,10.08749670485678
-37,com.f2pmedia.myfreecash,"Social Rewards, earn cash home",Business,4.7,10097,"  10,000 - 50,000  ","November 23, 2016",35524,0,15,train,10.288975932478207
-38,com.godaddy.mobile.android,GoDaddy,Business,4.1,32925,"  1,000,000 - 5,000,000  ","May 4, 2017",23501,0,164,train,10.395503011536404
-39,com.dteenergy.mydte,DTE Energy,Business,4.6,12688,"  100,000 - 500,000  ","April 27, 2017",20944,0,370,train,11.102124108518238
-40,com.dictionary.flashcards,Dictionary.com Flashcards,Education,4.2,6351,"  1,000,000 - 5,000,000  ","September 18, 2013",25591,0,129,test,8.017648963504909
-41,com.fusionprojects.edmodo,Edmodo,Education,4.1,169108,"  5,000,000 - 10,000,000  ","May 3, 2017",61905,0,353,train,8.489771428616919
-42,com.studyblue,StudyBlue Flashcards & Quizzes,Education,3.9,9821,"  1,000,000 - 5,000,000  ","May 5, 2017",28135,0,1349,test,8.728176172698914
-43,com.nclexpn.hlt,NCLEX PN Mastery,Education,4.7,2471,"  100,000 - 500,000  ","November 16, 2016",50278,0,292,train,8.941887951391182
-44,com.skibler.cursodeingles,Curso de Ingles GRATIS,Education,4.1,1845,"  100,000 - 500,000  ","April 8, 2015",41136,0,14,train,9.174525184333138
-45,com.studyblue,StudyBlue Flashcards & Quizzes,Education,3.9,9821,"  1,000,000 - 5,000,000  ","May 5, 2017",28154,0,950,test,9.211211989200224
-46,com.testsstore.app.peg0,Practice English Grammar,Education,3.9,7111,"  1,000,000 - 5,000,000  ","May 17, 2015",58080,0,113,train,9.328482368993187
-47,com.naturalsoft.naturalreader,Text to Speech - NaturalReader,Education,3.4,1342,"  100,000 - 500,000  ","November 2, 2016",13003,0,400,train,9.471352102382964
-48,com.busuu.android.fr,Learn French - Speak French,Education,4.4,15183,"  1,000,000 - 5,000,000  ","November 22, 2016",11734,2,1982,train,9.572873675474202
-49,com.busuu.android.es,Learn Spanish - Speak Spanish,Education,4.4,15071,"  1,000,000 - 5,000,000  ","November 22, 2016",2930,0,7381,train,9.672110177166717
-50,com.sololearn.htmltrial,Learn HTML,Education,4.7,56183,"  1,000,000 - 5,000,000  ","May 9, 2017",7288,0,208,train,9.727332698816747
-51,com.bravolang.italian,Learn Italian,Education,4.3,15404,"  500,000 - 1,000,000  ","December 3, 2016",4001,0,541,train,9.763895628720638
-52,com.vivitylabs.android.braintrainer,Fit Brains Trainer,Education,4.0,42330,"  1,000,000 - 5,000,000  ","November 17, 2016",69009,0,9138,train,9.897079994987347
-53,forqan.tech.families1,Preschool Adventures-1,Education,4.2,2172,"  500,000 - 1,000,000  ","April 22, 2017",13901,0,265,train,9.987737815494
-54,com.yobimi.bbclearningenglish,Learn English Listening,Education,4.7,10165,"  500,000 - 1,000,000  ","May 6, 2017",28476,0,1440,train,10.101756368053572
-55,com.coderzheaven.englishtenses,English Tenses,Education,4.1,13827,"  1,000,000 - 5,000,000  ","December 12, 2016",661,0,795,train,10.237922401640866
-56,com.howtodrawnew17pokemon.app,Draw POKE characters  ✏️,Education,3.8,1164,"  100,000 - 500,000  ","July 21, 2016",24203,0,315,test,10.29426890014399
-57,com.gabrielittner.timetable,Timetable,Education,4.2,38144,"  1,000,000 - 5,000,000  ","May 21, 2016",4846,1,633,train,10.505361670404731
-58,com.QuranReading.SurahYaseen,Surah Yasin,Education,4.6,14316,"  1,000,000 - 5,000,000  ","April 18, 2016",32777,0,106,train,10.662410842578186
-59,org.muth.android.conjugator_demo_en,English Verbs,Education,4.2,10317,"  1,000,000 - 5,000,000  ","December 3, 2016",9701,0,2139,test,11.165829546998191
-60,emoji.wallpapers,Emoji wallpapers,Entertainment,4.3,9739,"  1,000,000 - 5,000,000  ","December 10, 2016",6698,1,269,train,8.123777439220873
-61,tv.pluto.android,Pluto TV - It’s Free TV,Entertainment,3.9,14345,"  1,000,000 - 5,000,000  ","May 5, 2017",24900,0,5,dev,8.464305037424468
-62,minecraft.mapsforminecraft.luckyblockrace,Lucky Block Race Minecraft PE,Entertainment,4.0,2591,"  100,000 - 500,000  ","May 5, 2017",50436,0,139,train,8.817883191789202
-63,com.gi.playingteddybear,Talking Teddy Bear Free,Entertainment,4.2,3880,"  500,000 - 1,000,000  ","November 4, 2016",21385,0,655,train,8.918948590261834
-64,com.wacompany.mydol,"Mydol- Virtual chat, Fanletter",Entertainment,4.4,55962,"  1,000,000 - 5,000,000  ","November 18, 2016",7447,1,5,train,9.068216421439478
-65,com.til.boxtv.mobile,BoxTV Free Full Movies Online,Entertainment,3.6,9256,"  1,000,000 - 5,000,000  ","September 5, 2016",42135,0,313,train,9.119395453186772
-66,com.piviandco.baldbooth,BaldBooth,Entertainment,3.8,23288,"  5,000,000 - 10,000,000  ","August 9, 2016",22846,0,110,test,9.26453601063032
-67,com.gi.talkingpocoyofree,Talking Pocoyo Free,Entertainment,4.1,66911,"  5,000,000 - 10,000,000  ","November 11, 2016",25239,0,1921,train,9.342933530834046
-68,com.wacompany.mydol,"Mydol- Virtual chat, Fanletter",Entertainment,4.4,55962,"  1,000,000 - 5,000,000  ","November 18, 2016",7437,1,4129,train,9.40558438206429
-69,com.epicurean83.game.isadari,iSadari - Random Game,Entertainment,3.8,2039,"  1,000,000 - 5,000,000  ","December 22, 2013",11905,0,545,train,9.537547942524812
-70,com.ciskroapps.boyskinsminecraft,HD Boy Skins for Minecraft PE,Entertainment,4.0,10521,"  500,000 - 1,000,000  ","June 22, 2016",15463,0,1041,train,9.641494400374484
-71,com.km.effects.dogsounds,Dog Sounds,Entertainment,3.5,5720,"  1,000,000 - 5,000,000  ","March 29, 2016",39679,0,192,test,9.707102513001344
-72,com.laugh.talking.koala,Talking Koala Bear,Entertainment,4.0,9660,"  1,000,000 - 5,000,000  ","October 19, 2016",49319,0,700,train,9.818146245525282
-73,com.fxnetworks.fxnow,FXNOW,Entertainment,3.7,20914,"  1,000,000 - 5,000,000  ","October 3, 2016",9668,0,542,train,9.943565347217625
-74,com.piviandco.bimbobooth,BimboBooth,Entertainment,3.5,14684,"  1,000,000 - 5,000,000  ","August 9, 2016",18317,0,70,train,10.01857270326547
-75,com.mtvn.mtvPrimeAndroid,MTV,Entertainment,3.8,31162,"  1,000,000 - 5,000,000  ","April 27, 2017",30779,0,298,train,10.11447225021977
-76,com.gamefly.android.gamecenter,GameFly,Entertainment,4.4,34942,"  1,000,000 - 5,000,000  ","December 6, 2016",62407,0,162,train,10.252118257116706
-77,lalelu.com.pornotitel_deutsch,Porno Ping Pong,Entertainment,3.5,4829,"  1,000,000 - 5,000,000  ","February 10, 2015",63345,1,159,train,10.362972424437832
-78,com.scoompa.ants,Ants in Phone,Entertainment,4.3,10977,"  500,000 - 1,000,000  ","March 31, 2016",40333,0,16,train,10.519398492665056
-79,com.kissanime.jpanime.v9.gogoanime,JP Anime ~ KissAnime,Entertainment,4.2,5439,"  100,000 - 500,000  ","May 21, 2016",30226,0,1500,train,10.997971012233393
-80,com.handynorth.moneywise_free,MoneyWise,Finance,4.3,7364,"  500,000 - 1,000,000  ","September 2, 2014",2185,0,278,test,8.203368191452928
-81,mediavision.handwallet,Expense Manager,Finance,4.3,19255,"  1,000,000 - 5,000,000  ","October 26, 2016",9570,0,16,train,8.567576102685859
-82,com.wageworks.ezreceipts,EZ Receipts,Finance,3.6,1124,"  100,000 - 500,000  ","May 11, 2017",18010,0,65,train,8.785693144971088
-83,com.appxy.checkbook2,Checkbook - Account Tracker,Finance,4.5,2554,"  100,000 - 500,000  ","May 12, 2017",16007,0,1203,train,8.876786521585698
-84,com.grppl.android.shell.CMBlloydsTSB73,Lloyds Bank Mobile Banking,Finance,4.5,74944,"  1,000,000 - 5,000,000  ","November 5, 2016",59707,0,175,train,8.957159134483128
-85,com.westernunion.android.mtapp,Western Union Money Transfer,Finance,4.4,53972,"  1,000,000 - 5,000,000  ","April 19, 2017",7253,3,1616,dev,9.138491571126922
-86,de.elfsoft.bestbrokers,Best Brokers: Stock Simulator,Finance,4.1,8506,"  500,000 - 1,000,000  ","March 29, 2017",71327,0,753,train,9.26456833315075
-87,net.metaquotes.metatrader5,MetaTrader 5,Finance,4.4,17832,"  1,000,000 - 5,000,000  ","September 27, 2016",31066,0,125,train,9.335626401904136
-88,com.netgate,Mint Bills: Bill Pay & Money,Finance,4.5,76273,"  1,000,000 - 5,000,000  ","May 15, 2016",67720,0,1379,train,9.486089185269805
-89,com.ifs.banking.fiid7001,1st Source Bank Mobile,Finance,4.6,1070,"  10,000 - 50,000  ","May 23, 2016",882,2,274,train,9.57251383639373
-90,com.thirdframestudios.android.expensoor,Toshl Finance Budget & Expense,Finance,4.3,24408,"  1,000,000 - 5,000,000  ","December 6, 2016",42987,0,1945,train,9.621254820233212
-91,gov.irs,IRS2Go,Finance,4.1,29342,"  5,000,000 - 10,000,000  ","February 14, 2017",11457,1,357,train,9.697194664184035
-92,com.sbi.SBIFreedomPlus,State Bank Anywhere,Finance,4.3,198151,"  10,000,000 - 50,000,000  ","December 6, 2016",38617,0,119,train,9.813275936180744
-93,com.ml.mobile.edge,Merrill Edge for Android,Finance,3.7,981,"  100,000 - 500,000  ","May 10, 2017",2385,0,17,train,9.929460925925492
-94,com.Vertifi.Mobile.P211391825,DCU Mobile Banking,Finance,4.2,2184,"  100,000 - 500,000  ","December 6, 2016",24753,0,625,train,10.06832454696659
-95,com.ifs.banking.fiid7001,1st Source Bank Mobile,Finance,4.6,1070,"  10,000 - 50,000  ","May 23, 2016",876,2,284,train,10.095400467419882
-96,digit.android,Digit Save Money Automatically,Finance,4.3,3601,"  100,000 - 500,000  ","April 10, 2017",24188,0,408,test,10.17533628195303
-97,com.discoverfinancial.mobile,Discover Mobile,Finance,4.4,44812,"  1,000,000 - 5,000,000  ","May 11, 2017",40883,0,374,train,10.270784775342564
-98,ru.yandex.money,Yandex.Money: online payments,Finance,4.6,86819,"  1,000,000 - 5,000,000  ","November 8, 2016",28533,0,1025,test,10.625625412412516
-99,com.tdbank,TD Bank (US),Finance,4.1,18674,"  1,000,000 - 5,000,000  ","May 8, 2017",44448,0,1561,test,10.835958235897737
-100,com.freerecipes.cakerecipes,Cake Recipes Free,Food & Drink,4.4,161,"  10,000 - 50,000  ","November 18, 2016",8171,0,463,train,8.503437239511896
-101,com.mcdeliveryonline.app,McDelivery India – North&East,Food & Drink,3.3,2598,"  100,000 - 500,000  ","December 6, 2015",21548,0,939,train,8.615217767046373
-102,com.dunnbros.android.app,Dunn Bros Coffee,Food & Drink,3.8,202,"  10,000 - 50,000  ","February 6, 2015",67524,0,747,test,8.947010329664527
-103,com.application.zomato,Zomato - Restaurant Finder,Food & Drink,4.3,241967,"  10,000,000 - 50,000,000  ","May 5, 2017",40896,0,1621,train,9.103363837934037
-104,com.riatech.diabeticrecipes,Diabetic Recipes Free,Food & Drink,3.9,2018,"  100,000 - 500,000  ","May 4, 2017",4894,0,1157,train,9.2977706196162
-105,com.tudorspan.recipekeeper,Recipe Keeper,Food & Drink,4.4,1024,"  50,000 - 100,000  ","April 30, 2017",14109,0,75,test,9.361546050340271
-106,com.bigoven.android,"BigOven: 350,000+ Recipes",Food & Drink,4.3,31298,"  1,000,000 - 5,000,000  ","April 26, 2017",59921,2,306,train,9.425815798759508
-107,com.vertskebap.vertskebap.android.app,VERTS Rewards,Food & Drink,3.3,32,"  10,000 - 50,000  ","May 10, 2017",62149,0,447,test,9.547485162244053
-108,com.endless.healthyrecipes,Healthy Recipes,Food & Drink,3.9,1605,"  100,000 - 500,000  ","April 10, 2017",14228,0,18,train,9.637021531825406
-109,com.global.hellofood.android,hellofood - Food Delivery,Food & Drink,3.9,39532,"  1,000,000 - 5,000,000  ","October 12, 2016",50091,0,181,dev,9.738887062994106
-110,com.winesearcher,Wine-Searcher,Food & Drink,4.3,2050,"  100,000 - 500,000  ","April 17, 2017",12583,0,87,train,9.87283334572366
-111,com.yummly.android,Yummly Recipes & Shopping List,Food & Drink,4.5,71355,"  1,000,000 - 5,000,000  ","December 5, 2016",30144,1,4694,train,9.91302593454445
-112,com.global.hellofood.android,hellofood - Food Delivery,Food & Drink,3.9,39532,"  1,000,000 - 5,000,000  ","October 12, 2016",50087,0,716,dev,9.957817182850066
-113,com.winesearcher,Wine-Searcher,Food & Drink,4.3,2050,"  100,000 - 500,000  ","April 17, 2017",12576,0,13,train,10.138974239504424
-114,com.foodbooking.clientapp,FoodBooking,Food & Drink,4.1,80,"  5,000 - 10,000  ","December 15, 2016",20422,0,2672,train,10.209633723274424
-115,com.desertstorm.recipebook,Recipe Book,Food & Drink,4.1,10898,"  1,000,000 - 5,000,000  ","May 8, 2017",4784,0,666,train,10.306555275768217
-116,com.application.zomato,Zomato - Restaurant Finder,Food & Drink,4.3,241967,"  10,000,000 - 50,000,000  ","May 5, 2017",56741,2,337,train,10.41768819232684
-117,com.omniluxtrade.healthyrecipes,Healthy Recipes Free,Food & Drink,4.0,1008,"  100,000 - 500,000  ","November 16, 2016",14281,0,22,test,10.518479448597969
-118,com.andromo.dev136619.app230407,43 Chocolate Cake Recipes,Food & Drink,3.9,3771,"  500,000 - 1,000,000  ","September 20, 2016",45355,1,167,train,10.651623840932832
-119,com.talabat,Talabat: Food Delivery,Food & Drink,4.5,80428,"  1,000,000 - 5,000,000  ","April 24, 2017",50490,1,5654,dev,11.557134746033055
-120,com.caynax.hiit,HIIT - interval training timer,Health & Fitness,3.8,16518,"  1,000,000 - 5,000,000  ","September 21, 2016",15482,0,512,train,8.29751346121355
-121,com.getsomeheadspace.android,Headspace - meditation,Health & Fitness,4.4,24008,"  1,000,000 - 5,000,000  ","December 13, 2016",7553,0,2191,train,8.703048728265628
-122,org.digitalcure.ccnf.app,Calorie counter Life Balance,Health & Fitness,4.3,9091,"  1,000,000 - 5,000,000  ","November 20, 2016",13952,0,170,train,8.83099409554826
-123,com.hcmagic.askadoctor,Ask a Doctor,Health & Fitness,4.0,5711,"  100,000 - 500,000  ","April 15, 2014",5779,0,356,train,8.989646285288636
-124,com.wte.view,Pregnancy Tracker,Health & Fitness,4.5,37191,"  1,000,000 - 5,000,000  ","December 9, 2016",60717,0,3808,test,9.189353583842
-125,com.eatthismuch,Eat This Much - Meal Planner,Health & Fitness,4.2,1481,"  100,000 - 500,000  ","May 11, 2017",5268,0,764,train,9.312333473951742
-126,com.purewowstudio.bodycal,"BodyCal (IIFYM, BMI, Body Fat)",Health & Fitness,4.3,885,"  100,000 - 500,000  ","January 18, 2015",46973,0,476,train,9.382438801842326
-127,com.glow.android.eve,Eve - Period Tracker,Health & Fitness,4.6,15493,"  500,000 - 1,000,000  ","May 12, 2017",16951,0,142,train,9.48007023684576
-128,com.sparkpeople.androidtracker,Calorie Counter & Diet Tracker,Health & Fitness,4.4,27875,"  1,000,000 - 5,000,000  ","April 17, 2017",29921,0,541,test,9.52160904263713
-129,com.EAGINsoftware.dejaloYa,Quit smoking - QuitNow!,Health & Fitness,4.2,27664,"  1,000,000 - 5,000,000  ","December 13, 2016",7059,0,221,train,9.635227429679444
-130,com.webmd.baby,WebMD Baby,Health & Fitness,4.1,5169,"  500,000 - 1,000,000  ","July 15, 2016",57485,2,906,train,9.787372306885102
-131,se.perigee.android.seven,Seven - 7 Minute Workout,Health & Fitness,4.4,59695,"  1,000,000 - 5,000,000  ","May 5, 2017",1264,0,2,train,9.804781302203155
-132,de.aktiwir.aktibmi,"Weight Loss Tracker, BMI",Health & Fitness,4.5,34975,"  1,000,000 - 5,000,000  ","January 4, 2017",16563,0,1392,train,9.89722250114135
-133,com.healthagen.iTriage,iTriage Health,Health & Fitness,4.5,93333,"  5,000,000 - 10,000,000  ","February 1, 2017",51740,0,669,train,9.997506613472805
-134,com.fourtechnologies.mynetdiary.ad,Calorie Counter - MyNetDiary,Health & Fitness,4.5,20733,"  1,000,000 - 5,000,000  ","May 12, 2017",8341,0,374,test,10.114523273327212
-135,com.webmd.baby,WebMD Baby,Health & Fitness,4.1,5169,"  500,000 - 1,000,000  ","July 15, 2016",69943,1,826,train,10.242633939558056
-136,com.womanlog,WomanLog Calendar,Health & Fitness,4.5,116999,"  5,000,000 - 10,000,000  ","March 29, 2017",49446,1,221,train,10.37738244745929
-137,com.atkins.android.carbcounter,Atkins Carb Counter,Health & Fitness,3.1,3293,"  500,000 - 1,000,000  ","April 26, 2017",41577,0,2149,train,10.434805021536835
-138,com.proactiveapp.womanlogpregnancy.free,WomanLog Pregnancy Calendar,Health & Fitness,4.3,8639,"  1,000,000 - 5,000,000  ","August 30, 2016",51271,0,445,train,10.629065779230691
-139,com.dailybits.foodjournal,Food Diary,Health & Fitness,4.0,2615,"  500,000 - 1,000,000  ","March 26, 2017",34645,0,1398,test,11.13044030328784
-140,com.mywebgrocer.JewelOscoCircular,Jewel-Osco,Lifestyle,3.5,1417,"  100,000 - 500,000  ","March 28, 2017",21187,1,90,test,7.79705126321116
-141,com.sotg.surveys,Surveys On The Go®,Lifestyle,4.4,34941,"  500,000 - 1,000,000  ","May 3, 2017",9548,1,509,train,8.373580984734815
-142,cps.mmxi.torch2,Flashlight,Lifestyle,3.9,4055,"  500,000 - 1,000,000  ","August 26, 2016",63836,0,1648,train,8.62476040067459
-143,com.utagoe.momentdiary,Moment Diary,Lifestyle,4.1,9675,"  1,000,000 - 5,000,000  ","December 6, 2016",59227,0,885,train,8.82290447929264
-144,com.paktor,Paktor: Meet New People,Lifestyle,4.2,82989,"  1,000,000 - 5,000,000  ","December 14, 2016",51578,0,4569,train,9.083126778140018
-145,com.kauf.talking.baum.TalkingJohnDogandSoundboard,Talking John Dog & Soundboard,Lifestyle,4.0,48512,"  5,000,000 - 10,000,000  ","October 21, 2016",59404,0,73,train,9.090520906932207
-146,com.diaryforgirlswithlock,My Secret Diary With Password,Lifestyle,4.2,1328,"  100,000 - 500,000  ","November 4, 2016",39105,0,703,train,9.205779393109992
-147,com.hemisphere3.tarot,Galaxy Tarot,Lifestyle,4.5,33495,"  1,000,000 - 5,000,000  ","May 5, 2016",69420,0,183,train,9.335013991640244
-148,com.familyandco.framilywall,FamilyWall for Sprint,Lifestyle,3.9,1283,"  100,000 - 500,000  ","April 14, 2016",21510,0,1808,train,9.45822729252552
-149,com.ancestry.ancestrydna,AncestryDNA - Genetic Testing,Lifestyle,3.7,139,"  50,000 - 100,000  ","May 12, 2017",64346,0,125,train,9.572137998002717
-150,com.muslimtoolbox.app.android.prayertimes,Prayer times: Qibla & Azan,Lifestyle,4.3,64963,"  5,000,000 - 10,000,000  ","June 5, 2016",546,0,781,test,9.593700889270409
-151,com.scripps.android.foodnetwork,Food Network In the Kitchen,Lifestyle,4.5,43411,"  1,000,000 - 5,000,000  ","September 22, 2015",62621,0,527,test,9.668009995363509
-152,com.dylvian.mango.activities,MANGO,Lifestyle,3.6,13044,"  1,000,000 - 5,000,000  ","November 15, 2016",14870,0,1064,train,9.808342512765028
-153,com.trovit.android.apps.cars,Used cars for sale - Trovit,Lifestyle,4.2,43198,"  1,000,000 - 5,000,000  ","December 12, 2016",25663,0,855,train,9.919458784114722
-154,com.sotg.surveys,Surveys On The Go®,Lifestyle,4.4,34941,"  500,000 - 1,000,000  ","May 3, 2017",9550,1,539,train,10.034567408640283
-155,com.honeywell.mobile.android.totalComfort,Total Connect Comfort,Lifestyle,4.6,35646,"  500,000 - 1,000,000  ","February 9, 2017",42254,0,333,train,10.083931568550256
-156,com.polyvore,Polyvore Style: Fashion to Buy,Lifestyle,4.7,92086,"  1,000,000 - 5,000,000  ","November 8, 2016",9079,0,438,dev,10.24471221194034
-157,com.pinkapp,PINK dating app,Lifestyle,4.4,43241,"  1,000,000 - 5,000,000  ","May 2, 2017",1050,0,1147,train,10.32640751623363
-158,ch.bitspin.timely,Timely Alarm Clock,Lifestyle,4.4,251490,"  5,000,000 - 10,000,000  ","February 5, 2015",38692,0,1186,train,10.704870472688452
-159,com.kolesnik.feminap,Feminap - Woman Calendar,Lifestyle,4.3,21342,"  1,000,000 - 5,000,000  ","May 19, 2016",865,0,48,train,11.249734483458276
-160,com.freedomlabs.free.music.archive,Free Music Downloader,Music & Audio,2.6,12748,"  1,000,000 - 5,000,000  ","November 21, 2016",29397,0,3812,train,8.421005611298167
 161,com.sqr5.android.audioplayer,Maple Player Classic,Music & Audio,4.3,9316,"  1,000,000 - 5,000,000  ","September 2, 2016",35200,0,248,train,8.788420223135821
-162,com.batanga,bRadio Free Music,Music & Audio,4.4,37080,"  1,000,000 - 5,000,000  ","November 2, 2016",44721,0,1433,train,8.951185216274606
-163,com.blackbeltstudio.valentinesdayringtones,Romantic Ringtones,Music & Audio,3.9,12290,"  1,000,000 - 5,000,000  ","May 9, 2016",52208,0,545,train,9.081779805359927
-164,com.desaxedstudios.bassbooster,Bass Booster,Music & Audio,4.3,187824,"  10,000,000 - 50,000,000  ","June 16, 2016",5962,3,225,train,9.295804539509572
-165,com.soundcloud.creators,SoundCloud Pulse: for creators,Music & Audio,4.1,7306,"  1,000,000 - 5,000,000  ","May 11, 2017",65082,0,75,dev,9.387677132308264
-166,com.ezhoop.music,Top Music Player,Music & Audio,4.2,104506,"  5,000,000 - 10,000,000  ","June 4, 2015",49416,0,46,train,9.439726318391369
-167,com.bork.dsp.datuna,Tuner - DaTuner (Lite!),Music & Audio,4.4,76177,"  5,000,000 - 10,000,000  ","April 3, 2016",46782,0,967,test,9.569959081269005
-168,com.kane.xplay.activities,Xplay music player,Music & Audio,4.0,20944,"  1,000,000 - 5,000,000  ","July 22, 2013",4968,1,488,dev,9.645980046748084
-169,com.batanga,bRadio Free Music,Music & Audio,4.4,37080,"  1,000,000 - 5,000,000  ","November 2, 2016",44722,0,4357,train,9.791076746607676
-170,com.keerby.mp3converter,MP3 Converter,Music & Audio,3.8,9233,"  1,000,000 - 5,000,000  ","July 1, 2016",1365,0,766,train,9.844689339196677
-171,com.kerker.android.voicechanger,Voice Changer,Music & Audio,3.5,5083,"  1,000,000 - 5,000,000  ","April 28, 2014",52822,0,21,dev,9.891350739622528
-172,com.blackbeltstudio.crazysounds,Crazy Sounds & Ringtones,Music & Audio,3.9,6574,"  1,000,000 - 5,000,000  ","May 9, 2016",57549,0,560,train,10.020592591220042
-173,com.podbean.app.podcast,Podbean Podcast App,Music & Audio,4.6,19064,"  500,000 - 1,000,000  ","November 29, 2016",486,0,488,train,10.105977953180693
-174,de.smartchord.droid,smart Chords & tools (guitar..,Music & Audio,4.7,33039,"  1,000,000 - 5,000,000  ","November 27, 2016",5664,1,3459,train,10.269041334863148
-175,com.mrgreensoft.nrg.player,NRG Player music player,Music & Audio,4.3,146732,"  5,000,000 - 10,000,000  ","November 8, 2016",48667,0,1757,dev,10.308826159464472
-176,com.smart.softclient.music.baseline,Spinnr Music,Music & Audio,4.0,22807,"  1,000,000 - 5,000,000  ","March 1, 2016",56775,0,3579,train,10.425118682471687
-177,com.anghami,Anghami - Free Unlimited Music,Music & Audio,4.4,415908,"  10,000,000 - 50,000,000  ","December 8, 2016",3459,0,662,train,10.525487285917634
-178,com.amp.android,AmpMe - Social Music Party,Music & Audio,4.2,13851,"  1,000,000 - 5,000,000  ","December 7, 2016",17788,0,276,train,10.731796178675555
-179,com.eliferun.music,Music Player for Android,Music & Audio,4.0,130542,"  10,000,000 - 50,000,000  ","March 31, 2017",15479,0,1656,train,11.11532239946748
-180,com.outsitenetworks.citgo,Club CITGO,Shopping,4.4,1407,"  50,000 - 100,000  ","May 12, 2017",50929,0,42,test,8.127972134491287
-181,com.kmart.android,Kmart - Download & Shop Now!,Shopping,4.0,21763,"  1,000,000 - 5,000,000  ","May 5, 2017",1929,0,295,dev,8.48245773449047
-182,com.DramaProductions.Einkaufen5,Lister - Shopping List,Shopping,4.4,19793,"  1,000,000 - 5,000,000  ","November 28, 2016",55536,0,2488,train,8.8122443579003
-183,com.ebates,Ebates: Coupons & Cash Back,Shopping,4.5,31566,"  1,000,000 - 5,000,000  ","May 12, 2017",66112,2,104,train,9.081734335324244
-184,com.gpshopper.truereligion,True Religion Brand Jeans,Shopping,4.5,421,"  50,000 - 100,000  ","April 13, 2017",3978,0,81,train,9.239941876089343
-185,com.retale.android,Retale - Weekly Ads & Coupons,Shopping,4.4,82837,"  5,000,000 - 10,000,000  ","May 9, 2017",69909,1,454,test,9.34928777370681
-186,com.trixiesoft.clapp,Postings (Craigslist App),Shopping,4.3,145413,"  5,000,000 - 10,000,000  ","November 7, 2016",68049,0,29,train,9.466787316376168
-187,com.thefancy.app,Fancy,Shopping,4.2,39367,"  5,000,000 - 10,000,000  ","December 10, 2016",48438,0,718,test,9.607965381465874
+37,com.f2pmedia.myfreecash,"Social Rewards, earn cash home",Business,4.7,10097,"  10,000 - 50,000  ","November 23, 2016",35524,0,15,train,10.288975932478207
 188,com.target.socsav,Cartwheel by Target,Shopping,4.2,71548,"  10,000,000 - 50,000,000  ","April 12, 2017",36117,1,1924,dev,9.693545670503983
-189,com.ebay.mobile,"eBay - Buy, Sell & Save Money",Shopping,4.3,2335538,"  100,000,000 - 500,000,000  ","April 26, 2017",33617,1,528,train,9.756143505617452
 190,com.conduit.app_6a7998c9653c47ba8a8a2abc2894eac8.app,Dog Finder - Adopt A Puppy,Shopping,3.8,363,"  10,000 - 50,000  ","April 4, 2016",37758,0,525,train,9.88976300539097
-191,com.lazada.android,Lazada - Shopping & Deals,Shopping,4.2,867085,"  10,000,000 - 50,000,000  ","May 5, 2017",44842,0,894,train,9.968490627495123
-192,com.wix.touch.mall.shopping,Shopping by Wix,Shopping,4.3,604,"  100,000 - 500,000  ","May 26, 2016",52903,0,4,train,10.053544742486254
-193,com.heb.android,H-E-B,Shopping,4.0,4283,"  500,000 - 1,000,000  ","November 7, 2016",45732,0,833,train,10.220757977420217
-194,com.quikr,Quikr Free Local Classifieds,Shopping,4.2,534674,"  10,000,000 - 50,000,000  ","December 8, 2016",13578,0,961,test,10.277001303528836
-195,com.iherb,iHerb,Shopping,4.5,21220,"  1,000,000 - 5,000,000  ","May 8, 2017",23206,0,92,train,10.367145150877816
-196,it.doveconviene.android,Shopfully - Weekly Ads & Deals,Shopping,4.4,243044,"  10,000,000 - 50,000,000  ","December 7, 2016",12632,0,190,train,10.564256460688371
-197,com.zulily.android,zulily: Deals for Women & Kids,Shopping,4.5,26988,"  1,000,000 - 5,000,000  ","May 10, 2017",5116,0,221,train,10.614378605738318
-198,com.heb.android,H-E-B,Shopping,4.0,4283,"  500,000 - 1,000,000  ","November 7, 2016",45737,0,438,train,10.825190196846366
+92,com.sbi.SBIFreedomPlus,State Bank Anywhere,Finance,4.3,198151,"  10,000,000 - 50,000,000  ","December 6, 2016",38617,0,119,train,9.813275936180744
+158,ch.bitspin.timely,Timely Alarm Clock,Lifestyle,4.4,251490,"  5,000,000 - 10,000,000  ","February 5, 2015",38692,0,1186,train,10.704870472688452
+146,com.diaryforgirlswithlock,My Secret Diary With Password,Lifestyle,4.2,1328,"  100,000 - 500,000  ","November 4, 2016",39105,0,703,train,9.205779393109992
+71,com.km.effects.dogsounds,Dog Sounds,Entertainment,3.5,5720,"  1,000,000 - 5,000,000  ","March 29, 2016",39679,0,192,test,9.707102513001344
+11,com.leguide.lego.city.mycity,LEGUIDE LEGO City My City,Books & Reference,3.3,1607,"  1,000,000 - 5,000,000  ","February 4, 2017",39989,0,213,train,9.751298371131863
+22,com.lotus.sync.traveler,IBM Verse,Business,3.4,11439,"  1,000,000 - 5,000,000  ","May 5, 2017",40266,0,71,train,8.655981641817387
+78,com.scoompa.ants,Ants in Phone,Entertainment,4.3,10977,"  500,000 - 1,000,000  ","March 31, 2016",40333,0,16,train,10.519398492665056
 199,com.jet.jet.app,Jet - Online Shopping Deals,Shopping,4.6,27632,"  1,000,000 - 5,000,000  ","May 6, 2017",40642,2,2059,train,11.056667196848425
+97,com.discoverfinancial.mobile,Discover Mobile,Finance,4.4,44812,"  1,000,000 - 5,000,000  ","May 11, 2017",40883,0,374,train,10.270784775342564
+103,com.application.zomato,Zomato - Restaurant Finder,Food & Drink,4.3,241967,"  10,000,000 - 50,000,000  ","May 5, 2017",40896,0,1621,train,9.103363837934037
+44,com.skibler.cursodeingles,Curso de Ingles GRATIS,Education,4.1,1845,"  100,000 - 500,000  ","April 8, 2015",41136,0,14,train,9.174525184333138
+137,com.atkins.android.carbcounter,Atkins Carb Counter,Health & Fitness,3.1,3293,"  500,000 - 1,000,000  ","April 26, 2017",41577,0,2149,train,10.434805021536835
+65,com.til.boxtv.mobile,BoxTV Free Full Movies Online,Entertainment,3.6,9256,"  1,000,000 - 5,000,000  ","September 5, 2016",42135,0,313,train,9.119395453186772
+155,com.honeywell.mobile.android.totalComfort,Total Connect Comfort,Lifestyle,4.6,35646,"  500,000 - 1,000,000  ","February 9, 2017",42254,0,333,train,10.083931568550256
+90,com.thirdframestudios.android.expensoor,Toshl Finance Budget & Expense,Finance,4.3,24408,"  1,000,000 - 5,000,000  ","December 6, 2016",42987,0,1945,train,9.621254820233212
+36,com.tux.client,Parallels Client (legacy),Business,4.4,11503,"  1,000,000 - 5,000,000  ","October 25, 2016",43030,0,1147,train,10.08749670485678
+8,com.holyclassic.bible,Bible,Books & Reference,4.8,618,"  50,000 - 100,000  ","September 19, 2016",43544,0,414,train,9.41473745213142
+32,com.asana.app,Asana: organize team projects,Business,4.1,16211,"  1,000,000 - 5,000,000  ","May 11, 2017",43887,0,758,train,9.737884795790825
+17,com.movinapp.dict.enes.free,Offline English Spanish dict.,Books & Reference,4.1,10010,"  1,000,000 - 5,000,000  ","March 29, 2016",43986,0,418,train,10.343066262970773
+99,com.tdbank,TD Bank (US),Finance,4.1,18674,"  1,000,000 - 5,000,000  ","May 8, 2017",44448,0,1561,test,10.835958235897737
+162,com.batanga,bRadio Free Music,Music & Audio,4.4,37080,"  1,000,000 - 5,000,000  ","November 2, 2016",44721,0,1433,train,8.951185216274606
+169,com.batanga,bRadio Free Music,Music & Audio,4.4,37080,"  1,000,000 - 5,000,000  ","November 2, 2016",44722,0,4357,train,9.791076746607676
+191,com.lazada.android,Lazada - Shopping & Deals,Shopping,4.2,867085,"  10,000,000 - 50,000,000  ","May 5, 2017",44842,0,894,train,9.968490627495123
+118,com.andromo.dev136619.app230407,43 Chocolate Cake Recipes,Food & Drink,3.9,3771,"  500,000 - 1,000,000  ","September 20, 2016",45355,1,167,train,10.651623840932832
+193,com.heb.android,H-E-B,Shopping,4.0,4283,"  500,000 - 1,000,000  ","November 7, 2016",45732,0,833,train,10.220757977420217
+198,com.heb.android,H-E-B,Shopping,4.0,4283,"  500,000 - 1,000,000  ","November 7, 2016",45737,0,438,train,10.825190196846366
+27,com.cp.mpos,Chase Mobile Checkout,Business,4.1,1720,"  100,000 - 500,000  ","March 3, 2017",46604,0,219,test,9.331880142811755
+167,com.bork.dsp.datuna,Tuner - DaTuner (Lite!),Music & Audio,4.4,76177,"  5,000,000 - 10,000,000  ","April 3, 2016",46782,0,967,test,9.569959081269005
+126,com.purewowstudio.bodycal,"BodyCal (IIFYM, BMI, Body Fat)",Health & Fitness,4.3,885,"  100,000 - 500,000  ","January 18, 2015",46973,0,476,train,9.382438801842326
+21,com.mobisystems.fileman,File Commander - File Manager,Business,4.2,633666,"  50,000,000 - 100,000,000  ","May 9, 2017",47058,0,450,train,8.192946749096265
+2,com.pleco.chinesesystem,Pleco Chinese Dictionary,Books & Reference,4.6,26679,"  1,000,000 - 5,000,000  ","February 28, 2017",47519,0,2643,test,8.821207078684965
+9,com.pleco.chinesesystem,Pleco Chinese Dictionary,Books & Reference,4.6,26679,"  1,000,000 - 5,000,000  ","February 28, 2017",47520,0,2253,test,9.552942077491885
+7,com.labs.merlinbirdid.app,Merlin Bird ID by Cornell Lab,Books & Reference,4.2,2683,"  100,000 - 500,000  ","April 24, 2017",48006,0,71,train,9.376085528095576
+187,com.thefancy.app,Fancy,Shopping,4.2,39367,"  5,000,000 - 10,000,000  ","December 10, 2016",48438,0,718,test,9.607965381465874
+175,com.mrgreensoft.nrg.player,NRG Player music player,Music & Audio,4.3,146732,"  5,000,000 - 10,000,000  ","November 8, 2016",48667,0,1757,dev,10.308826159464472
+18,com.inome.android,Intelius People Search/Call ID,Books & Reference,4.2,6125,"  500,000 - 1,000,000  ","March 3, 2017",48961,0,203,train,10.462092223932345
+72,com.laugh.talking.koala,Talking Koala Bear,Entertainment,4.0,9660,"  1,000,000 - 5,000,000  ","October 19, 2016",49319,0,700,train,9.818146245525282
+166,com.ezhoop.music,Top Music Player,Music & Audio,4.2,104506,"  5,000,000 - 10,000,000  ","June 4, 2015",49416,0,46,train,9.439726318391369
+136,com.womanlog,WomanLog Calendar,Health & Fitness,4.5,116999,"  5,000,000 - 10,000,000  ","March 29, 2017",49446,1,221,train,10.37738244745929
+112,com.global.hellofood.android,hellofood - Food Delivery,Food & Drink,3.9,39532,"  1,000,000 - 5,000,000  ","October 12, 2016",50087,0,716,dev,9.957817182850066
+109,com.global.hellofood.android,hellofood - Food Delivery,Food & Drink,3.9,39532,"  1,000,000 - 5,000,000  ","October 12, 2016",50091,0,181,dev,9.738887062994106
+12,com.duckduckgo.mobile.android,DuckDuckGo Search & Stories,Books & Reference,4.4,22588,"  1,000,000 - 5,000,000  ","May 14, 2017",50200,0,215,train,9.785048462195856
+43,com.nclexpn.hlt,NCLEX PN Mastery,Education,4.7,2471,"  100,000 - 500,000  ","November 16, 2016",50278,0,292,train,8.941887951391182
+62,minecraft.mapsforminecraft.luckyblockrace,Lucky Block Race Minecraft PE,Entertainment,4.0,2591,"  100,000 - 500,000  ","May 5, 2017",50436,0,139,train,8.817883191789202
+119,com.talabat,Talabat: Food Delivery,Food & Drink,4.5,80428,"  1,000,000 - 5,000,000  ","April 24, 2017",50490,1,5654,dev,11.557134746033055
+180,com.outsitenetworks.citgo,Club CITGO,Shopping,4.4,1407,"  50,000 - 100,000  ","May 12, 2017",50929,0,42,test,8.127972134491287
+138,com.proactiveapp.womanlogpregnancy.free,WomanLog Pregnancy Calendar,Health & Fitness,4.3,8639,"  1,000,000 - 5,000,000  ","August 30, 2016",51271,0,445,train,10.629065779230691
+144,com.paktor,Paktor: Meet New People,Lifestyle,4.2,82989,"  1,000,000 - 5,000,000  ","December 14, 2016",51578,0,4569,train,9.083126778140018
+133,com.healthagen.iTriage,iTriage Health,Health & Fitness,4.5,93333,"  5,000,000 - 10,000,000  ","February 1, 2017",51740,0,669,train,9.997506613472805
+26,com.microsoft.office.lync15,Skype for Business for Android,Business,3.9,61014,"  10,000,000 - 50,000,000  ","May 9, 2017",51952,0,423,test,9.170905621318855
+163,com.blackbeltstudio.valentinesdayringtones,Romantic Ringtones,Music & Audio,3.9,12290,"  1,000,000 - 5,000,000  ","May 9, 2016",52208,0,545,train,9.081779805359927
+171,com.kerker.android.voicechanger,Voice Changer,Music & Audio,3.5,5083,"  1,000,000 - 5,000,000  ","April 28, 2014",52822,0,21,dev,9.891350739622528
+192,com.wix.touch.mall.shopping,Shopping by Wix,Shopping,4.3,604,"  100,000 - 500,000  ","May 26, 2016",52903,0,4,train,10.053544742486254
+25,com.ziprecruiter.android.release,Job Search by ZipRecruiter,Business,4.8,92572,"  1,000,000 - 5,000,000  ","April 27, 2017",53052,0,3103,train,9.119101475141704
+182,com.DramaProductions.Einkaufen5,Lister - Shopping List,Shopping,4.4,19793,"  1,000,000 - 5,000,000  ","November 28, 2016",55536,0,2488,train,8.8122443579003
+116,com.application.zomato,Zomato - Restaurant Finder,Food & Drink,4.3,241967,"  10,000,000 - 50,000,000  ","May 5, 2017",56741,2,337,train,10.41768819232684
+176,com.smart.softclient.music.baseline,Spinnr Music,Music & Audio,4.0,22807,"  1,000,000 - 5,000,000  ","March 1, 2016",56775,0,3579,train,10.425118682471687
+130,com.webmd.baby,WebMD Baby,Health & Fitness,4.1,5169,"  500,000 - 1,000,000  ","July 15, 2016",57485,2,906,train,9.787372306885102
+172,com.blackbeltstudio.crazysounds,Crazy Sounds & Ringtones,Music & Audio,3.9,6574,"  1,000,000 - 5,000,000  ","May 9, 2016",57549,0,560,train,10.020592591220042
+46,com.testsstore.app.peg0,Practice English Grammar,Education,3.9,7111,"  1,000,000 - 5,000,000  ","May 17, 2015",58080,0,113,train,9.328482368993187
+143,com.utagoe.momentdiary,Moment Diary,Lifestyle,4.1,9675,"  1,000,000 - 5,000,000  ","December 6, 2016",59227,0,885,train,8.82290447929264
+145,com.kauf.talking.baum.TalkingJohnDogandSoundboard,Talking John Dog & Soundboard,Lifestyle,4.0,48512,"  5,000,000 - 10,000,000  ","October 21, 2016",59404,0,73,train,9.090520906932207
+84,com.grppl.android.shell.CMBlloydsTSB73,Lloyds Bank Mobile Banking,Finance,4.5,74944,"  1,000,000 - 5,000,000  ","November 5, 2016",59707,0,175,train,8.957159134483128
+106,com.bigoven.android,"BigOven: 350,000+ Recipes",Food & Drink,4.3,31298,"  1,000,000 - 5,000,000  ","April 26, 2017",59921,2,306,train,9.425815798759508
+124,com.wte.view,Pregnancy Tracker,Health & Fitness,4.5,37191,"  1,000,000 - 5,000,000  ","December 9, 2016",60717,0,3808,test,9.189353583842
+41,com.fusionprojects.edmodo,Edmodo,Education,4.1,169108,"  5,000,000 - 10,000,000  ","May 3, 2017",61905,0,353,train,8.489771428616919
+107,com.vertskebap.vertskebap.android.app,VERTS Rewards,Food & Drink,3.3,32,"  10,000 - 50,000  ","May 10, 2017",62149,0,447,test,9.547485162244053
+76,com.gamefly.android.gamecenter,GameFly,Entertainment,4.4,34942,"  1,000,000 - 5,000,000  ","December 6, 2016",62407,0,162,train,10.252118257116706
+151,com.scripps.android.foodnetwork,Food Network In the Kitchen,Lifestyle,4.5,43411,"  1,000,000 - 5,000,000  ","September 22, 2015",62621,0,527,test,9.668009995363509
+4,com.gty.macarthurstudybible,The Study Bible,Books & Reference,4.8,10480,"  100,000 - 500,000  ","December 16, 2016",63037,0,621,test,9.026501466999504
+77,lalelu.com.pornotitel_deutsch,Porno Ping Pong,Entertainment,3.5,4829,"  1,000,000 - 5,000,000  ","February 10, 2015",63345,1,159,train,10.362972424437832
+142,cps.mmxi.torch2,Flashlight,Lifestyle,3.9,4055,"  500,000 - 1,000,000  ","August 26, 2016",63836,0,1648,train,8.62476040067459
+149,com.ancestry.ancestrydna,AncestryDNA - Genetic Testing,Lifestyle,3.7,139,"  50,000 - 100,000  ","May 12, 2017",64346,0,125,train,9.572137998002717
+3,com.supersimpleapps.readerapp,eBook Reader,Books & Reference,3.8,510,"  100,000 - 500,000  ","December 14, 2016",64924,0,28,dev,8.984161866690826
+165,com.soundcloud.creators,SoundCloud Pulse: for creators,Music & Audio,4.1,7306,"  1,000,000 - 5,000,000  ","May 11, 2017",65082,0,75,dev,9.387677132308264
+183,com.ebates,Ebates: Coupons & Cash Back,Shopping,4.5,31566,"  1,000,000 - 5,000,000  ","May 12, 2017",66112,2,104,train,9.081734335324244
+102,com.dunnbros.android.app,Dunn Bros Coffee,Food & Drink,3.8,202,"  10,000 - 50,000  ","February 6, 2015",67524,0,747,test,8.947010329664527
+88,com.netgate,Mint Bills: Bill Pay & Money,Finance,4.5,76273,"  1,000,000 - 5,000,000  ","May 15, 2016",67720,0,1379,train,9.486089185269805
+186,com.trixiesoft.clapp,Postings (Craigslist App),Shopping,4.3,145413,"  5,000,000 - 10,000,000  ","November 7, 2016",68049,0,29,train,9.466787316376168
+24,com.piksoft.turboscan.free,TurboScan: PDF scanner,Business,4.4,3251,"  500,000 - 1,000,000  ","February 10, 2017",68130,0,633,train,8.974490779460119
+29,com.nitrodesk.droid20.nitroid,TouchDown for Smartphones,Business,4.0,20847,"  1,000,000 - 5,000,000  ","August 23, 2016",68305,0,683,test,9.458608077074125
+52,com.vivitylabs.android.braintrainer,Fit Brains Trainer,Education,4.0,42330,"  1,000,000 - 5,000,000  ","November 17, 2016",69009,0,9138,train,9.897079994987347
+147,com.hemisphere3.tarot,Galaxy Tarot,Lifestyle,4.5,33495,"  1,000,000 - 5,000,000  ","May 5, 2016",69420,0,183,train,9.335013991640244
+185,com.retale.android,Retale - Weekly Ads & Coupons,Shopping,4.4,82837,"  5,000,000 - 10,000,000  ","May 9, 2017",69909,1,454,test,9.34928777370681
+135,com.webmd.baby,WebMD Baby,Health & Fitness,4.1,5169,"  500,000 - 1,000,000  ","July 15, 2016",69943,1,826,train,10.242633939558056
+6,com.deviceroot.kingsalldevice.devicerootking,King Mod Root For Coc,Books & Reference,3.8,5612,"  100,000 - 500,000  ","June 27, 2016",70659,0,16,dev,9.247681393318686
+0,com.solvus_lab.android.BibleEN_kjv,Holy Bible (KJV),Books & Reference,4.4,18030,"  1,000,000 - 5,000,000  ","October 20, 2016",71214,1,904,dev,8.168385024840896
+86,de.elfsoft.bestbrokers,Best Brokers: Stock Simulator,Finance,4.1,8506,"  500,000 - 1,000,000  ","March 29, 2017",71327,0,753,train,9.26456833315075
+23,com.google.android.apps.ads.express,AdWords Express,Business,4.1,6191,"  500,000 - 1,000,000  ","April 21, 2017",71435,0,68,dev,8.802221622181241
