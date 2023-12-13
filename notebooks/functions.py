@@ -1,5 +1,7 @@
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
+from langchain.schema import HumanMessage 
+from langchain.schema import AIMessage
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import pandas as pd
@@ -9,11 +11,9 @@ import requests
 
 load_dotenv()
 
-MODEL = "gpt-3.5-turbo"
-
 OUTPUT_FOLDER = "../generated_GUIs/"
 
-IMAGE_INPUT_FOLDER = "../data/"
+IMAGE_INPUT_FOLDER = "../data/s2w_sample1/"
 
 
 def encode_image(id):
