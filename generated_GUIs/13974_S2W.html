@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Settings</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
         }
-
+        
         .container {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
+        
         h1 {
             text-align: center;
             color: #333;
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
+        
+        .options {
+            margin-top: 30px;
         }
-
-        li {
-            margin-bottom: 10px;
+        
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
-
-        label {
+        
+        .option input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .option label {
             font-weight: bold;
         }
-
-        input[type="text"], select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+        
+        .option select {
+            margin-left: 10px;
         }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
+        
+        .button {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .button input[type="submit"] {
+            background-color: #333;
             color: #fff;
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
             cursor: pointer;
         }
-
-        button:hover {
-            background-color: #45a049;
+        
+        .button input[type="submit"]:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Weather Forecast Settings</h1>
-        <ul>
-            <li>
-                <label for="location">Location:</label>
-                <input type="text" id="location" placeholder="Enter location">
-            </li>
-            <li>
-                <label for="temperature">Temperature Unit:</label>
-                <select id="temperature">
-                    <option value="celsius">Celsius</option>
-                    <option value="fahrenheit">Fahrenheit</option>
+        
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" id="option1">
+                <label for="option1">Show temperature in Celsius</label>
+            </div>
+            
+            <div class="option">
+                <input type="checkbox" id="option2">
+                <label for="option2">Show wind speed</label>
+            </div>
+            
+            <div class="option">
+                <input type="checkbox" id="option3">
+                <label for="option3">Show precipitation</label>
+            </div>
+            
+            <div class="option">
+                <input type="checkbox" id="option4">
+                <label for="option4">Show humidity</label>
+            </div>
+            
+            <div class="option">
+                <label for="location">Choose location:</label>
+                <select id="location">
+                    <option value="london">London</option>
+                    <option value="newyork">New York</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
                 </select>
-            </li>
-            <li>
-                <label for="notifications">Notifications:</label>
-                <input type="checkbox" id="notifications">
-            </li>
-        </ul>
-        <button>Save Settings</button>
+            </div>
+        </div>
+        
+        <div class="button">
+            <input type="submit" value="Save Settings">
+        </div>
     </div>
 </body>
 </html>
