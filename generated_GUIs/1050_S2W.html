@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Dating App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .train {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .preference-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .preference-item label {
+            margin-right: 10px;
+        }
+
+        .search-option {
+            margin-bottom: 10px;
+        }
+
+        .search-option input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .search-option label {
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Train #1050 - Dating App</h1>
+    </div>
+    <div class="container">
+        <div class="train">
+            <div class="section">
+                <h1>Preferences</h1>
+                <div class="preference-item">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" placeholder="Enter preferred age range">
+                </div>
+                <div class="preference-item">
+                    <label for="height">Height:</label>
+                    <input type="text" id="height" name="height" placeholder="Enter preferred height range">
+                </div>
+                <div class="preference-item">
+                    <label for="body-type">Body Type:</label>
+                    <select id="body-type" name="body-type">
+                        <option value="slim">Slim</option>
+                        <option value="average">Average</option>
+                        <option value="curvy">Curvy</option>
+                        <option value="athletic">Athletic</option>
+                    </select>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Settings</h1>
+                <div class="preference-item">
+                    <label for="distance">Distance:</label>
+                    <input type="text" id="distance" name="distance" placeholder="Enter preferred distance">
+                </div>
+                <div class="preference-item">
+                    <label for="notifications">Notifications:</label>
+                    <input type="checkbox" id="notifications" name="notifications">
+                    <label for="notifications">Receive notifications</label>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Options</h1>
+                <div class="search-option">
+                    <input type="checkbox" id="photos" name="photos">
+                    <label for="photos">Only show profiles with photos</label>
+                </div>
+                <div class="search-option">
+                    <input type="checkbox" id="online" name="online">
+                    <label for="online">Only show profiles of online users</label>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Description</h1>
+                <p>This page displays preferences, settings, options, and descriptions for searching females in the dating app.</p>
+            </div>
+            <button class="button">Search</button>
+        </div>
+    </div>
+</body>
+</html>
