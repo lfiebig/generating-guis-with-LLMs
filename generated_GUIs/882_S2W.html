@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mobile Page</title>
+    <title>Account Balance</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,49 +15,46 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
-            font-size: 24px;
-            margin-top: 0;
+            text-align: center;
+            color: #333;
         }
         
         p {
-            font-size: 16px;
-            line-height: 1.5;
+            margin-bottom: 10px;
         }
         
-        .balance-info {
-            margin-top: 20px;
+        .balance {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
         }
         
-        .options {
+        .quick-balance {
+            text-align: center;
             margin-top: 20px;
         }
         
         .device-info {
-            margin-top: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Screen 882</h1>
-        <p>This page offers the option of quick balance. It provides balance information for an account, along with other options, and also displays the current device being used in the application.</p>
-        <div class="balance-info">
-            <h2>Balance Information</h2>
-            <!-- Add balance information here -->
+        <h1>Account Balance</h1>
+        <p class="balance">Balance: $5000</p>
+        <div class="quick-balance">
+            <label for="quick-balance-checkbox">Quick Balance:</label>
+            <input type="checkbox" id="quick-balance-checkbox">
         </div>
-        <div class="options">
-            <h2>Options</h2>
-            <!-- Add options here -->
-        </div>
-        <div class="device-info">
-            <h2>Device Information</h2>
-            <!-- Add device information here -->
-        </div>
+        <p class="device-info">Current Device: Mobile</p>
     </div>
 </body>
 </html>

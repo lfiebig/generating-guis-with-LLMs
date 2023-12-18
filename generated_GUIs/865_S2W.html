@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstrual Tracker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
         }
-
+        
         .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
+        
         h1 {
             text-align: center;
-            margin-bottom: 30px;
+            color: #333;
         }
-
+        
         p {
-            margin-bottom: 20px;
+            text-align: center;
+            color: #666;
         }
-
-        .options {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .option {
-            width: calc(50% - 10px);
-            margin-bottom: 20px;
+        
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
             padding: 10px;
-            background-color: #e6e6e6;
+            text-align: center;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
             border-radius: 5px;
         }
-
-        .option:hover {
-            background-color: #d9d9d9;
+        
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Period Tracking App</h1>
-        <p>This page allows you to create and track your menstrual details.</p>
-        <p>Please enter your details in the health care app and start tracking your periods.</p>
-        <div class="options">
-            <div class="option">
-                <h2>Create Details</h2>
-                <p>Click here to enter your menstrual details.</p>
-            </div>
-            <div class="option">
-                <h2>Multiple Options</h2>
-                <p>Explore various options available in the menstrual application.</p>
-            </div>
-        </div>
-        <p>This screen is related to a train.</p>
+        <h1>Welcome to Menstrual Tracker</h1>
+        <p>Track and manage your menstrual details with ease!</p>
+        <a href="create-details.html" class="button">Create and Enter Details</a>
+        <h2>Options:</h2>
+        <ul>
+            <li>Track menstrual cycle</li>
+            <li>Record symptoms</li>
+            <li>Set reminders</li>
+            <li>View history</li>
+        </ul>
     </div>
 </body>
 </html>

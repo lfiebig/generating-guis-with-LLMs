@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mobile Fitness App</title>
+    <title>Fitness App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
         
         .container {
-            width: 80%;
+            max-width: 600px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            color: #333;
         }
         
         .workout-options {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
-        }
-        
-        .workout-card {
-            width: 45%;
-            background-color: #f2f2f2;
-            padding: 10px;
             margin-bottom: 20px;
+        }
+        
+        .workout-option {
+            width: 30%;
+            padding: 10px;
+            background-color: #f9f9f9;
             border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
         }
         
-        .workout-card h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
+        .timer {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         
-        .workout-card p {
-            font-size: 14px;
-            color: #666;
+        .start-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
         }
         
         .popup {
@@ -55,107 +67,57 @@
         }
         
         .popup-content {
-            background-color: #fff;
+            max-width: 400px;
             padding: 20px;
+            background-color: #fff;
             border-radius: 5px;
-            max-width: 80%;
             text-align: center;
         }
         
-        .close-btn {
+        .close-button {
             position: absolute;
             top: 10px;
             right: 10px;
-            cursor: pointer;
-        }
-        
-        .timer {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        
-        .timer-btns {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .timer-btns button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
+            color: #999;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Training Page</h1>
+        <h1>Fitness App</h1>
         
         <div class="workout-options">
-            <div class="workout-card">
-                <h2>Cardio Workout</h2>
-                <p>Improve cardiovascular health and burn calories.</p>
-            </div>
-            <div class="workout-card">
-                <h2>Strength Training</h2>
-                <p>Build strength and increase muscle mass.</p>
-            </div>
-            <div class="workout-card">
-                <h2>Yoga</h2>
-                <p>Improve flexibility, balance, and mindfulness.</p>
-            </div>
-            <div class="workout-card">
-                <h2>Pilates</h2>
-                <p>Strengthen core muscles and improve posture.</p>
-            </div>
+            <div class="workout-option">Option 1</div>
+            <div class="workout-option">Option 2</div>
+            <div class="workout-option">Option 3</div>
         </div>
         
-        <button onclick="showPopup()">Learn More</button>
+        <div class="timer">00:00:00</div>
         
-        <div class="popup" id="popup">
+        <button class="start-button">Start Workout</button>
+        
+        <div class="popup">
             <div class="popup-content">
-                <span class="close-btn" onclick="closePopup()">&times;</span>
-                <h2>About Body Workouts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id ligula sit amet ligula eleifend lacinia. Proin id convallis diam. In hac habitasse platea dictumst. Sed luctus semper tortor, et finibus arcu suscipit eget. Nullam auctor, elit vitae aliquet imperdiet, nisl mauris sodales turpis, quis bibendum mauris nisi id metus.</p>
+                <h2>Body Workouts</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id lacinia lacinia, nisl nunc lacinia dolor, id tincidunt nunc nunc ac nunc. Sed id semper nunc. Sed auctor, nunc id lacinia lacinia, nisl nunc lacinia dolor, id tincidunt nunc nunc ac nunc.</p>
+                <span class="close-button">Close</span>
             </div>
-        </div>
-        
-        <div class="timer">
-            <span id="timer">00:00:00</span>
-        </div>
-        
-        <div class="timer-btns">
-            <button onclick="startTimer()">Start</button>
-            <button onclick="pauseTimer()">Pause</button>
-            <button onclick="resetTimer()">Reset</button>
         </div>
     </div>
     
     <script>
-        function showPopup() {
-            document.getElementById("popup").style.display = "flex";
-        }
+        const startButton = document.querySelector('.start-button');
+        const popup = document.querySelector('.popup');
+        const closeButton = document.querySelector('.close-button');
         
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
+        startButton.addEventListener('click', () => {
+            // Start the workout timer
+        });
         
-        function startTimer() {
-            // Code for starting the timer
-        }
-        
-        function pauseTimer() {
-            // Code for pausing the timer
-        }
-        
-        function resetTimer() {
-            // Code for resetting the timer
-        }
+        closeButton.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
     </script>
 </body>
 </html>

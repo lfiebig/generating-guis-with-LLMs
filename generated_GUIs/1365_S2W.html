@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Converter App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,133 +10,89 @@
             padding: 0;
         }
         
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
+        .header {
+            background-color: #333;
+            color: #fff;
             padding: 20px;
+            text-align: center;
         }
         
-        h1 {
-            text-align: center;
-            color: #333;
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
         .options {
-            margin-top: 30px;
-        }
-        
-        .option {
-            display: flex;
-            align-items: center;
             margin-bottom: 20px;
+        }
+        
+        .options h2 {
+            margin-top: 0;
+        }
+        
+        .audio-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .audio-list li {
+            margin-bottom: 10px;
             padding: 10px;
-            background-color: #fff;
+            background-color: #f2f2f2;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .option img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
-        
-        .option .title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .option .description {
-            font-size: 14px;
-            color: #666;
         }
         
         .library {
-            margin-top: 30px;
+            margin-top: 20px;
         }
         
-        .file {
-            display: flex;
-            align-items: center;
+        .library h2 {
+            margin-bottom: 10px;
+        }
+        
+        .library-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .library-list li {
             margin-bottom: 10px;
             padding: 10px;
-            background-color: #fff;
+            background-color: #f2f2f2;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .file img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        
-        .file .name {
-            font-size: 14px;
-            color: #333;
-        }
-        
-        .file .size {
-            font-size: 12px;
-            color: #666;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Music Converter App</h1>
+    </div>
     <div class="container">
-        <h1>Train-Related Page</h1>
-        
         <div class="options">
-            <div class="option">
-                <img src="train_option1.png" alt="Option 1">
-                <div>
-                    <div class="title">Option 1</div>
-                    <div class="description">Description of Option 1</div>
-                </div>
-            </div>
-            
-            <div class="option">
-                <img src="train_option2.png" alt="Option 2">
-                <div>
-                    <div class="title">Option 2</div>
-                    <div class="description">Description of Option 2</div>
-                </div>
-            </div>
-            
-            <div class="option">
-                <img src="train_option3.png" alt="Option 3">
-                <div>
-                    <div class="title">Option 3</div>
-                    <div class="description">Description of Option 3</div>
-                </div>
-            </div>
+            <h2>Options</h2>
+            <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+            </ul>
         </div>
-        
+        <div class="audio-list">
+            <h2>Empty List of Audios</h2>
+            <ul>
+                <!-- No audios available -->
+            </ul>
+        </div>
         <div class="library">
-            <div class="file">
-                <img src="train_file1.png" alt="File 1">
-                <div>
-                    <div class="name">File 1</div>
-                    <div class="size">Size: 10 MB</div>
-                </div>
-            </div>
-            
-            <div class="file">
-                <img src="train_file2.png" alt="File 2">
-                <div>
-                    <div class="name">File 2</div>
-                    <div class="size">Size: 5 MB</div>
-                </div>
-            </div>
-            
-            <div class="file">
-                <img src="train_file3.png" alt="File 3">
-                <div>
-                    <div class="name">File 3</div>
-                    <div class="size">Size: 8 MB</div>
-                </div>
-            </div>
+            <h2>Stored Files in Library</h2>
+            <ul class="library-list">
+                <li>File 1</li>
+                <li>File 2</li>
+                <li>File 3</li>
+            </ul>
         </div>
     </div>
 </body>

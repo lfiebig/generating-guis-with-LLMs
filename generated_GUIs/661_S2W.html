@@ -6,7 +6,15 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
@@ -14,54 +22,79 @@
             color: #333;
         }
         
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .select-tense {
+            margin-bottom: 20px;
         }
         
-        label {
+        .select-tense label {
+            display: block;
             font-weight: bold;
+            margin-bottom: 5px;
         }
         
-        select,
-        input[type="text"] {
+        .select-tense select {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
         
-        button {
-            background-color: #4CAF50;
+        .query {
+            margin-bottom: 20px;
+        }
+        
+        .query label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .query input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .practice-test {
+            text-align: center;
+        }
+        
+        .practice-test button {
+            padding: 10px 20px;
+            background-color: #333;
             color: #fff;
             border: none;
-            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
         }
         
-        button:hover {
-            background-color: #45a049;
+        .practice-test button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Tenses Practice</h1>
-        <label for="tense-select">Select a tense:</label>
-        <select id="tense-select">
-            <option value="present">Present Tense</option>
-            <option value="past">Past Tense</option>
-            <option value="future">Future Tense</option>
-        </select>
-        <label for="query-input">Answer the query:</label>
-        <input type="text" id="query-input" placeholder="Type your answer here...">
-        <button id="submit-btn">Submit</button>
+        
+        <div class="select-tense">
+            <label>Select a tense:</label>
+            <select>
+                <option value="present">Present Tense</option>
+                <option value="past">Past Tense</option>
+                <option value="future">Future Tense</option>
+            </select>
+        </div>
+        
+        <div class="query">
+            <label>Answer the following query:</label>
+            <input type="text" placeholder="Enter your answer">
+        </div>
+        
+        <div class="practice-test">
+            <button>Take Practice Test</button>
+        </div>
     </div>
 </body>
 </html>
