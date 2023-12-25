@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .container {
+            margin: 20px;
+        }
+        
+        .option {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .option h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .option p {
+            margin: 0;
+            color: #666;
+        }
+        
+        .option input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        .option label {
+            font-weight: normal;
+        }
+        
+        .option select {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        .option button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .option button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Weather Forecast Application</h1>
+    </div>
+    <div class="container">
+        <div class="option">
+            <h2>Temperature Units</h2>
+            <p>Select the preferred temperature unit:</p>
+            <select>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="option">
+            <h2>Wind Speed Units</h2>
+            <p>Select the preferred wind speed unit:</p>
+            <select>
+                <option value="km/h">Kilometers per hour</option>
+                <option value="mph">Miles per hour</option>
+            </select>
+        </div>
+        <div class="option">
+            <h2>Notifications</h2>
+            <p>Enable or disable notifications:</p>
+            <input type="checkbox" id="notifications">
+            <label for="notifications">Enable notifications</label>
+        </div>
+        <div class="option">
+            <button>Save Settings</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+Expert 1:
+Step 1: Create the basic structure of the HTML page using the <!DOCTYPE html> declaration and the <html>, <head>, and <body> tags.
+
+Expert 2:
+Step 2: Inside the <body> tag, create a <div> element with an id of "container" to hold all the content of the mobile page.
+
+Expert 3:
+Step 3: Within the "container" <div>, create a <h1> element to display the heading of the page, such as "App Security Code".
+
+Expert 1:
+Step 4: Below the heading, create a <p> element to provide instructions for the user, such as "Please enter the security code below".
+
+Expert 2:
+Step 5: Next, create an <input> element with a type of "text" to allow the user to enter the security code.
+
+Expert 3:
+Step 6: Add a <button> element with a text of "Submit" to allow the user to submit the entered security code.
+
+Expert 1:
+Step 7: Apply some basic styling to the elements. Add CSS to center align the text and elements within the "container" <div>. Set a background color, font size, and padding to enhance the visual appearance.
+
+Expert 2:
+Step 8: Add some additional CSS to style the <h1> heading, <p> instructions, <input> field, and <button>. Customize the colors, font styles, and sizes to make them visually appealing.
+
+Expert 3:
+Step 9: Finally, add JavaScript code to validate the entered security code. Use an event listener on the "Submit" button to trigger a function that checks if the entered code matches the expected code. Display a success message if the code is correct or an error message if it is incorrect.
+
+All three experts agreed on the following HTML code:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Page</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        #container {
+            margin: 0 auto;
+            max-width: 400px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>App Security Code</h1>
+        <p>Please enter the security code below</p>
+        <input type="text" id="securityCode" />
+        <button id="submitBtn">Submit</button>
+    </div>
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            var enteredCode = document.getElementById("securityCode").value;
+            var expectedCode = "1234"; // Replace with the actual expected security code
+            if (enteredCode === expectedCode) {
+                alert("Success! Code is correct.");
+            } else {
+                alert("Error! Code is incorrect.");
+            }
+        });
+    </script>
+</body>
+</html>

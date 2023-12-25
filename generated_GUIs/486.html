@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Screen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        .alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+        
+        .share-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .share-option {
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .share-option:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Screen</h1>
+        
+        <div class="alert">
+            <p>Alert message displaying social apps</p>
+        </div>
+        
+        <div class="popup">
+            <h2>Share Options</h2>
+            <div class="share-options">
+                <div class="share-option">Option 1</div>
+                <div class="share-option">Option 2</div>
+                <div class="share-option">Option 3</div>
+            </div>
+        </div>
+        
+        <div class="share-options">
+            <div class="share-option">Option 1</div>
+            <div class="share-option">Option 2</div>
+            <div class="share-option">Option 3</div>
+        </div>
+        
+        <div class="popup">
+            <h2>Sharing Options</h2>
+            <div class="share-options">
+                <div class="share-option">Option 1</div>
+                <div class="share-option">Option 2</div>
+                <div class="share-option">Option 3</div>
+            </div>
+        </div>
+        
+        <div class="share-options">
+            <div class="share-option">Option 1</div>
+            <div class="share-option">Option 2</div>
+            <div class="share-option">Option 3</div>
+        </div>
+        
+        <div class="alert">
+            <p>Share episode through social app.</p>
+        </div>
+    </div>
+</body>
+</html>

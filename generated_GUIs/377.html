@@ -1,115 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flight Booking</title>
+    <title>Pitch Application</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #FF69B4;
         }
         
         .container {
-            max-width: 600px;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        input[type="text"],
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-bottom: 20px;
-        }
-        
-        .search-button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #fff;
+        .button {
+            background-color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
             cursor: pointer;
         }
         
-        .recent-searches {
-            margin-top: 30px;
-        }
-        
-        .recent-searches h2 {
-            margin-bottom: 10px;
-        }
-        
-        .recent-searches ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .recent-searches li {
-            margin-bottom: 5px;
+        .advertisement {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Flight Booking</h1>
-        <label for="departure">Departure City:</label>
-        <input type="text" id="departure" name="departure" placeholder="Enter departure city">
-        
-        <label for="arrival">Arrival City:</label>
-        <input type="text" id="arrival" name="arrival" placeholder="Enter arrival city">
-        
-        <label for="date">Travel Date:</label>
-        <input type="text" id="date" name="date" placeholder="Select travel date">
-        
-        <label for="passengers">Number of Passengers:</label>
-        <select id="passengers" name="passengers">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-        
-        <label for="class">Class of Service:</label>
-        <select id="class" name="class">
-            <option value="economy">Economy</option>
-            <option value="business">Business</option>
-            <option value="first">First</option>
-        </select>
-        
-        <label for="flight-type">Flight Type:</label>
-        <input type="radio" id="one-way" name="flight-type" value="one-way" checked>
-        <label for="one-way">One-way</label>
-        <input type="radio" id="round-trip" name="flight-type" value="round-trip">
-        <label for="round-trip">Round Trip</label>
-        
-        <input type="submit" value="Search" class="search-button">
-        
-        <div class="recent-searches">
-            <h2>Recent Searches</h2>
-            <ul>
-                <li>Flight from New York to Los Angeles</li>
-                <li>Flight from London to Paris</li>
-                <li>Flight from Tokyo to Sydney</li>
-            </ul>
-        </div>
+        <button class="button">0</button>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">0</button>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">0</button>
+        <button class="button">1</button>
+        <button class="button">2</button>
+    </div>
+    <div class="advertisement">
+        <p>Advertisement:</p>
+        <p>Gutter and Downspout Cleaning</p>
+        <p>Full Service Lawn and Landscape Care</p>
+        <p>Visit <a href="https://www.pride-outdoor.com">Pride-Outdoor.com</a> for more information.</p>
     </div>
 </body>
 </html>
