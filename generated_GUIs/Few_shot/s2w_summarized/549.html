@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 1em;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="title">Settings</div>
+    <div class="section">
+        <div class="subheading">Prayer Options</div>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" id="fajr" name="fajr" value="fajr">
+                <label for="fajr">Fajr</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="dhuhr" name="dhuhr" value="dhuhr">
+                <label for="dhuhr">Dhuhr</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="asr" name="asr" value="asr">
+                <label for="asr">Asr</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="maghrib" name="maghrib" value="maghrib">
+                <label for="maghrib">Maghrib</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="isha" name="isha" value="isha">
+                <label for="isha">Isha</label>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="subheading">Fajr Alarm</div>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" id="fajr-alarm" name="fajr-alarm">
+                <label for="fajr-alarm">Enable Fajr Alarm</label>
+            </div>
+            <div class="option">
+                <label for="alarm-time">Alarm Time:</label>
+                <input type="time" id="alarm-time" name="alarm-time">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

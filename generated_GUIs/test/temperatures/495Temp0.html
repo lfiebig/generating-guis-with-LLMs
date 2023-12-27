@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Podcast Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        
+        .episode {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #cccccc;
+        }
+        
+        .episode img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        
+        .episode .details {
+            flex-grow: 1;
+        }
+        
+        .episode .title {
+            font-weight: bold;
+            color: #333333;
+        }
+        
+        .episode .description {
+            color: #666666;
+        }
+        
+        .episode .likes {
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favorite Episodes</h1>
+    
+    <div class="episode">
+        <img src="episode1.jpg" alt="Episode 1">
+        <div class="details">
+            <div class="title">Episode 1: Title</div>
+            <div class="description">Episode description goes here.</div>
+            <div class="likes">Likes: 100</div>
+        </div>
+    </div>
+    
+    <div class="episode">
+        <img src="episode2.jpg" alt="Episode 2">
+        <div class="details">
+            <div class="title">Episode 2: Title</div>
+            <div class="description">Episode description goes here.</div>
+            <div class="likes">Likes: 50</div>
+        </div>
+    </div>
+    
+    <div class="episode">
+        <img src="episode3.jpg" alt="Episode 3">
+        <div class="details">
+            <div class="title">Episode 3: Title</div>
+            <div class="description">Episode description goes here.</div>
+            <div class="likes">Likes: 75</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        li:last-child {
+            margin-bottom: 0;
+        }
+        
+        li img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        
+        li span {
+            font-weight: bold;
+        }
+        
+        li p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .nasa-video {
+            background-color: #fdd82f;
+        }
+        
+        .nasa-video span {
+            color: #00204a;
+        }
+        
+        .nasa-video p {
+            color: #00204a;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Scientific App</h1>
+    <ul>
+        <li>
+            <img src="video-thumbnail1.jpg" alt="Video Thumbnail">
+            <div>
+                <span>Video Title 1</span>
+                <p>This is a description of Video 1.</p>
+            </div>
+        </li>
+        <li class="nasa-video">
+            <img src="nasa-video-thumbnail.jpg" alt="NASA Video Thumbnail">
+            <div>
+                <span>NASA Video Title</span>
+                <p>This is a description of the NASA video.</p>
+            </div>
+        </li>
+        <li>
+            <img src="video-thumbnail2.jpg" alt="Video Thumbnail">
+            <div>
+                <span>Video Title 2</span>
+                <p>This is a description of Video 2.</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

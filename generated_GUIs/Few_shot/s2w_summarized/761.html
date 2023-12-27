@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Settings</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .settings-list {
+            margin-bottom: 20px;
+        }
+
+        .setting-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .setting-option label {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        .setting-option input[type="checkbox"] {
+            cursor: pointer;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+        </style>
+        </head>
+        <body>
+        <div class="container">
+        <div class="title">Settings</div>
+        <div class="settings-list">
+            <div class="setting-option">
+            <input type="checkbox" id="option1">
+            <label for="option1">Option 1</label>
+            </div>
+            <div class="setting-option">
+            <input type="checkbox" id="option2">
+            <label for="option2">Option 2</label>
+            </div>
+            <div class="setting-option">
+            <input type="checkbox" id="option3">
+            <label for="option3">Option 3</label>
+            </div>
+        </div>
+        <button class="button">Save Changes</button>
+        </div>
+        </body>
+        </html>

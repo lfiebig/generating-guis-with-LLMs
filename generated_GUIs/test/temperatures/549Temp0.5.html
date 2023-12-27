@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings - Religious App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .option {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .option label {
+            font-weight: bold;
+        }
+
+        .option input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        .option input[type="time"] {
+            margin-left: 10px;
+        }
+
+        .btn-save {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Settings</h1>
+
+    <div class="option">
+        <label for="prayerOption">Prayer Option:</label>
+        <select id="prayerOption">
+            <option value="automatic">Automatic</option>
+            <option value="manual">Manual</option>
+        </select>
+    </div>
+
+    <div class="option">
+        <label for="fajrAlarm">Fajr Alarm:</label>
+        <input type="checkbox" id="fajrAlarm">
+    </div>
+
+    <a href="#" class="btn-save">Save</a>
+</body>
+</html>

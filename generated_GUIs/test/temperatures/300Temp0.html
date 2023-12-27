@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        
+        .question {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .answer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .answer input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="question">Question:</div>
+        <div class="answer">
+            <input type="radio" name="answer" value="option1">
+            <label for="option1">Option 1</label>
+        </div>
+        <div class="answer">
+            <input type="radio" name="answer" value="option2">
+            <label for="option2">Option 2</label>
+        </div>
+        <div class="answer">
+            <input type="radio" name="answer" value="option3">
+            <label for="option3">Option 3</label>
+        </div>
+        <button class="submit-btn">Submit</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        width: 400px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .cancel-button {
+        background-color: #f44336;
+        color: #fff;
+    }
+
+    .delete-button {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <div class="popup">
+        <h2>Confirmation</h2>
+        <p>Are you sure you want to delete the selected episodes?</p>
+        <div class="button-container">
+            <button class="cancel-button">Cancel</button>
+            <button class="delete-button">Delete</button>
+        </div>
+    </div>
+</body>
+</html>
