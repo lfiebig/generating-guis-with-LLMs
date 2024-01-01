@@ -158,7 +158,7 @@ CREATION_PROMPT_FS = PromptTemplate(
         Q: 
         Given a summary of a mobile screen, create the corresponding HTML code with a bit of styling, that represents the described functionalities: 
 
-        The mobile screen is part of a language translator application that asks the user to translate a given text sentence. 
+        The mobile screen is part of a language learning application that asks the user to translate a given text sentence. 
 
         A:
         <!DOCTYPE html>
@@ -369,6 +369,17 @@ CREATION_PROMPT_FS = PromptTemplate(
 
         A:"""
 )
+
+CREATION_PROMPT_FS_COT = PromptTemplate(
+    input_variables=["summaries"],
+    template=""
+)
+
+CREATION_PROMPT_ZS_COT = PromptTemplate(
+    input_variables=["summaries"],
+    template=""
+)
+
 
 SUMMARY_PROMPT = PromptTemplate(
     input_variables=["summaries"],
