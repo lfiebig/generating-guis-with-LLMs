@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 16px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .podcast-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .podcast-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 16px;
+        }
+
+        .podcast-item-details {
+            flex-grow: 1;
+        }
+
+        .podcast-item-title {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .podcast-item-metadata {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .podcast-item-social-media {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .social-media-icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Episodes I Like</h1>
+    </div>
+    <div class="content">
+        <div class="section-title">Episodes I Like</div>
+        <div class="podcast-item">
+            <img src="episode1.jpg" alt="Episode 1">
+            <div class="podcast-item-details">
+                <div class="podcast-item-title">Case #6 Kotter</div>
+                <div class="podcast-item-metadata">
+                    <span>Date: Jul 30, 2015</span> • <span>Duration: 01:17:46</span>
+                </div>
+                <div class="podcast-item-social-media">
+                    <img class="social-media-icon" src="facebook.png" alt="Facebook">
+                    <img class="social-media-icon" src="whatsapp.png" alt="WhatsApp">
+                    <img class="social-media-icon" src="twitter.png" alt="Twitter">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

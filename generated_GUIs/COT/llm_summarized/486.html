@@ -1,0 +1,58 @@
+The screen is displaying a popup to inform the user about a failed download attempt. The popup should include a message stating "Download failed". Additionally, there should be some visual cues or buttons within the popup that may allow the user to interact further, although their specific functions are not discernible from the image provided.
+
+Here is the corresponding HTML code with a bit of inline css styling:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Failed</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+        }
+
+        .popup-container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .popup-container h2 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .popup-container .buttons-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popup-container .button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <h2>Download failed</h2>
+        <div class="buttons-container">
+            <button class="button">Button 1</button>
+            <button class="button">Button 2</button>
+        </div>
+    </div>
+</body>
+</html>
+```

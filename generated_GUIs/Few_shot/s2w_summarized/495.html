@@ -3,48 +3,57 @@
         <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Favorite Episodes</title>
         <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
 
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .navbar {
+            background-color: #4CAF50;
+            color: #FFF;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            margin: 0 5px;
+        }
+
+        .episode-container {
             padding: 20px;
-            margin-top: 20px;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 20px;
         }
 
         .episode {
             display: flex;
             align-items: center;
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        .image-container {
+        .episode-image {
             width: 80px;
             height: 80px;
             overflow: hidden;
-            border-radius: 5px;
-            margin-right: 10px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
 
-        .image-container img {
+        .episode-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -56,58 +65,70 @@
 
         .episode-title {
             font-weight: bold;
+            font-size: 18px;
             margin-bottom: 5px;
         }
 
         .episode-description {
-            font-size: 0.8em;
+            color: #555;
+            margin-bottom: 10px;
         }
 
-        .play-button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 0.8em;
+        .episode-options {
+            display: flex;
+            justify-content: space-between;
         }
+
+        .episode-options button {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+
         </style>
         </head>
         <body>
-        <div class="container">
-        <div class="title">Favorite Episodes</div>
+
+        <div class="navbar">
+        <h1>Favorite Episodes</h1>
+        <div>
+            <button class="info-button" aria-label="Information">i</button>
+            <button class="more-options-button" aria-label="More options">&#8942;</button>
+        </div>
+        </div>
+
+        <div class="episode-container">
         <div class="episode">
-            <div class="image-container">
+            <div class="episode-image">
             <img src="episode1.jpg" alt="Episode 1">
             </div>
             <div class="episode-details">
-            <div class="episode-title">Episode 1: Title</div>
-            <div class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dui ac nisl lobortis volutpat. Etiam interdum sem id libero semper, ac tristique leo fermentum.</div>
+            <div class="episode-title">Episode 1: Introduction</div>
+            <div class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="episode-options">
+                <button class="play-button">Play</button>
+                <button class="download-button">Download</button>
+                <button class="remove-button">Remove</button>
             </div>
-            <button class="play-button">Play</button>
+            </div>
         </div>
-
         <div class="episode">
-            <div class="image-container">
+            <div class="episode-image">
             <img src="episode2.jpg" alt="Episode 2">
             </div>
             <div class="episode-details">
-            <div class="episode-title">Episode 2: Title</div>
-            <div class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dui ac nisl lobortis volutpat. Etiam interdum sem id libero semper, ac tristique leo fermentum.</div>
+            <div class="episode-title">Episode 2: Topic Discussion</div>
+            <div class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="episode-options">
+                <button class="play-button">Play</button>
+                <button class="download-button">Download</button>
+                <button class="remove-button">Remove</button>
             </div>
-            <button class="play-button">Play</button>
-        </div>
-
-        <div class="episode">
-            <div class="image-container">
-            <img src="episode3.jpg" alt="Episode 3">
             </div>
-            <div class="episode-details">
-            <div class="episode-title">Episode 3: Title</div>
-            <div class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dui ac nisl lobortis volutpat. Etiam interdum sem id libero semper, ac tristique leo fermentum.</div>
-            </div>
-            <button class="play-button">Play</button>
         </div>
         </div>
 

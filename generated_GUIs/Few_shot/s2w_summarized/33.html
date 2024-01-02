@@ -3,48 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Selection</title>
 <style>
     body {
         font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
         margin: 0;
         padding: 0;
+        background-color: #f4f4f4;
     }
 
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        max-width: 300px;
+        max-width: 400px;
         margin: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         padding: 20px;
+        margin-top: 20px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .number-button {
-        background-color: #4CAF50;
-        color: white;
+        background-color: #eee;
         border: none;
-        padding: 14px 20px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        font-size: 24px;
+        padding: 10px;
         border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
     }
 </style>
 </head>
 <body>
-    <div class="container">
-        <button class="number-button">1</button>
-        <button class="number-button">2</button>
-        <button class="number-button">3</button>
-        <button class="number-button">4</button>
-        <button class="number-button">5</button>
-        <button class="number-button">6</button>
-        <button class="number-button">7</button>
-        <button class="number-button">8</button>
-        <button class="number-button">9</button>
-        <button class="number-button">0</button>
-    </div>
+<div class="container">
+<div class="title">Select a Number</div>
+<div class="button-container">
+    <button class="number-button">1</button>
+    <button class="number-button">2</button>
+    <button class="number-button">3</button>
+    <button class="number-button">4</button>
+    <button class="number-button">5</button>
+    <button class="number-button">6</button>
+    <button class="number-button">7</button>
+    <button class="number-button">8</button>
+    <button class="number-button">9</button>
+    <button class="number-button">0</button>
+</div>
+</div>
 </body>
 </html>

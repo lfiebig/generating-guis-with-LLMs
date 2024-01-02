@@ -1,0 +1,119 @@
+The screen is a settings page for a religious app that focuses on prayer and the Fajr alarm. We need to display different options related to prayer and the Fajr alarm, such as the ability to set prayer times, enable or disable the Fajr alarm, and provide options for customizing the alarm sound and snooze duration.
+
+Here is the corresponding HTML code with a bit of inline CSS styling:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Religious App Settings</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.option {
+    margin-bottom: 20px;
+}
+
+.option-label {
+    font-size: 1.1em;
+}
+
+.option-control {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.option-checkbox {
+    margin-right: 10px;
+}
+
+.option-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="title">Settings</div>
+
+<div class="option">
+    <div class="option-label">Prayer Times</div>
+    <select class="option-select">
+        <option value="auto">Auto</option>
+        <option value="manual">Manual</option>
+    </select>
+</div>
+
+<div class="option">
+    <div class="option-label">Fajr Alarm</div>
+    <div class="option-control">
+        <input type="checkbox" class="option-checkbox">
+        <label for="fajr-alarm-checkbox">Enable Fajr Alarm</label>
+    </div>
+</div>
+
+<div class="option">
+    <div class="option-label">Alarm Sound</div>
+    <select class="option-select">
+        <option value="azan">Azan</option>
+        <option value="adhan">Adhan</option>
+        <option value="custom">Custom</option>
+    </select>
+</div>
+
+<div class="option">
+    <div class="option-label">Snooze Duration</div>
+    <select class="option-select">
+        <option value="5">5 minutes</option>
+        <option value="10">10 minutes</option>
+        <option value="15">15 minutes</option>
+    </select>
+</div>
+
+<button class="button">Save Settings</button>
+</div>
+
+</body>
+</html>
+```
+
+This HTML code creates a mobile settings page for a religious app. It includes options for prayer times, enabling or disabling the Fajr alarm, selecting an alarm sound, and choosing the snooze duration. The user can also save their settings by clicking the "Save Settings" button.

@@ -1,98 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religious App - Settings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
 
-.container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-top: 20px;
-}
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
 
-.title {
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+        .title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
 
-.section {
-    margin-bottom: 20px;
-}
+        .options {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
 
-.subheading {
-    font-size: 1em;
-}
+        .option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
 
-.options {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
+        .option-label {
+            font-weight: bold;
+        }
 
-.option {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
+        .option-button {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 4px;
+        }
 
-.option input[type="checkbox"] {
-    margin-right: 10px;
-}
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
 
-</style>
+        .toggle-input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #4CAF50;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 20px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        .toggle-input:checked+.toggle-slider {
+            background-color: #ccc;
+        }
+
+        .toggle-input:focus+.toggle-slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        .toggle-input:checked+.toggle-slider:before {
+            -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            transform: translateX(20px);
+        }
+
+        .toggle-slider.round {
+            border-radius: 34px;
+        }
+
+        .toggle-slider.round:before {
+            border-radius: 50%;
+        }
+
+        .button-save {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="title">Settings</div>
-    <div class="section">
-        <div class="subheading">Prayer Options</div>
+    <div class="container">
+        <div class="title">Settings</div>
         <div class="options">
             <div class="option">
-                <input type="checkbox" id="fajr" name="fajr" value="fajr">
-                <label for="fajr">Fajr</label>
+                <span class="option-label">Prayer Notifications:</span>
+                <label class="toggle-switch">
+                    <input class="toggle-input" type="checkbox">
+                    <span class="toggle-slider round"></span>
+                </label>
             </div>
             <div class="option">
-                <input type="checkbox" id="dhuhr" name="dhuhr" value="dhuhr">
-                <label for="dhuhr">Dhuhr</label>
-            </div>
-            <div class="option">
-                <input type="checkbox" id="asr" name="asr" value="asr">
-                <label for="asr">Asr</label>
-            </div>
-            <div class="option">
-                <input type="checkbox" id="maghrib" name="maghrib" value="maghrib">
-                <label for="maghrib">Maghrib</label>
-            </div>
-            <div class="option">
-                <input type="checkbox" id="isha" name="isha" value="isha">
-                <label for="isha">Isha</label>
+                <span class="option-label">Fajr Alarm:</span>
+                <label class="toggle-switch">
+                    <input class="toggle-input" type="checkbox">
+                    <span class="toggle-slider round"></span>
+                </label>
             </div>
         </div>
+        <button class="button-save">Save Settings</button>
     </div>
-    <div class="section">
-        <div class="subheading">Fajr Alarm</div>
-        <div class="options">
-            <div class="option">
-                <input type="checkbox" id="fajr-alarm" name="fajr-alarm">
-                <label for="fajr-alarm">Enable Fajr Alarm</label>
-            </div>
-            <div class="option">
-                <label for="alarm-time">Alarm Time:</label>
-                <input type="time" id="alarm-time" name="alarm-time">
-            </div>
-        </div>
-    </div>
-</div>
 </body>
+
 </html>

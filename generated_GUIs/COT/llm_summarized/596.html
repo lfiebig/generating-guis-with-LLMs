@@ -1,0 +1,119 @@
+The screen is part of a printer app and displays an advanced categories page for users to select various print options. Therefore, we need different categories with selectable options. Each category should have a title and a list of options. The user should be able to select multiple options within each category. Additionally, we need a button to submit the selected options.
+
+Here is the corresponding HTML code with a bit of inline CSS styling:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .options-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .option-label {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="category">
+            <div class="category-title">Print Size:</div>
+            <ul class="options-list">
+                <li class="option">
+                    <input type="checkbox" id="size-a4">
+                    <label for="size-a4">A4</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="size-letter">
+                    <label for="size-letter">Letter</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="size-a3">
+                    <label for="size-a3">A3</label>
+                </li>
+            </ul>
+        </div>
+        <div class="category">
+            <div class="category-title">Color Mode:</div>
+            <ul class="options-list">
+                <li class="option">
+                    <input type="checkbox" id="color-mode-color">
+                    <label for="color-mode-color">Color</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="color-mode-blackwhite">
+                    <label for="color-mode-blackwhite">Black and White</label>
+                </li>
+            </ul>
+        </div>
+        <div class="category">
+            <div class="category-title">Paper Type:</div>
+            <ul class="options-list">
+                <li class="option">
+                    <input type="checkbox" id="paper-type-plain">
+                    <label for="paper-type-plain">Plain</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="paper-type-glossy">
+                    <label for="paper-type-glossy">Glossy</label>
+                </li>
+            </ul>
+        </div>
+        <button class="submit-button">Print</button>
+    </div>
+</body>
+</html>
+```
+
+This HTML code creates a mobile page for a printer app's advanced categories page. It includes categories for print size, color mode, and paper type, with selectable options within each category. Finally, there is a submit button to proceed with the selected print options.

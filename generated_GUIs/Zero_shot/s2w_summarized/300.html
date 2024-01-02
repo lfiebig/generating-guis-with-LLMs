@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning App - Quiz Section</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F2F2F2;
+      }
+
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FFFFFF;
+        width: 90%;
+        max-width: 400px;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0 0 10px;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 0 0 20px;
+      }
+
+      .answer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .answer input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup">
+      <h1>Quiz Section</h1>
+      <p>Select the correct answer:</p>
+      <div class="answer">
+        <input type="radio" id="answer1" name="answer" value="option1">
+        <label for="answer1">Option 1</label>
+      </div>
+      <div class="answer">
+        <input type="radio" id="answer2" name="answer" value="option2">
+        <label for="answer2">Option 2</label>
+      </div>
+      <div class="answer">
+        <input type="radio" id="answer3" name="answer" value="option3">
+        <label for="answer3">Option 3</label>
+      </div>
+      <a class="button" href="#">Submit</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Settings</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.toggle-label {
+    font-size: 16px;
+}
+
+.submenu {
+    display: none;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.select {
+    margin-top: 10px;
+}
+
+.select select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.vibration-toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.notification-tone {
+    margin-top: 10px;
+}
+
+.notification-tone select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.alarm-settings {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.alarm-settings h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.alarm-settings .alarm-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.alarm-settings .alarm-time input[type="time"] {
+    margin-right: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Settings</h1>
+    <div class="toggle">
+        <span class="toggle-label">Time Format</span>
+        <label class="checkbox-label">
+            <input type="checkbox" id="time-format-toggle">
+            <span>12-hour</span>
+        </label>
+    </div>
+    <div class="toggle">
+        <span class="toggle-label">Prayer Notifications</span>
+        <label class="checkbox-label">
+            <input type="checkbox" id="prayer-notifications-toggle">
+            <span>Enable</span>
+        </label>
+    </div>
+    <div class="toggle">
+        <span class="toggle-label">Vibration for Notifications</span>
+        <label class="checkbox-label">
+            <input type="checkbox" id="vibration-toggle">
+            <span>On</span>
+        </label>
+    </div>
+    <div class="notification-tone">
+        <span class="toggle-label">Notification Tone</span>
+        <select>
+            <option value="default">Default</option>
+            <option value="tone1">Tone 1</option>
+            <option value="tone2">Tone 2</option>
+            <option value="tone3">Tone 3</option>
+        </select>
+    </div>
+    <div class="toggle">
+        <span class="toggle-label">Fajr Alarm</span>
+        <label class="checkbox-label">
+            <input type="checkbox" id="fajr-alarm-toggle">
+            <span>Enable</span>
+        </label>
+    </div>
+    <div class="alarm-settings">
+        <h2>Fajr Alarm Settings</h2>
+        <div class="alarm-time">
+            <input type="time">
+            <span class="toggle-label">Alarm Time</span>
+        </div>
+        <div class="toggle">
+            <span class="toggle-label">Vibration for Fajr Alarm</span>
+            <label class="checkbox-label">
+                <input type="checkbox" id="fajr-alarm-vibration-toggle">
+                <span>On</span>
+            </label>
+        </div>
+        <div class="notification-tone">
+            <span class="toggle-label">Fajr Alarm Tone</span>
+            <select>
+                <option value="default">Default</option>
+                <option value="tone1">Tone 1</option>
+                <option value="tone2">Tone 2</option>
+                <option value="tone3">Tone 3</option>
+            </select>
+        </div>
+    </div>
+    <button class="button">Save Settings</button>
+</div>
+</body>
+</html>

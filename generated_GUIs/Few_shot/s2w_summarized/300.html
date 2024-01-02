@@ -3,86 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Popup</title>
+<title>Quiz Pop-up</title>
 <style>
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
 
-.popup {
-    max-width: 400px;
-    margin: auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-top: 20px;
-}
+    .container {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-top: 20px;
+    }
 
-.question {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+    .question {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
 
-.answer {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
+    .answer {
+        margin-bottom: 10px;
+    }
 
-.input-field {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-left: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    .answer input[type="radio"] {
+        margin-right: 8px;
+    }
 
-.submit-button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.cancel-button {
-    background-color: #f44336;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
+    .submit-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
 </style>
 </head>
 <body>
-<div class="popup">
-<div class="question">What is the capital of France?</div>
-<div class="answer">
-    <input type="radio" id="paris" name="capital" value="paris">
-    <label for="paris">Paris</label>
-</div>
-<div class="answer">
-    <input type="radio" id="london" name="capital" value="london">
-    <label for="london">London</label>
-</div>
-<div class="answer">
-    <input type="radio" id="berlin" name="capital" value="berlin">
-    <label for="berlin">Berlin</label>
-</div>
-<div class="answer">
-    <input type="radio" id="rome" name="capital" value="rome">
-    <label for="rome">Rome</label>
-</div>
-<button class="submit-button">Submit</button>
-<button class="cancel-button">Cancel</button>
+<div class="container">
+    <div class="question">What is the capital of France?</div>
+    <div class="answer">
+        <input type="radio" id="option1" name="answer" value="option1">
+        <label for="option1">Paris</label>
+    </div>
+    <div class="answer">
+        <input type="radio" id="option2" name="answer" value="option2">
+        <label for="option2">London</label>
+    </div>
+    <div class="answer">
+        <input type="radio" id="option3" name="answer" value="option3">
+        <label for="option3">Berlin</label>
+    </div>
+    <button class="submit-button">Submit</button>
 </div>
 </body>
 </html>

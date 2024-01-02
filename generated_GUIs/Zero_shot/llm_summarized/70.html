@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f3f3f3;
+            padding: 10px;
+        }
+
+        .left-arrow {
+            font-size: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons .icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .search-icon {
+            font-size: 18px;
+        }
+
+        .options-icon {
+            font-size: 18px;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .video-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .video-thumbnail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            background-color: #f3f3f3;
+        }
+
+        .thumbnail-image {
+            width: 150px;
+            height: 100px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+        }
+
+        .thumbnail-title {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #f3f3f3;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-arrow">&#8592;</div>
+        <div class="social-icons">
+            <span class="icon">&#128172;</span>
+            <span class="icon">&#128171;</span>
+        </div>
+        <div>
+            <span class="search-icon">&#128269;</span>
+            <span class="options-icon">&#8801;</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="video-thumbnails">
+            <div class="video-thumbnail">
+                <img src="thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail-image">
+                <div class="thumbnail-title">Video 1</div>
+            </div>
+            <div class="video-thumbnail">
+                <img src="thumbnail2.jpg" alt="Video Thumbnail" class="thumbnail-image">
+                <div class="thumbnail-title">Video 2</div>
+            </div>
+            <div class="video-thumbnail">
+                <img src="thumbnail3.jpg" alt="Video Thumbnail" class="thumbnail-image">
+                <div class="thumbnail-title">Video 3</div>
+            </div>
+            <!-- More video thumbnails here -->
+        </div>
+    </div>
+    <div class="footer">Showing 1 of 14072 Videos</div>
+</body>
+</html>

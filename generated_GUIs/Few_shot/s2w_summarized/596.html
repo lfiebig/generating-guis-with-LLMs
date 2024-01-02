@@ -9,79 +9,79 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #f4f4f4;
         }
 
         .container {
             max-width: 400px;
             margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             padding: 20px;
+            margin-top: 20px;
         }
 
-        .page-title {
+        .title {
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 20px;
         }
 
-        .category-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-
-        .category-item {
-            background-color: #fff;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+        
+        .category {
+            width: 48%;
             padding: 10px;
-            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
         }
 
-        .category-item:hover {
-            background-color: #f8f8f8;
+        .category:hover {
+            background-color: #f2f2f2;
         }
 
-        .category-item h3 {
-            margin: 0;
-            font-size: 1.2em;
-            margin-bottom: 5px;
+        .category-image {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
         }
 
-        .category-item p {
-            margin: 0;
-            font-size: 0.8em;
-            color: #666;
+        .category-title {
+            font-size: 14px;
+            font-weight: bold;
         }
         </style>
         </head>
         <body>
         <div class="container">
-        <h1 class="page-title">Print Options</h1>
-        <ul class="category-list">
-            <li class="category-item">
-            <h3>Printing Quality</h3>
-            <p>Select the printing quality options for your documents.</p>
-            </li>
-            <li class="category-item">
-            <h3>Paper Size</h3>
-            <p>Choose the paper size for your printouts.</p>
-            </li>
-            <li class="category-item">
-            <h3>Color Mode</h3>
-            <p>Select whether to print in color or black and white.</p>
-            </li>
-            <li class="category-item">
-            <h3>Layout</h3>
-            <p>Choose the layout options for your printouts.</p>
-            </li>
-            <li class="category-item">
-            <h3>Collation</h3>
-            <p>Select whether to collate multiple copies of your document.</p>
-            </li>
-        </ul>
+        <div class="title">Select Print Options</div>
+        <div class="categories">
+            <div class="category">
+            <img class="category-image" src="printer-icon.png" alt="Printer Icon">
+            <div class="category-title">Print Document</div>
+            </div>
+            <div class="category">
+            <img class="category-image" src="scan-icon.png" alt="Scan Icon">
+            <div class="category-title">Scan Document</div>
+            </div>
+            <div class="category">
+            <img class="category-image" src="copy-icon.png" alt="Copy Icon">
+            <div class="category-title">Copy Document</div>
+            </div>
+            <div class="category">
+            <img class="category-image" src="fax-icon.png" alt="Fax Icon">
+            <div class="category-title">Fax Document</div>
+            </div>
         </div>
+        </div>
+
         </body>
         </html>

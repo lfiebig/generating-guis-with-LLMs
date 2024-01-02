@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .submit-btn {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .answer-feedback {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ff0000;
+    }
+
+    .navigation-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navigation-button {
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .hint {
+      margin-top: 20px;
+      color: #555555;
+    }
+
+    .action-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .action-button {
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript Quiz</h1>
+
+    <form>
+      <label>
+        <input type="radio" name="answer" value="A">
+        Option A
+      </label>
+
+      <label>
+        <input type="radio" name="answer" value="B">
+        Option B
+      </label>
+
+      <label>
+        <input type="radio" name="answer" value="C">
+        Option C
+      </label>
+
+      <label>
+        <input type="radio" name="answer" value="D">
+        Option D
+      </label>
+
+      <input type="submit" value="Submit" class="submit-btn">
+    </form>
+
+    <div class="answer-feedback">
+      Wrong <span>&#10006;</span>
+    </div>
+
+    <div class="navigation-buttons">
+      <a href="#" class="navigation-button">BACK</a>
+      <a href="#" class="navigation-button">TRY AGAIN</a>
+    </div>
+
+    <div class="hint">
+      26 COMMENTS
+    </div>
+
+    <div class="action-buttons">
+      <button class="action-button">UNLOCK</button>
+      <button class="action-button">SHARE</button>
+    </div>
+  </div>
+</body>
+
+</html>

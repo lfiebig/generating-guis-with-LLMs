@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Settings</title>
+    <style>
+        .container {
+            padding: 20px;
+        }
+
+        .toggle-label {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-label input[type=checkbox] {
+            margin-right: 10px;
+        }
+
+        .sub-menu {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .sub-menu.open {
+            display: block;
+        }
+
+        .alarm-label {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .alarm-label input[type=checkbox] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+
+        <h2>Time Format</h2>
+        <div class="toggle-label">
+            <input type="checkbox" id="timeFormatToggle">
+            <label for="timeFormatToggle">Use 12-hour format</label>
+        </div>
+
+        <h2>Prayer Notifications</h2>
+        <div class="toggle-label">
+            <input type="checkbox" id="prayerNotificationsToggle">
+            <label for="prayerNotificationsToggle">Enable Prayer Notifications</label>
+        </div>
+
+        <h2>Vibration for Notifications</h2>
+        <div class="toggle-label">
+            <input type="checkbox" id="vibrationToggle">
+            <label for="vibrationToggle">Activate Vibration for Notifications</label>
+        </div>
+
+        <h2>Notification Tone for Prayers</h2>
+        <select>
+            <option value="tone1">Tone 1</option>
+            <option value="tone2">Tone 2</option>
+            <option value="tone3">Tone 3</option>
+            <option value="tone4">Tone 4</option>
+        </select>
+
+        <h2>Fajr Alarm</h2>
+        <div class="toggle-label">
+            <input type="checkbox" id="fajrAlarmToggle">
+            <label for="fajrAlarmToggle">Enable Fajr Alarm</label>
+        </div>
+
+        <div class="sub-menu">
+            <h3>Adjust Fajr Alarm Time</h3>
+            <input type="time" value="06:00">
+        </div>
+
+        <h2>Vibration for Fajr Alarm</h2>
+        <div class="toggle-label">
+            <input type="checkbox" id="fajrAlarmVibrationToggle">
+            <label for="fajrAlarmVibrationToggle">Activate Vibration for Fajr Alarm</label>
+        </div>
+
+        <h2>Fajr Alarm Tone</h2>
+        <select>
+            <option value="tone1">Tone 1</option>
+            <option value="tone2">Tone 2</option>
+            <option value="tone3">Tone 3</option>
+            <option value="tone4">Tone 4</option>
+        </select>
+    </div>
+</body>
+
+</html>

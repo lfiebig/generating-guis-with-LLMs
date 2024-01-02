@@ -1,96 +1,75 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Create Playlist</title>
-        <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Playlist</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-top: 20px;
-        }
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
 
-        .title {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
-        .input-field {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+.form-group {
+    margin-bottom: 20px;
+}
 
-        .add-song-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
+.label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
 
-        .song-list-container {
-            margin-top: 20px;
-        }
+.input-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        .song-list-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #eee;
-            margin-bottom: 10px;
-        }
-
-        .song-list-item .song-name {
-            flex-grow: 1;
-        }
-
-        .song-list-item .remove-button {
-            background-color: #f44336;
-            color: white;
-            padding: 5px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        </style>
-        </head>
-        <body>
-        <div class="container">
-        <div class="title">Create Playlist</div>
-        <input class="input-field" type="text" placeholder="Playlist Name">
-        <input class="input-field" type="text" placeholder="Add Song">
-        <button class="add-song-button">Add Song</button>
-        <div class="song-list-container">
-            <div class="song-list-item">
-            <div class="song-name">Song 1</div>
-            <button class="remove-button">-</button>
-            </div>
-            <div class="song-list-item">
-            <div class="song-name">Song 2</div>
-            <button class="remove-button">-</button>
-            </div>
-        </div>
-        </div>
-        </body>
-        </html>
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="title">Create Playlist</div>
+<form>
+<div class="form-group">
+<label for="playlist-name" class="label">Playlist Name:</label>
+<input type="text" id="playlist-name" class="input-field" required>
+</div>
+<div class="form-group">
+<label for="playlist-description" class="label">Playlist Description:</label>
+<textarea id="playlist-description" class="input-field" required></textarea>
+</div>
+<button type="submit" class="button">Create</button>
+</form>
+</div>
+</body>
+</html>

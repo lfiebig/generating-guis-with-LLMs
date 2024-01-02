@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recording App Settings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .setting {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .setting-label {
+            flex-grow: 1;
+        }
+
+        .switch input[type="checkbox"] {
+            display: none;
+        }
+
+        .switch label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .switch label .switch-toggle {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
+
+        .switch label .switch-toggle:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .switch input[type="checkbox"]:checked + label .switch-toggle:before {
+            transform: translateX(calc(100% - 2px));
+        }
+
+        .setting select {
+            width: 200px;
+            margin-left: 10px;
+        }
+
+        .setting input[type="text"] {
+            width: 100%;
+        }
+
+        .setting-advanced {
+            margin-top: 40px;
+        }
+
+        .setting-advanced .setting-group {
+            margin-bottom: 20px;
+        }
+
+        .setting-advanced .setting-group h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Settings</h2>
+
+        <div class="setting">
+            <div class="setting-label">Skip Silence Mode</div>
+            <div class="switch">
+                <input type="checkbox" id="skip-silence">
+                <label for="skip-silence"><span class="switch-toggle"></span></label>
+            </div>
+        </div>
+
+        <div class="setting">
+            <div class="setting-label">Sample Rate (Quality)</div>
+            <select name="sample-rate" id="sample-rate">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div class="setting">
+            <div class="setting-label">Location of Recordings</div>
+            <input type="text" id="location-recordings">
+        </div>
+
+        <div class="setting">
+            <div class="setting-label">Datetime File Naming</div>
+            <div class="switch">
+                <input type="checkbox" id="datetime-naming">
+                <label for="datetime-naming"><span class="switch-toggle"></span></label>
+            </div>
+        </div>
+
+        <div class="setting">
+            <div class="setting-label">Dialogs and Confirmations</div>
+            <button id="dialogs-confirmations">Options</button>
+        </div>
+
+        <div class="setting">
+            <div class="setting-label">Microphone Adjustment</div>
+            <select name="microphone-adjustment" id="microphone-adjustment">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div class="setting-advanced">
+            <h3>Advanced</h3>
+            <div class="setting-group">
+                <div class="setting-label">Setting 1</div>
+                <select name="setting1" id="setting1">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <div class="setting-label">Setting 2</div>
+                <select name="setting2" id="setting2">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

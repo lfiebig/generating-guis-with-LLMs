@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podcast App</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #343a40;
+    }
+
+    .popup-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup {
+        background-color: #fff;
+        width: 300px;
+        padding: 16px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 20px;
+        color: #343a40;
+        cursor: pointer;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .toggle-option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .toggle-option input[type="checkbox"] {
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .increment-decrement {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .increment-decrement input[type="button"] {
+        padding: 6px;
+        margin-right: 8px;
+        border: none;
+        background-color: #f8f9fa;
+        color: #343a40;
+        cursor: pointer;
+    }
+
+    .delete-podcast {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .delete-podcast button {
+        padding: 8px 16px;
+        border: none;
+        background-color: #f44336;
+        color: #fff;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="popup">
+            <span class="close-button">&#10006;</span>
+            <h2>Podcast Options</h2>
+            <div class="toggle-option">
+                <input type="checkbox" id="delete-played-episodes" name="delete-played-episodes">
+                <label for="delete-played-episodes">Delete Played Episodes</label>
+            </div>
+            <div class="increment-decrement">
+                <input type="button" value="-" id="decrement-button">
+                <label for="keep-automatic-downloads">Keep Auto-downloads:</label>
+                <input type="number" id="keep-automatic-downloads" min="1" max="99" value="1">
+                <input type="button" value="+" id="increment-button">
+            </div>
+            <div class="delete-podcast">
+                <button id="delete-podcast-button">Delete Podcast</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
