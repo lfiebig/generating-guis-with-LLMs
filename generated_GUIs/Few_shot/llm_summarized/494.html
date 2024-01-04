@@ -1,65 +1,72 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
         <html lang="en">
         <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Create Playlist</title>
         <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+            body, h1, input, button {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
 
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-top: 20px;
-        }
+            .header {
+                position: relative;
+                background-color: #1DB954;
+                color: #FFFFFF;
+                padding: 20px;
+                text-align: center;
+            }
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+            .back-arrow {
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: none;
+                background: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                font-size: 24px;
+            }
 
-        .input-field {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+            .checkmark {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: none;
+                background: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                font-size: 24px;
+            }
 
-        .actions {
-            display: flex;
-            justify-content: space-between;
-        }
+            .content {
+                padding: 20px;
+            }
 
-        .cancel-button,
-        .confirm-button {
-            background: none;
-            border: none;
-            color: #4CAF50;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 16px;
-        }
+            .input-field {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                margin-top: 10px;
+                box-sizing: border-box;
+                display: block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
         </style>
         </head>
         <body>
-        <div class="container">
-        <h2>Create Playlist</h2>
-        <input class="input-field" type="text" placeholder="Enter playlist name" value="1233">
-        <div class="actions">
-            <button class="cancel-button">&#8592; Cancel</button>
-            <button class="confirm-button">&#10003; Create</button>
-        </div>
-        </div>
-
+            <div class="header">
+                <button class="back-arrow">&#8592;</button>
+                <h1>Create playlist</h1>
+                <button class="checkmark">&#10004;</button>
+            </div>
+            <div class="content">
+                <input type="text" class="input-field" value="1233" placeholder="Enter playlist name">
+            </div>
         </body>
         </html>

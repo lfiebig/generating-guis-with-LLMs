@@ -1,152 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Religious App - Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Religious App Settings</title>
     <style>
-        body {
+        body, button {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
+            color: #333;
         }
 
         .container {
-            max-width: 400px;
-            margin: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin-top: 20px;
+            max-width: 480px;
+            margin: auto;
         }
 
-        .title {
-            text-align: center;
-            font-size: 1.2em;
+        h2 {
+            font-size: 20px;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .setting-group {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 15px;
             margin-bottom: 20px;
         }
 
-        .options {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-
-        .option {
+        .setting-option {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
         }
 
-        .option-label {
-            font-weight: bold;
+        .setting-option:last-child {
+            border-bottom: none;
         }
 
-        .option-button {
-            background-color: #f8f8f8;
-            border: 1px solid #ccc;
-            padding: 8px;
-            border-radius: 4px;
+        .setting-option label {
+            font-size: 16px;
+            color: #555;
         }
 
-        .toggle-switch {
+        .switch {
             position: relative;
             display: inline-block;
-            width: 40px;
-            height: 20px;
+            width: 50px;
+            height: 24px;
         }
 
-        .toggle-input {
+        .switch input { 
             opacity: 0;
             width: 0;
             height: 0;
         }
 
-        .toggle-slider {
+        .slider {
             position: absolute;
             cursor: pointer;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #4CAF50;
-            -webkit-transition: .4s;
+            background-color: #ccc;
             transition: .4s;
-            border-radius: 20px;
+            border-radius: 24px;
         }
 
-        .toggle-slider:before {
+        .slider:before {
             position: absolute;
             content: "";
-            height: 16px;
-            width: 16px;
+            height: 20px;
+            width: 20px;
             left: 2px;
             bottom: 2px;
             background-color: white;
-            -webkit-transition: .4s;
             transition: .4s;
             border-radius: 50%;
         }
 
-        .toggle-input:checked+.toggle-slider {
-            background-color: #ccc;
+        input:checked + .slider {
+            background-color: #2196F3;
         }
 
-        .toggle-input:focus+.toggle-slider {
+        input:focus + .slider {
             box-shadow: 0 0 1px #2196F3;
         }
 
-        .toggle-input:checked+.toggle-slider:before {
-            -webkit-transform: translateX(20px);
-            -ms-transform: translateX(20px);
-            transform: translateX(20px);
-        }
-
-        .toggle-slider.round {
-            border-radius: 34px;
-        }
-
-        .toggle-slider.round:before {
-            border-radius: 50%;
-        }
-
-        .button-save {
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            border-radius: 4px;
-            cursor: pointer;
+        input:checked + .slider:before {
+            transform: translateX(26px);
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <div class="title">Settings</div>
-        <div class="options">
-            <div class="option">
-                <span class="option-label">Prayer Notifications:</span>
-                <label class="toggle-switch">
-                    <input class="toggle-input" type="checkbox">
-                    <span class="toggle-slider round"></span>
+        <h2>Settings</h2>
+        <div class="setting-group">
+            <div class="setting-option">
+                <label for="prayer-option">Prayer Notifications</label>
+                <label class="switch">
+                    <input type="checkbox" id="prayer-option" checked>
+                    <span class="slider"></span>
                 </label>
             </div>
-            <div class="option">
-                <span class="option-label">Fajr Alarm:</span>
-                <label class="toggle-switch">
-                    <input class="toggle-input" type="checkbox">
-                    <span class="toggle-slider round"></span>
+            <div class="setting-option">
+                <label for="fajr-alarm">Fajr Alarm</label>
+                <label class="switch">
+                    <input type="checkbox" id="fajr-alarm">
+                    <span class="slider"></span>
                 </label>
             </div>
         </div>
-        <button class="button-save">Save Settings</button>
     </div>
 </body>
-
 </html>

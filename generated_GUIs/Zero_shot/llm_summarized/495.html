@@ -1,114 +1,94 @@
+Below is the static HTML structure with a bit of inline CSS to fulfill the specified requirements. It includes a back button to navigate to the previous page, a title for the page, a list of podcast episodes with associated artwork, title, metadata, and social media sharing icons.
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Favorite Episodes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            margin: 0;
-            font-size: 20px;
-        }
-        
-        .container {
-            padding: 20px;
-        }
-        
-        .episode {
-            display: flex;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-        
-        .episode img {
-            width: 80px;
-            height: 80px;
-            margin-right: 20px;
-        }
-        
-        .episode .details {
-            flex-grow: 1;
-        }
-        
-        .episode h3 {
-            font-size: 16px;
-            margin: 0;
-        }
-        
-        .episode .metadata {
-            color: #666;
-            margin-top: 5px;
-        }
-        
-        .social-icons {
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        .social-icons a {
-            margin-left: 10px;
-        }
-        
-        .social-icons img {
-            width: 20px;
-            height: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Episodes I Like</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    .back-arrow {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .title {
+        flex-grow: 1;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .podcast-list {
+        margin-top: 20px;
+    }
+    .podcast {
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+        display: flex;
+    }
+    .artwork {
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+    }
+    .details {
+        flex-grow: 1;
+    }
+    .title {
+        font-size: 16px;
+        margin: 0;
+    }
+    .metadata {
+        color: #666;
+        font-size: 12px;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .social-icon {
+        padding: 5px;
+    }
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1>Episodes I Like</h1>
-    </div>
-    <div class="container">
-        <div class="episode">
-            <img src="artwork1.jpg" alt="Artwork 1">
-            <div class="details">
-                <h3>Case #6 Kotter</h3>
-                <p class="metadata">Date: Jul 30, 2015 | Duration: 01:17:46</p>
-            </div>
+<div class="header">
+    <span class="back-arrow">&larr;</span>
+    <span class="title">Episodes I Like</span>
+</div>
+<div class="podcast-list">
+    <div class="podcast">
+        <img src="artwork1.jpg" alt="podcast artwork" class="artwork">
+        <div class="details">
+            <p class="title">Case #6 Kotter</p>
+            <p class="metadata">Jul 30, 2015 | 01:17:46</p>
             <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            </div>
-        </div>
-        <div class="episode">
-            <img src="artwork2.jpg" alt="Artwork 2">
-            <div class="details">
-                <h3>Case #12 Mystery</h3>
-                <p class="metadata">Date: Aug 15, 2015 | Duration: 00:58:32</p>
-            </div>
-            <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            </div>
-        </div>
-        <div class="episode">
-            <img src="artwork3.jpg" alt="Artwork 3">
-            <div class="details">
-                <h3>Case #18 Conspiracy</h3>
-                <p class="metadata">Date: Sep 02, 2015 | Duration: 01:21:19</p>
-            </div>
-            <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <img src="facebook.png" alt="Share on Facebook" class="social-icon">
+                <img src="whatsapp.png" alt="Share on WhatsApp" class="social-icon">
+                <img src="twitter.png" alt="Share on Twitter" class="social-icon">
             </div>
         </div>
     </div>
+    <!-- Repeat above div for each podcast episode -->
+</div>
 </body>
 </html>
+```
+
+Please note, that the `src` attributes for the images should be replaced with the actual paths to your artwork and social media icons. 
+
+The 'back-arrow' div can be linked to a previous page by wrapping it in an `<a>` tag like so: `<a href="previous-page.html" class="back-arrow">&larr;</a>`, assuming `previous-page.html` is the URL of the previous page. Since this is a static page, without JavaScript, the back button will not have functional behavior unless it's linked to an actual previous page URL.

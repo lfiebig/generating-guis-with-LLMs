@@ -1,98 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast App</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Podcast Favorites</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
 
-        .header {
-            background-color: #343a40;
-            color: #fff;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-        }
+            /* Header */
+            .header {
+                display: flex;
+                align-items: center;
+                padding: 16px;
+                background-color: #fff;
+                border-bottom: 1px solid #ddd;
+            }
 
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
+            .back-arrow {
+                cursor: pointer;
+                font-size: 24px;
+                margin-right: 10px;
+            }
 
-        .content {
-            background-color: #fff;
-            padding: 16px;
-        }
+            .header-title {
+                font-size: 20px;
+                font-weight: bold;
+            }
 
-        .section-title {
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
+            /* Episode List */
+            .episode-list {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
 
-        .podcast-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 16px;
-        }
+            .episode-item {
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                border-bottom: 1px solid #ddd;
+                padding: 16px;
+            }
 
-        .podcast-item img {
-            width: 80px;
-            height: 80px;
-            margin-right: 16px;
-        }
+            .episode-artwork {
+                width: 60px;
+                height: 60px;
+                background-color: #ccc;
+                border-radius: 6px;
+                margin-right: 12px;
+            }
 
-        .podcast-item-details {
-            flex-grow: 1;
-        }
+            .episode-content {
+                flex-grow: 1;
+            }
 
-        .podcast-item-title {
-            font-size: 16px;
-            margin-bottom: 4px;
-        }
+            .title {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
 
-        .podcast-item-metadata {
-            font-size: 14px;
-            color: #888;
-        }
+            .metadata {
+                font-size: 12px;
+                color: #666;
+            }
 
-        .podcast-item-social-media {
-            display: flex;
-            gap: 8px;
-            margin-top: 8px;
-        }
+            /* Social Media Icons */
+            .social-media {
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 16px;
+            }
 
-        .social-media-icon {
-            width: 24px;
-            height: 24px;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Episodes I Like</h1>
-    </div>
-    <div class="content">
-        <div class="section-title">Episodes I Like</div>
-        <div class="podcast-item">
-            <img src="episode1.jpg" alt="Episode 1">
-            <div class="podcast-item-details">
-                <div class="podcast-item-title">Case #6 Kotter</div>
-                <div class="podcast-item-metadata">
-                    <span>Date: Jul 30, 2015</span> • <span>Duration: 01:17:46</span>
-                </div>
-                <div class="podcast-item-social-media">
-                    <img class="social-media-icon" src="facebook.png" alt="Facebook">
-                    <img class="social-media-icon" src="whatsapp.png" alt="WhatsApp">
-                    <img class="social-media-icon" src="twitter.png" alt="Twitter">
-                </div>
-            </div>
+            .social-media img {
+                width: 24px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        </style>
+        </head>
+        <body>
+
+        <div class="header">
+            <div class="back-arrow">&#8592;</div>
+            <div class="header-title">Episodes I Like</div>
         </div>
-    </div>
-</body>
-</html>
+
+        <ul class="episode-list">
+            <li class="episode-item">
+                <div class="episode-artwork"></div>
+                <div class="episode-content">
+                    <div class="title">Case #6 Kotter</div>
+                    <div class="metadata">Jul 30, 2015 &bull; 01:17:46</div>
+                </div>
+            </li>
+            <!-- Repeat for more episodes -->
+            <!-- Template for additional episodes -->
+            <!--<li class="episode-item">
+                <div class="episode-artwork"></div>
+                <div class="episode-content">
+                    <div class="title">Episode Title</div>
+                    <div class="metadata">Date &bull; Duration</div>
+                </div>
+            </li>-->
+        </ul>
+
+        <div class="social-media">
+            <img src="facebook-icon.png" alt="Share on Facebook">
+            <img src="whatsapp-icon.png" alt="Share on WhatsApp">
+            <img src="twitter-icon.png" alt="Share on Twitter">
+        </div>
+
+        </body>
+        </html>

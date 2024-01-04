@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Pop-up</title>
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Popup</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    .container {
-        max-width: 400px;
-        margin: auto;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        padding: 20px;
-        margin-top: 20px;
-    }
+        .quiz-popup {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%;
+            max-width: 350px;
+        }
 
-    .question {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-    }
+        .question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
-    .answer {
-        margin-bottom: 10px;
-    }
+        .answers {
+            list-style: none;
+            padding: 0;
+        }
 
-    .answer input[type="radio"] {
-        margin-right: 8px;
-    }
+        .answers li {
+            margin-bottom: 10px;
+        }
 
-    .submit-button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        cursor: pointer;
-    }
-</style>
+        .answer-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .answer-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="question">What is the capital of France?</div>
-    <div class="answer">
-        <input type="radio" id="option1" name="answer" value="option1">
-        <label for="option1">Paris</label>
+    <div class="quiz-popup">
+        <div class="question">What is the capital of France?</div>
+        <ul class="answers">
+            <li><button class="answer-btn">A: Paris</button></li>
+            <li><button class="answer-btn">B: Rome</button></li>
+            <li><button class="answer-btn">C: Berlin</button></li>
+            <li><button class="answer-btn">D: Madrid</button></li>
+        </ul>
     </div>
-    <div class="answer">
-        <input type="radio" id="option2" name="answer" value="option2">
-        <label for="option2">London</label>
-    </div>
-    <div class="answer">
-        <input type="radio" id="option3" name="answer" value="option3">
-        <label for="option3">Berlin</label>
-    </div>
-    <button class="submit-button">Submit</button>
-</div>
 </body>
 </html>

@@ -1,73 +1,82 @@
-Here is an example of the HTML code for the mobile page with the mentioned functionalities:
+Below is a basic HTML structure of a static mobile page with inline CSS styling, without any JavaScript code, and without the dynamic functionalities requested. Please note that without JavaScript, the grid cannot have any interaction such as swipes or combining tiles. The tiles here are just static placeholders for demonstration purposes.
 
-```
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            padding: 10px;
-        }
-        
-        .tile {
-            background-color: #eee;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid-based Numeric Puzzle</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #faf8f0;
+    }
+    .page-container {
+        max-width: 600px;
+        margin: auto;
+    }
+    .header {
+        text-align: center;
+        background: #BBADA0;
+        color: white;
+        padding: 10px;
+        font-size: 24px;
+    }
+    .back-button {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 16px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .tile {
+        background: #CDC1B4;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        color: #776E65;
+        border-radius: 10px;
+        height: 60px;
+    }
+</style>
 </head>
 <body>
+<div class="page-container">
     <div class="header">
-        <h1>Pitch</h1>
+        <span class="back-button">&#x2190; Back</span>
+        <div>Pitch</div>
     </div>
-    
-    <div class="grid">
+    <div class="grid-container">
+        <!-- Placeholder tiles for demonstration purposes -->
         <div class="tile">2</div>
+        <div class="tile">4</div>
         <div class="tile"></div>
-        <div class="tile">4</div>
-        <div class="tile">2</div>
-        <div class="tile">8</div>
-        <div class="tile">4</div>
+        <div class="tile"></div>
         <div class="tile"></div>
         <div class="tile"></div>
         <div class="tile">2</div>
         <div class="tile"></div>
         <div class="tile">4</div>
-        <div class="tile">2</div>
-        <div class="tile">8</div>
-        <div class="tile">4</div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
         <div class="tile"></div>
         <div class="tile"></div>
     </div>
-    
-    <script>
-        // Add JavaScript logic for swipe actions, combining tiles, generating new tiles, etc.
-    </script>
+</div>
 </body>
 </html>
 ```
 
-Please note that the above code only includes the basic structure and styling of the page. Additional JavaScript logic is required to implement the swipe actions, combining tiles, and generating new tiles.
+This HTML structure creates a static page with a styled header and a grid of tiles representing the puzzle. Each tile is a `div` with its own styling. Since no JavaScript has been included, there's no dynamic behavior or interaction possible, and every tile will remain static. To add the required functionalities, JavaScript would be necessary to capture swipe events, update tile values, and manage game logic.

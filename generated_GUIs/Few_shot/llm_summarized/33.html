@@ -1,76 +1,68 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numeric Puzzle Game</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .tile {
-            background-color: #eee;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            padding: 20px;
-        }
-
-        .navigation {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        .back-button {
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 50%;
-            font-size: 20px;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048 Puzzle Game</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #faf8ef;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #faf8ef;
+        border-bottom: 1px solid #bbada0;
+    }
+    .back-button {
+        border: none;
+        background: none;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .title {
+        font-size: 24px;
+        color: #776e65;
+    }
+    .game-container {
+        max-width: 320px;
+        margin: 20px auto;
+        background-color: #bbada0;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    .tile {
+        background-color: #cdc1b4;
+        text-align: center;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #776e65;
+    }
+</style>
 </head>
 <body>
-<div class="container">
-    <div class="navigation">
-        <button class="back-button">&#8249;</button>
-    </div>
-    <h1 class="title">Pitch</h1>
-    <div class="grid-container">
+
+<div class="header">
+    <button class="back-button">&#8592;</button>
+    <div class="title">Pitch</div>
+</div>
+
+<div class="game-container">
+    <div class="grid">
         <div class="tile">2</div>
         <div class="tile">4</div>
         <div class="tile">8</div>
@@ -82,12 +74,15 @@
         <div class="tile">512</div>
         <div class="tile">1024</div>
         <div class="tile">2048</div>
-        <div class="tile">4096</div>
-        <div class="tile">8192</div>
-        <div class="tile">16384</div>
-        <div class="tile">32768</div>
-        <div class="tile">65536</div>
+        <div class="tile"></div> <!-- empty cell in the grid -->
+        <div class="tile"></div> <!-- empty cell in the grid -->
+        <div class="tile"></div> <!-- empty cell in the grid -->
+        <div class="tile"></div> <!-- empty cell in the grid -->
     </div>
 </div>
+
 </body>
 </html>
+```
+
+This HTML code provides a static structure for a 2048 puzzle game without JavaScript. It has a grid for number tiles, a title, and a back button. Interactive elements such as swiping and updating the grid are not achievable with static HTML and CSS alone; they would require JavaScript for implementation, which is beyond the scope of the given question.

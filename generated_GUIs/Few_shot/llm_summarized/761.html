@@ -7,156 +7,149 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f7f7f7;
+            color: #333;
             margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 20px auto;
-            background-color: #fff;
             padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        h2 {
+        .settings-item {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 15px;
+        }
+        .settings-title {
+            padding: 10px 15px;
+            background-color: #e9ecef;
+            border-bottom: 1px solid #ddd;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        .settings-section {
             margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-
-        .setting {
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
+        label {
+            display: block;
+            margin-bottom: 5px;
         }
-
-        .setting-label {
-            flex-grow: 1;
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
         }
-
-        .switch input[type="checkbox"] {
+        .toggle input {
             display: none;
         }
-
-        .switch label {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .switch label .switch-toggle {
-            position: relative;
-            width: 40px;
-            height: 20px;
-            background-color: #ccc;
-            border-radius: 10px;
-        }
-
-        .switch label .switch-toggle:before {
-            content: '';
+        .slider {
             position: absolute;
-            top: 2px;
-            left: 2px;
-            width: 16px;
-            height: 16px;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
             border-radius: 50%;
-            background-color: #fff;
-            transition: transform 0.3s;
-        }
-
-        .switch input[type="checkbox"]:checked + label .switch-toggle:before {
-            transform: translateX(calc(100% - 2px));
-        }
-
-        .setting select {
-            width: 200px;
-            margin-left: 10px;
-        }
-
-        .setting input[type="text"] {
-            width: 100%;
-        }
-
-        .setting-advanced {
-            margin-top: 40px;
-        }
-
-        .setting-advanced .setting-group {
-            margin-bottom: 20px;
-        }
-
-        .setting-advanced .setting-group h3 {
-            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Settings</h2>
-
-        <div class="setting">
-            <div class="setting-label">Skip Silence Mode</div>
-            <div class="switch">
-                <input type="checkbox" id="skip-silence">
-                <label for="skip-silence"><span class="switch-toggle"></span></label>
+    <header>
+        <h1>Recording Settings</h1>
+    </header>
+    
+    <main>
+        <!-- Skip Silence Mode -->
+        <section class="settings-section">
+            <h2 class="settings-title">Recording</h2>
+            <div class="settings-item">
+                <label for="skip-silence">Skip Silence Mode</label>
+                <label class="toggle">
+                    <input type="checkbox" id="skip-silence">
+                    <span class="slider round"></span>
+                </label>
             </div>
-        </div>
-
-        <div class="setting">
-            <div class="setting-label">Sample Rate (Quality)</div>
-            <select name="sample-rate" id="sample-rate">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-        </div>
-
-        <div class="setting">
-            <div class="setting-label">Location of Recordings</div>
-            <input type="text" id="location-recordings">
-        </div>
-
-        <div class="setting">
-            <div class="setting-label">Datetime File Naming</div>
-            <div class="switch">
-                <input type="checkbox" id="datetime-naming">
-                <label for="datetime-naming"><span class="switch-toggle"></span></label>
-            </div>
-        </div>
-
-        <div class="setting">
-            <div class="setting-label">Dialogs and Confirmations</div>
-            <button id="dialogs-confirmations">Options</button>
-        </div>
-
-        <div class="setting">
-            <div class="setting-label">Microphone Adjustment</div>
-            <select name="microphone-adjustment" id="microphone-adjustment">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-        </div>
-
-        <div class="setting-advanced">
-            <h3>Advanced</h3>
-            <div class="setting-group">
-                <div class="setting-label">Setting 1</div>
-                <select name="setting1" id="setting1">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+            
+            <!-- Sample Rate (Quality) -->
+            <div class="settings-item">
+                <label for="sample-rate">Sample Rate (Quality)</label>
+                <select id="sample-rate">
+                    <option value="low">Low (8 kHz)</option>
+                    <option value="medium" selected>Medium (22 kHz)</option>
+                    <option value="high">High (44 kHz)</option>
                 </select>
             </div>
-            <div class="setting-group">
-                <div class="setting-label">Setting 2</div>
-                <select name="setting2" id="setting2">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
+            
+            <!-- Location of Recordings -->
+            <div class="settings-item">
+                <label for="file-location">Location of Recordings</label>
+                <input type="text" id="file-location" value="/storage/emulated/0/Recordings"/>
             </div>
-        </div>
-    </div>
+            
+            <!-- Datetime File Naming -->
+            <div class="settings-item">
+                <label for="datetime-naming">Datetime File Naming</label>
+                <label class="toggle">
+                    <input type="checkbox" id="datetime-naming" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+        
+        <!-- Dialogs and Confirmations -->
+        <section class="settings-section">
+            <h2 class="settings-title">Interactivity</h2>
+            <div class="settings-item">
+                <label for="dialogs-confirmations">Dialogs and Confirmations</label>
+                <label class="toggle">
+                    <input type="checkbox" id="dialogs-confirmations" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+        
+        <!-- Microphone Adjustment -->
+        <section class="settings-section">
+            <h2 class="settings-title">Audio Input</h2>
+            <div class="settings-item">
+                <label for="mic-adjustment">Microphone Adjustment</label>
+                <input type="range" id="mic-adjustment" min="0" max="100" value="50"/>
+            </div>
+        </section>
+        
+        <!-- Advanced Settings -->
+        <section class="settings-section">
+            <h2 class="settings-title">Advanced</h2>
+            <div class="settings-item">
+                <button id="advanced-settings">Advanced Settings</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

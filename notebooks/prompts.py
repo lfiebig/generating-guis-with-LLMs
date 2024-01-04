@@ -2,19 +2,19 @@ from langchain.prompts import PromptTemplate
 
 CREATION_PROMPT_ZS = PromptTemplate(
     input_variables=["summary"],
-    template= """Create the HTML code of a mobilepage with a bit of styling, based on the following description: 
+    template= """Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, based on the following description: 
     {summary}."""
 )
 CREATION_PROMPT_ZS_LLM = PromptTemplate(
     input_variables=["summary"],
-    template= """Create the HTML code of a mobilepage with a bit of styling, that satisfies following functionalities: 
+    template= """Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, that satisfies following functionalities: 
     {summary}."""
 )
 CREATION_PROMPT_FS = PromptTemplate(
     input_variables=["summary"],
     template="""
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, based on the following description: 
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, based on the following description: 
 
         The Screen displays different workout options to set, alongside the feature to start the workout.
 
@@ -160,7 +160,7 @@ CREATION_PROMPT_FS = PromptTemplate(
         </html>
 
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, based on the following description: 
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, based on the following description: 
 
         The mobile screen is part of a language learning application that asks the user to translate a given text sentence. 
 
@@ -277,7 +277,7 @@ CREATION_PROMPT_FS = PromptTemplate(
         </html>
 
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, based on the following description: 
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, based on the following description: 
 
         The mobile screen is a display page in a weather forecast app that shows various options.
 
@@ -367,7 +367,7 @@ CREATION_PROMPT_FS = PromptTemplate(
         </body>
         </html>
 
-        Q: Given a summary of a mobile screen, create the corresponding HTML code with a bit of styling, that represents the described functionalities: 
+        Q: Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, based on the following description: 
 
         {summary}
 
@@ -378,7 +378,7 @@ CREATION_PROMPT_FS_LLM = PromptTemplate(
     input_variables=["summary"],
     template="""
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, that satisfies following functionalities: 
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, that satisfies following functionalities:
 
         The mobile page is a fitness app with the following functionalities:
 
@@ -530,7 +530,7 @@ CREATION_PROMPT_FS_LLM = PromptTemplate(
         </html>
 
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, that satisfies following functionalities:
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, that satisfies following functionalities:
 
         The mobile page is a language-learning application with the following functionalities:
 
@@ -654,7 +654,7 @@ CREATION_PROMPT_FS_LLM = PromptTemplate(
         </html>
 
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, that satisfies following functionalities:
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, that satisfies following functionalities:
 
         1. Provide a section for saved locations with the option to add a new location.
         2. Offer tabs for different types of forecasts, such as "7 Day Forecast", "Hourly Forecast", and "Weather Details".
@@ -747,7 +747,7 @@ CREATION_PROMPT_FS_LLM = PromptTemplate(
         </html>
 
         Q: 
-        Create the HTML code of a mobilepage with a bit of styling, that satisfies following functionalities:
+        Create the static HTML structure of a mobilepage with a bit of inline css styling and without any JavaScript code, that satisfies following functionalities:
 
         {summary}
 

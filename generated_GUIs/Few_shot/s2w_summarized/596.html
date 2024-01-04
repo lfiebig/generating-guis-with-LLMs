@@ -1,87 +1,119 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Printer App</title>
-        <style>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Printer App - Advanced Options</title>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f6f6f6;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
         }
 
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
+        .option-category {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+        }
+
+        .option-category h4 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .hr-line {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        select, input[type='number'] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* to include padding in width */
+        }
+
+        input[type='checkbox'], input[type='radio'] {
+            margin-right: 10px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
             margin-top: 20px;
         }
+    </style>
+</head>
+<body>
 
-        .title {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
+<div class="option-category">
+    <h4>Paper Settings</h4>
+    <label for="paper-size">Paper Size</label>
+    <select id="paper-size">
+        <option>A4</option>
+        <option>Letter</option>
+        <option>Legal</option>
+    </select>
 
-        .categories {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .category {
-            width: 48%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+    <label for="paper-type">Paper Type</label>
+    <select id="paper-type">
+        <option>Glossy</option>
+        <option>Matte</option>
+        <option>Plain</option>
+    </select>
+</div>
 
-        .category:hover {
-            background-color: #f2f2f2;
-        }
+<div class="option-category">
+    <h4>Print Quality</h4>
+    <input type="radio" id="best" name="quality" checked>
+    <label for="best">Best</label>
+    
+    <input type="radio" id="normal" name="quality">
+    <label for="normal">Normal</label>
 
-        .category-image {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
+    <input type="radio" id="draft" name="quality">
+    <label for="draft">Draft</label>
+</div>
 
-        .category-title {
-            font-size: 14px;
-            font-weight: bold;
-        }
-        </style>
-        </head>
-        <body>
-        <div class="container">
-        <div class="title">Select Print Options</div>
-        <div class="categories">
-            <div class="category">
-            <img class="category-image" src="printer-icon.png" alt="Printer Icon">
-            <div class="category-title">Print Document</div>
-            </div>
-            <div class="category">
-            <img class="category-image" src="scan-icon.png" alt="Scan Icon">
-            <div class="category-title">Scan Document</div>
-            </div>
-            <div class="category">
-            <img class="category-image" src="copy-icon.png" alt="Copy Icon">
-            <div class="category-title">Copy Document</div>
-            </div>
-            <div class="category">
-            <img class="category-image" src="fax-icon.png" alt="Fax Icon">
-            <div class="category-title">Fax Document</div>
-            </div>
-        </div>
-        </div>
+<div class="option-category">
+    <h4>Color Options</h4>
+    <input type="checkbox" id="color" checked>
+    <label for="color">Color</label>
 
-        </body>
-        </html>
+    <input type="checkbox" id="grayscale">
+    <label for="grayscale">Grayscale</label>
+
+    <input type="checkbox" id="black-white">
+    <label for="black-white">Black &amp; White</label>
+</div>
+
+<div class="option-category">
+    <h4>Copies</h4>
+    <label for="number-of-copies">Number of copies</label>
+    <input type="number" id="number-of-copies" name="copies" min="1" value="1">
+</div>
+
+<button class="submit-button">Print</button>
+
+</body>
+</html>

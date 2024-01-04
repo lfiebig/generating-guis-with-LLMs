@@ -3,92 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Settings App</title>
+<title>Settings</title>
 <style>
     body {
         font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
     }
 
-    .container {
+    .settings-container {
         max-width: 400px;
-        margin: auto;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        padding: 20px;
-        margin-top: 20px;
+        margin: 20px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
     }
 
-    .title {
-        text-align: center;
-        font-size: 1.2em;
-        margin-bottom: 20px;
-    }
-
-    .option {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .option-icon {
+    .settings-header {
         background-color: #4CAF50;
-        color: #FFF;
-        padding: 10px;
-        border-radius: 50%;
-        margin-right: 10px;
+        color: #ffffff;
+        padding: 10px 15px;
+        text-align: center;
     }
 
-    .option-text {
-        flex-grow: 1;
+    .settings-option {
+        padding: 15px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .settings-option:last-child {
+        border-bottom: none;
+    }
+
+    .settings-option h2 {
+        margin: 0;
         font-size: 16px;
+        color: #333333;
     }
 
-    .option-text span {
-        font-weight: bold;
+    .settings-option p {
+        font-size: 14px;
+        color: #666666;
+        margin-top: 5px;
     }
 
-    .option-text small {
-        display: block;
-        color: #888;
-        font-size: 12px;
+    .settings-option input[type="checkbox"] {
+        float: right;
+        margin-left: 10px;
     }
 </style>
 </head>
 <body>
-<div class="container">
-<div class="title">Settings</div>
-<div class="option">
-    <div class="option-icon">&#9881;</div>
-    <div class="option-text">
-        <span>General</span>
-        <small>Change general settings</small>
+
+<div class="settings-container">
+    <div class="settings-header">
+        <h1>Settings</h1>
+    </div>
+    <div class="settings-list">
+        <div class="settings-option">
+            <h2>Wi-Fi</h2>
+            <p>Manage Wi-Fi networks and settings</p>
+        </div>
+        <div class="settings-option">
+            <h2>Bluetooth</h2>
+            <p>Manage Bluetooth devices and settings</p>
+        </div>
+        <div class="settings-option">
+            <h2>Notifications</h2>
+            <p>Manage notification preferences</p>
+        </div>
+        <div class="settings-option">
+            <h2>Do Not Disturb</h2>
+            <p>Silences calls and notifications</p>
+            <input type="checkbox">
+        </div>
+        <div class="settings-option">
+            <h2>Display & Brightness</h2>
+            <p>Adjust screen brightness and colors</p>
+        </div>
+        <div class="settings-option">
+            <h2>Privacy</h2>
+            <p>Manage apps' access to your information</p>
+        </div>
+        <div class="settings-option">
+            <h2>Security</h2>
+            <p>Configure lock screen, passwords, and more</p>
+        </div>
+        <div class="settings-option">
+            <h2>Software Update</h2>
+            <p>Check for system updates</p>
+        </div>
     </div>
 </div>
-<div class="option">
-    <div class="option-icon">&#127968;</div>
-    <div class="option-text">
-        <span>Display</span>
-        <small>Adjust display settings</small>
-    </div>
-</div>
-<div class="option">
-    <div class="option-icon">&#128272;</div>
-    <div class="option-text">
-        <span>Sound</span>
-        <small>Change sound settings</small>
-    </div>
-</div>
-<div class="option">
-    <div class="option-icon">&#128295;</div>
-    <div class="option-text">
-        <span>Privacy</span>
-        <small>Manage privacy settings</small>
-    </div>
-</div>
-</div>
+
 </body>
 </html>

@@ -1,65 +1,120 @@
+Here's a simple static HTML structure for your mobile settings screen with a little inline CSS styling. This page provides options for configuring prayer notifications and a fajr alarm (the dawn prayer in Islam).
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Religious App Settings</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
-
         .container {
             max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: auto;
             background-color: #fff;
-            border-radius: 10px;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin: 0 0 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-
-        input[type="checkbox"] {
-            margin-left: 5px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 8px 16px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            background-color: #4CAF50;
-            color: #fff;
             border-radius: 5px;
-            margin-top: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-
-        .button:hover {
-            background-color: #45a049;
+        .setting-item {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0;
+        }
+        .setting-item:last-child {
+            border-bottom: 0;
+        }
+        .setting-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .setting-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .setting-control {
+            float: right;
+        }
+        .clear {
+            clear: both;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>App Settings</h2>
-        <label for="prayerOption">Prayer Option:</label>
-        <input type="checkbox" id="prayerOption" name="prayerOption">
-        <br>
-        <label for="fajrAlarm">Fajr Alarm:</label>
-        <input type="checkbox" id="fajrAlarm" name="fajrAlarm">
-        <br>
-        <a href="#" class="button">Save Settings</a>
+        <div class="setting-item">
+            <div class="setting-title">Prayer Notifications</div>
+            <div class="setting-description">Receive daily reminders for each prayer time.</div>
+            <div class="setting-control">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="setting-item">
+            <div class="setting-title">Fajr Alarm</div>
+            <div class="setting-description">Set an alarm for the Fajr prayer to start your day.</div>
+            <div class="setting-control">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="clear"></div>
     </div>
 </body>
 </html>
+```
+
+This basic HTML structure includes the settings page with a couple of toggle switches for prayer notifications and a fajr alarm. The checkboxes represent whether these settings are turned on or off. I've included a simple 'switch' toggling effect using CSS. Please note that, for actual functionality like storing user preferences, you will need some form of backend or at least JavaScript, but since you requested no JavaScript, this is purely for demonstration.
