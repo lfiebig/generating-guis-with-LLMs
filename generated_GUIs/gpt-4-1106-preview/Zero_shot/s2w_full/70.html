@@ -1,0 +1,111 @@
+Below is a static HTML structure for a mobile page that displays a list or menu of videos, typically focused on science or news content. The inline CSS styling ensures basic responsive design, catering to mobile devices. I've included representative content for each video item such as thumbnail, title, and a brief description.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science and News Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background: #009688;
+            color: white;
+        }
+        .video-list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .video-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .video-item:last-child {
+            border-bottom: none;
+        }
+        .thumbnail {
+            width: 30%;
+            margin-right: 10px;
+        }
+        .thumbnail img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .description {
+            width: 70%;
+        }
+        .description h3 {
+            margin: 0;
+            font-size: 1em;
+        }
+        .description p {
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Science & News Videos</h1>
+        </div>
+        <ul class="video-list">
+            <li class="video-item">
+                <div class="thumbnail">
+                    <img src="thumbnail1.jpg" alt="Video Title 1"/>
+                </div>
+                <div class="description">
+                    <h3>Amazing Science Facts</h3>
+                    <p>Discover incredible facts about the world of science.</p>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="thumbnail">
+                    <img src="thumbnail2.jpg" alt="Video Title 2"/>
+                </div>
+                <div class="description">
+                    <h3>Latest Tech Innovations</h3>
+                    <p>Explore the latest breakthroughs in technology.</p>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="thumbnail">
+                    <img src="thumbnail3.jpg" alt="Video Title 3"/>
+                </div>
+                <div class="description">
+                    <h3>Global News Update</h3>
+                    <p>Stay informed with the latest global news headlines.</p>
+                </div>
+            </li>
+            <!-- You can add more video items here -->
+        </ul>
+    </div>
+</body>
+</html>
+```
+
+In this HTML structure:
+- The `meta` viewport tag ensures the page is mobile-friendly.
+- The main content is wrapped in a `div` with a class `container`, which is centered and does not exceed `600px` in width.
+- A simple `header` at the top displays the title of the app/menu.
+- Each video is represented by a `li` with a `video-item` class inside an unordered list `ul`.
+- The `video-item` items contain a `thumbnail` for the video image and a `description` with a `h3` heading for the video title and a `p` paragraph for a brief description. 
+- The inline styles are minimal and provide basic responsiveness so that the content looks good on mobile devices. 
+
+Remember to replace the `src` attribute in the `img` tags with the correct paths to your video thumbnails and to provide the appropriate alt text for better accessibility.

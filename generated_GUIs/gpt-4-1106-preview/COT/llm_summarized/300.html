@@ -1,0 +1,130 @@
+UI Components:
+1. A question section, where the JavaScript question is clearly displayed.
+2. Multiple radio buttons, each associated with a label representing a possible answer choice.
+3. A submit button, to allow the user to submit their answer.
+4. A feedback section, to display if the answer is correct or incorrect after submission.
+5. Navigation buttons, specifically 'BACK' and 'TRY AGAIN' buttons.
+6. A comment indicator, showing the number of comments related to the question.
+7. Additional action buttons, such as 'UNLOCK' and 'SHARE'.
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .answers {
+            list-style: none;
+            padding: 0;
+        }
+
+        .answer {
+            margin-bottom: 5px;
+        }
+
+        .answer label {
+            padding-left: 5px; 
+        }
+
+        .feedback {
+            color: red;
+            padding: 5px 0;
+        }
+
+        .feedback .correct {
+            display: none;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 5px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .action-buttons {
+            text-align: center;
+        }
+
+        .comments {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .share-unlock {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="question">What does 'var' stand for in JavaScript?</div>
+    <ul class="answers">
+        <li class="answer">
+            <input type="radio" id="option1" name="answer" value="option1">
+            <label for="option1">Variant</label>
+        </li>
+        <li class="answer">
+            <input type="radio" id="option2" name="answer" value="option2">
+            <label for="option2">Variable</label>
+        </li>
+        <li class="answer">
+            <input type="radio" id="option3" name="answer" value="option3">
+            <label for="option3">Vector</label>
+        </li>
+    </ul>
+    <button class="button">Submit</button>
+
+    <div class="feedback">
+        <span>Wrong!</span><span>X</span>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="button">BACK</button>
+        <button class="button">TRY AGAIN</button>
+    </div>
+
+    <div class="comments">26 COMMENTS</div>
+
+    <div class="share-unlock">
+        <button class="button">UNLOCK</button>
+        <button class="button">SHARE</button>
+    </div>
+</div>
+
+</body>
+</html>
+```
+
+This HTML contains the basic structure and inline CSS for the educational app based on the functionalities inferred from the provided screenshot. Remember that the actual implementation of logic and interactivity, such as checking the answer or navigating between questions, would require JavaScript, which is outside the scope of this pure HTML/CSS response.

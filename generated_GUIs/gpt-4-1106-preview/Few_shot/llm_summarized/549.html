@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #f0f0f7;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 480px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #ffffff;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .setting-item {
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .setting-item input {
+        margin-left: 10px;
+    }
+
+    .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .toggle-switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Prayer Settings</h1>
+
+    <div class="setting-item">
+        <label>Time format:</label>
+        <div class="toggle-switch">
+            <input type="checkbox" id="12hr-24hr-toggle">
+            <span class="slider"></span>
+        </div>
+    </div>
+
+    <div class="setting-item">
+        <label>Prayer notifications:</label>
+        <input type="checkbox" checked>
+    </div>
+
+    <div class="setting-item">
+        <label>Vibration for notifications:</label>
+        <div class="toggle-switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </div>
+    </div>
+
+    <div class="setting-item">
+        <label>Notification tone:</label>
+        <button>Select Tone</button>
+    </div>
+
+    <div class="setting-item">
+        <label>Fajr alarm:</label>
+        <input type="checkbox">
+    </div>
+
+    <div class="setting-item">
+        <label for="fajr-time">Fajr alarm time:</label>
+        <button id="fajr-time">Edit Time</button>
+    </div>
+
+    <div class="setting-item">
+        <label>Vibration for Fajr alarm:</label>
+        <div class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </div>
+    </div>
+
+    <div class="setting-item">
+        <label>Fajr alarm tone:</label>
+        <button>Select Tone</button>
+    </div>
+
+</div>
+
+</body>
+</html>

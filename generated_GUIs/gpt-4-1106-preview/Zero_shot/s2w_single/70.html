@@ -1,0 +1,100 @@
+Below is a basic structure of a static HTML page designed to display a menu of videos, such as you might find in a NASA app for mobile devices. Note that this does not include any dynamic functionality, such as loading the videos or interactive elements, since no JavaScript is allowed in your request, and the styling is minimal due to the inline CSS:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Video Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0b3d91;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #132f63;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .video-menu {
+            padding: 20px;
+        }
+        .video-item {
+            background-color: #1b4f91;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .video-title {
+            margin: 0;
+            font-size: 18px;
+        }
+        .video-thumbnail {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #132f63;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NASA Video Menu</h1>
+    </header>
+
+    <div class="video-menu">
+        <!-- Video Item 1 -->
+        <div class="video-item" style="text-align: center;">
+            <h2 class="video-title">Curiosity Rover's Descent</h2>
+            <img src="curiosity-thumbnail.jpg" alt="Curiosity Rover's Descent" class="video-thumbnail">
+        </div>
+
+        <!-- Video Item 2 -->
+        <div class="video-item" style="text-align: center;">
+            <h2 class="video-title">Launch of Artemis I</h2>
+            <img src="artemis-launch-thumbnail.jpg" alt="Launch of Artemis I" class="video-thumbnail">
+        </div>
+
+        <!-- Video Item 3 -->
+        <div class="video-item" style="text-align: center;">
+            <h2 class="video-title">International Space Station Tour</h2>
+            <img src="iss-tour-thumbnail.jpg" alt="International Space Station Tour" class="video-thumbnail">
+        </div>
+
+        <!-- Additional video items can be added here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 NASA</p>
+    </footer>
+</body>
+</html>
+```
+
+This page consists of a main title in the header, a footer with a copyright notice, and a series of video items, each with a title and a placeholder image that acts as a thumbnail. The thumbnails don't link to actual videos, as linking would require either JavaScript for dynamic behavior or the use of anchor tags with a href attribute pointing to the video location.
+
+The simple CSS within the style tags sets the background colors, font styles, layout properties, and maximum width for thumbnails to ensure they are responsive and fit within the width of a mobile screen. The overall design is created with the mobile experience in mind, featuring large touch targets and a visually appealing color scheme that's consistent with what one might expect from a NASA-themed app.
+
+If these images were to be clickable and direct users to the actual videos, you would use `a` tags to wrap the `img` elements, like this:
+
+```html
+<a href="path-to-video" target="_blank">
+    <img src="curiosity-thumbnail.jpg" alt="Curiosity Rover's Descent" class="video-thumbnail">
+</a>
+```
+
+Replace `path-to-video` with the actual URL where the video is hosted. The `target="_blank"` attribute is optional and would cause the link to open in a new tab or window.

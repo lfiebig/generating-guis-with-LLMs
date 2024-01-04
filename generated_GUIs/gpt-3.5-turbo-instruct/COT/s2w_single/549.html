@@ -1,0 +1,133 @@
+functionalities:
+1. Display a list of setting options.
+2. Allow users to toggle between on/off states for some settings.
+3. Provide user-friendly navigation to go back or to confirm the selected settings.
+
+UI Components:
+1. Navigation bar/header at the top with a "Back" button and a "Save" or "Confirm" option.
+2. A list view containing setting items.
+   - Each setting item includes:
+     - A title for the setting.
+     - A description or subtitle that provides more detail.
+     - A switch or checkbox for toggling the setting.
+3. A footer (if needed) to emphasize confirmation or saving of changes.
+
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings Page</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .header button {
+        background: none;
+        border: none;
+        padding: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .settings-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .settings-list li {
+        background-color: #ffffff;
+        border-bottom: 1px solid #dcdcdc;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .settings-list label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .settings-list span {
+        margin-right: 8px;
+    }
+
+    input[type="checkbox"] {
+        cursor: pointer;
+    }
+
+    .footer {
+        padding: 16px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .footer button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <button id="backButton">Back</button>
+    <strong>Settings</strong>
+    <button id="saveButton">Save</button>
+</div>
+
+<ul class="settings-list">
+    <li>
+        <label>
+            <span>Option 1</span>
+            <input type="checkbox" id="option1" name="option1">
+        </label>
+    </li>
+    <li>
+        <label>
+            <span>Option 2</span>
+            <input type="checkbox" id="option2" name="option2" checked>
+        </label>
+    </li>
+    <li>
+        <label>
+            <span>Option 3</span>
+            <input type="checkbox" id="option3" name="option3">
+        </label>
+    </li>
+    <!-- Add more options as necessary -->
+</ul>
+
+<div class="footer">
+    <button id="confirmButton">Confirm</button>
+</div>
+
+</body>
+</html>
+```
+
+This HTML code provides an interface for a settings page with multiple toggleable options. Each setting is listed with a switch or checkbox allowing users to enable or disable it. There is a navigation header with the ability to go back or save changes, and an optional confirmation button in the footer.

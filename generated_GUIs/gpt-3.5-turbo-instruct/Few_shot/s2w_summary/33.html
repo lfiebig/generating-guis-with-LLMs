@@ -1,0 +1,68 @@
+ 
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Number Selection</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 20px;
+                display: grid;
+                place-items: center;
+                background-color: #e9ecef;
+                color: #343a40;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            #number-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr); /* change column number here to add or remove buttons */
+                gap: 8px;
+                width: 100%;
+                max-width: 420px;
+            }
+
+            button {
+                background-color: #f8f9fa;
+                border: 1px solid #ced4da;
+                color: #343a40;
+                font-size: 24px;
+                padding: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #e2e6ea;
+            }
+
+            button:focus,
+            input:checked + label {
+                outline: 2px solid #1877f2;
+            }
+        </style>
+        </head>
+        <body>
+            <main>
+                <h1>Select a Number</h1>
+                <div id="number-grid">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>0</button>
+                    <!-- Add more buttons here -->
+                </div>
+            </main>
+        </body>
+        </html>

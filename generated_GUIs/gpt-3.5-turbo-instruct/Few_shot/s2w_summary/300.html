@@ -1,0 +1,107 @@
+ 
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz Pop-up</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f9fa;
+                color: #495057;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h2 {
+                margin-bottom: 16px;
+            }
+
+            .question-card {
+                background-color: #fff;
+                padding: 16px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                margin-bottom: 16px;
+            }
+
+            .question {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .answer-options {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 16px;
+                gap: 8px;
+            }
+
+            .answer-option {
+                background-color: #f8f9fa;
+                border: 1px solid #adb5bd;
+                color: #495057;
+                padding: 8px;
+                width: 48%;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .answer-option:hover {
+                background-color: #e2e6ea;
+            }
+
+            .result {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 16px;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+            }
+
+            #next-button {
+                margin: auto;
+            }
+
+            #stop-button {
+                background-color: #f44336;
+                color: #fff;
+            }
+
+            #stop-button:hover {
+                background-color: #f77c70;
+            }
+        </style>
+        </head>
+        <body>
+            <main>
+                <div class="question-card">
+                    <div class="question">What is the capital of France?</div>
+                    <div class="answer-options">
+                        <div class="answer-option">London</div>
+                        <div class="answer-option">Paris</div>
+                        <div class="answer-option">Berlin</div>
+                        <div class="answer-option">Rome</div>
+                    </div>
+                    <div class="result">Correct!</div>
+                </div>
+                <div class="button-container">
+                    <button id="next-button">Next</button>
+                    <button id="stop-button">Stop Quiz</button>
+                </div>
+            </main>
+        </body>
+        </html>

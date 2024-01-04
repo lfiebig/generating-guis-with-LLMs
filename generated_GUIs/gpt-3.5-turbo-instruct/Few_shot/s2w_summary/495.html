@@ -1,0 +1,132 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorite Episodes</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .episode {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .episode img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .episode-info {
+            flex-grow: 1;
+        }
+
+        .episode-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .episode-date {
+            color: #ccc;
+        }
+
+        .episode-duration {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .episode-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .action-button i {
+            margin-right: 5px;
+        }
+
+        .action-button:first-child {
+            background-color: #ccc;
+        }
+
+        .action-button:last-child {
+            background-color: #f44336;
+        }
+
+        .episode:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        </style>
+        </head>
+        <body>
+        <div class="container">
+        <div class="title">Favorite Episodes</div>
+        <div class="episode">
+            <img src="https://via.placeholder.com/150x150" alt="Episode artwork">
+            <div class="episode-info">
+            <div class="episode-title">Title of Episode</div>
+            <div class="episode-date">Release date: 31/05/2020</div>
+            <div class="episode-duration">Duration: 50 minutes</div>
+            </div>
+            <div class="episode-actions">
+            <button class="action-button" aria-label="Play"><i class="fas fa-play"></i>Play</button>
+            <button class="action-button" aria-label="Delete"><i class="fas fa-minus-circle"></i>Delete</button>
+            </div>
+        </div>
+        <div class="episode">
+            <img src="https://via.placeholder.com/150x150" alt="Episode artwork">
+            <div class="episode-info">
+            <div class="episode-title">Title of Episode</div>
+            <div class="episode-date">Release date: 05/06/2020</div>
+            <div class="episode-duration">Duration: 20 minutes</div>
+            </div>
+            <div class="episode-actions">
+            <button class="action-button" aria-label="Play"><i class="fas fa-play"></i>Play</button>
+            <button class="action-button" aria-label="Delete"><i class="fas fa-minus-circle"></i>Delete</button>
+            </div>
+        </div>
+        </div>
+        </body>
+        </html>
+

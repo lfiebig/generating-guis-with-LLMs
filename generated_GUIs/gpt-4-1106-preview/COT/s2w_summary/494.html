@@ -1,0 +1,128 @@
+functionalities:
+1. Offer the functionality for a user to create a new playlist.
+2. Provide an input field to name the new playlist.
+3. Display a list of available songs to add to the playlist.
+4. Include buttons or icons to add songs to the playlist.
+5. Have a confirmation or save button to store the playlist after selection.
+6. Provide the option to cancel and go back without saving the new playlist.
+
+UI Components:
+1. A heading that says "Create New Playlist" or similar.
+2. A text input field for the playlist name.
+3. A scrollable list display of available songs with add buttons or icons.
+4. "Add" icon/buttons next to each song for adding to the playlist.
+5. A "Save" button to confirm the creation of the playlist.
+6. A "Cancel" button to discard changes and navigate back.
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music App - Create Playlist</title>
+<style>
+    body, input, button {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+        color: #333;
+    }
+
+    #app-container {
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 24px);
+        padding: 8px 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+    }
+
+    .song-list {
+        overflow-y: auto;
+        height: 300px; /* or any suitable height */
+        border: 1px solid #ced4da;
+        background-color: #fff;
+        margin-bottom: 16px;
+        padding: 10px;
+    }
+
+    .song-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .add-button {
+        background-color: #28a745;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 48%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .save-btn {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .cancel-btn {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div id="app-container">
+        <main>
+            <h1>Create New Playlist</h1>
+            <input type="text" placeholder="Playlist Name...">
+
+            <div class="song-list">
+                <!-- Repeat for each song -->
+                <div class="song-item">
+                    <div>Song Title 1</div>
+                    <button class="add-button">Add</button>
+                </div>
+                <div class="song-item">
+                    <div>Song Title 2</div>
+                    <button class="add-button">Add</button>
+                </div>
+                <!-- ... -->
+            </div>
+
+            <div class="buttons">
+                <button class="save-btn">Save Playlist</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+```
+
+Note: In the above code, the `.song-list` `<div>` is designed to be a scrollable list of songs, where each song item has a title and an "Add" button. The "Save Playlist" button will act as the confirmation button to save the playlist, while the "Cancel" button will serve to cancel the operation. These buttons would typically have event listeners attached to them to carry out the respective actions, but since no Javascript is allowed in this scenario, we do not include event handling logic.

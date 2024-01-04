@@ -1,0 +1,72 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Playlist</title>
+        <style>
+            body, h1, input, button {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                position: relative;
+                background-color: #1DB954;
+                color: #FFFFFF;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .back-arrow {
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: none;
+                background: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                font-size: 24px;
+            }
+
+            .checkmark {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: none;
+                background: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .input-field {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                margin-top: 10px;
+                box-sizing: border-box;
+                display: block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        </style>
+        </head>
+        <body>
+            <div class="header">
+                <button class="back-arrow">&#8592;</button>
+                <h1>Create playlist</h1>
+                <button class="checkmark">&#10004;</button>
+            </div>
+            <div class="content">
+                <input type="text" class="input-field" value="1233" placeholder="Enter playlist name">
+            </div>
+        </body>
+        </html>

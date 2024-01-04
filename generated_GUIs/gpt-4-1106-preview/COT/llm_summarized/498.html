@@ -1,0 +1,106 @@
+UI Components:
+1. A Toggle Switch for activating or deactivating the "Delete Played Episodes" feature.
+2. A Counter with buttons to increment and decrement the value for "Keep Auto-downloads."
+3. A Button labeled "Delete Podcast" to remove the podcast from the list.
+4. A Close Button (X) to close the popup.
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Podcast App Popup</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            color: #343a40;
+            margin: 0;
+        }
+
+        .popup {
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(100% - 40px);
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        .toggle-switch {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .toggle-switch label {
+            flex: 1;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .counter button {
+            width: 40px;
+            height: 40px;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .counter .value {
+            padding: 0 15px;
+        }
+
+        .delete-button {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 24px;
+            background: none;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <button class="close-button">X</button>
+        <div class="toggle-switch">
+            <label for="delete-episodes">Delete Played Episodes</label>
+            <input type="checkbox" id="delete-episodes" name="toggle">
+        </div>
+        <div class="counter">
+            <button id="decrement">-</button>
+            <span id="auto-download-value" class="value">1</span>
+            <button id="increment">+</button>
+            <span>Keep Auto-downloads</span>
+        </div>
+        <button class="delete-button">Delete Podcast</button>
+    </div>
+</body>
+</html>
+```
+Please note that since JavaScript functionality is not requested, the toggle and counter won't change state. The above code provides the basic structure and appearance for the UI components based on the described requirements.

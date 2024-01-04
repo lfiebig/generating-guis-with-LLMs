@@ -1,0 +1,68 @@
+Below is the HTML structure of a simple mobile page that functions as a settings menu and includes the functionalities you requested, with some basic inline CSS styles:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px;
+      border-bottom: 1px solid #dcdcdc;
+    }
+    .back-arrow {
+      font-size: 24px;
+      margin-right: 16px;
+      cursor: pointer;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .settings-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .settings-item {
+      background-color: #ffffff;
+      padding: 12px 16px;
+      border-bottom: 1px solid #dcdcdc;
+      cursor: pointer;
+    }
+    .settings-item:hover {
+      background-color: #eaeaea;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="back-arrow">&larr;</span>
+    <span class="title">Advanced</span>
+  </div>
+
+  <ul class="settings-list">
+    <li class="settings-item">General</li>
+    <li class="settings-item">Protocol</li>
+    <li class="settings-item">Rendering</li>
+  </ul>
+</body>
+</html>
+```
+
+With the above HTML structure and styling:
+- A back arrow symbol (`&larr;`) is used to represent the navigation to go back to the previous screen.
+- The title 'Advanced' is displayed at the top center of the page.
+- The categories 'General', 'Protocol', and 'Rendering' are listed as selectable items—clickable list items in this example stand in for interactive elements.
+- Some hover effect is also added to the settings options to enhance user interactivity. However, without JavaScript, we will not be able to actually make the selections change the displayed settings. For that, use a server-side language or JavaScript to dynamically update the content based on the user's selection.

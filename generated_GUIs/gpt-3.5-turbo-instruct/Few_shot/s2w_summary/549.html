@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Religious App Settings</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1em;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dropdown button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown-content p:hover {
+    background-color: #eee;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.dropdown.show button {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dropdown.show::after {
+    content: "▴";
+    position: absolute;
+    right: 10px;
+    top: 20%;
+}
+
+.dropdown button:focus {
+    outline: none;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2 class="title">SETTINGS</h2>
+<div class="prayer-options">
+    <div class="section-title">PRAYER OPTIONS</div>
+    <div class="option">
+    <label for="fajr-prayer">Fajr Prayer</label>
+    <input type="checkbox" id="fajr-prayer" name="prayer" checked>
+    </div>
+    <div class="option">
+    <label for="duhr-prayer">Duhr Prayer</label>
+    <input type="checkbox" id="duhr-prayer" name="prayer" checked>
+    </div>
+    <div class="option">
+    <label for="asr-prayer">Asr Prayer</label>
+    <input type="checkbox" id="asr-prayer" name="prayer" checked>
+    </div>
+    <div class="option">
+    <label for="maghrib-prayer">Maghrib Prayer</label>
+    <input type="checkbox" id="maghrib-prayer" name="prayer" checked>
+    </div>
+    <div class="option">
+    <label for="isha-prayer">Isha Prayer</label>
+    <input type="checkbox" id="isha-prayer" name="prayer" checked>
+    </div>
+</div>
+<div class="fajr-alarm">
+    <div class="section-title">FAJR ALARM</div>
+    <div class="option">
+    <label for="fajr-adhan">Adhān</label>
+    <input type="checkbox" id="fajr-adhan" name="fajr-alarm" checked>
+    </div>
+    <div class="option">
+    <label for="fajr-reminder">Reminder</label>
+    <input type="checkbox" id="fajr-reminder" name="fajr-alarm" checked>
+    </div>
+</div>
+<div class="dropdown">
+    <button onclick="myFunction()">
+    <p>Choose a sound</p>
+    <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-daac99321f5a440db2de98929ae2db28.png" alt="expand-dropdown"

@@ -1,0 +1,36 @@
+Here is an example of a static HTML structure for a mobile page with inline CSS styling that satisfies the above requirements. The page includes a 'Create playlist' title, an input field pre-populated with the text '1233', and buttons for confirmation and navigation/cancellation.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+  .header { display: flex; justify-content: space-between; align-items: center; padding: 16px; background-color: #f8f8f8; border-bottom: 1px solid #ddd; }
+  .header h1 { font-size: 22px; }
+  .back-button, .confirm-button { background: none; border: none; font-size: 22px; cursor: pointer; }
+  .content { padding: 16px; }
+  .input-label { display: block; margin-bottom: 8px; font-size: 18px; }
+  .input-field { width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+  .input-field::placeholder { color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <button class="back-button" title="Back">&#x2190;</button>
+  <h1>Create playlist</h1>
+  <button class="confirm-button" title="Confirm">&#x2713;</button>
+</div>
+
+<div class="content">
+  <label for="playlistName" class="input-label">Playlist Name:</label>
+  <input type="text" id="playlistName" class="input-field" placeholder="New Playlist" value="1233">
+</div>
+
+</body>
+</html>
+```
+
+This HTML structure includes a header bar with a back button (left arrow), a title, and a confirm button (checkmark). The body includes a label and an input field for the playlist name, which is pre-filled with '1233'. The view is designed to resemble a mobile interface, with responsive attributes set through the viewport meta tag and basic inline CSS for layout and styling.

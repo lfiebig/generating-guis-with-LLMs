@@ -1,0 +1,75 @@
+Here is a basic example of a static HTML structure with inline CSS for the described mobile screen. This will create a simple pop-up-like section on a mobile page that might be shown as part of a learning application. Please note that without JavaScript, the interactivity would be limited, so this example doesn't handle the logic of selecting an answer or submitting it.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning App Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #popup {
+            max-width: 400px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #popup h1 {
+            font-size: 18px;
+            color: #333;
+        }
+        #popup p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        #popup ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #popup ul li {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="popup">
+    <h1>Quiz Question</h1>
+    <p>What is the capital of France?</p>
+    <ul>
+        <li>A) Madrid</li>
+        <li>B) Paris</li>
+        <li>C) Berlin</li>
+        <li>D) Rome</li>
+    </ul>
+</div>
+
+</body>
+</html>
+```
+
+Here is what each part does:
+
+- The `<!DOCTYPE html>` declaration defines the document type and HTML version.
+- The `<html>` element is the root element of an HTML page.
+- The `<head>` element contains meta information about the document, like its character set and viewport settings to ensure proper scaling on mobile devices.
+- The `<title>` element specifies a title for the document.
+- The `<style>` element contains the CSS styles for your HTML content. Inline styles are used for simplicity, although external stylesheets are generally preferred for larger projects.
+- The `<body>` element contains the content of the HTML document.
+- The `#popup` div is styled to look like a pop-up with a white background, maximal width, and some padding to ensure the content does not touch the edges.
+- Within `#popup`, there is a `<h1>` for the question title, a `<p>` for the actual question, and an `<ul>` unordered list to display the possible answers (`<li>` elements). Each answer is also styled to look like selectable tiles or buttons.
+
+Remember, this is just the UI part — typically, you'd want to include JavaScript to handle user interactions, track the selected answer, and provide feedback or navigation to the user.

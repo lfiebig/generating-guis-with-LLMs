@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podcast Deletion Confirmation</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+        color: #343a40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .alert-box {
+        background-color: #fff;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .cancel-btn {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .delete-btn {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .enable-option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .checkbox {
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .label {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="alert-box">
+    <div class="header">
+        Confirm Deletion
+    </div>
+    <div class="content">
+        Are you sure you want to delete the selected podcast and all its episodes?
+        <div class="enable-option">
+            <input type="checkbox" id="enableDelete" class="checkbox">
+            <label for="enableDelete" class="label">Enable delete option</label>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="cancel-btn">Cancel</button>
+        <button class="delete-btn">Delete</button>
+    </div>
+</div>
+</body>
+</html>

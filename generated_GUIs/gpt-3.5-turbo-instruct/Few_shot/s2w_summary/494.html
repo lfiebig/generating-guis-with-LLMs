@@ -1,0 +1,99 @@
+ 
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Playlist</title>
+        <style>
+        body, input[type="text"], textarea {
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        input[type='text'],
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .submit-button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #FFF;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #388E3C;
+        }
+
+        </style>
+        </head>
+        <body>
+        <div class="container">
+        <form id="playlist-form">
+            <div class="form-group">
+            <label for="playlist-name">Playlist Name</label>
+            <input type="text" id="playlist-name" placeholder="Enter playlist name">
+            </div>
+
+            <div class="form-group">
+            <label for="playlist-description">Description</label>
+            <textarea id="playlist-description" placeholder="Enter playlist description"></textarea>
+            </div>
+
+            <div class="form-group">
+            <label for="playlist-image">Image</label>
+            <input type="file" id="playlist-image">
+            </div>
+
+            <div class="form-group">
+            <label for="songs">Songs</label>
+            <div class="song-fields">
+                <input type="text" class="song-input" placeholder="Song 1">
+                <input type="text" class="song-input" placeholder="Song 2">
+                <input type="text" class="song-input" placeholder="Song 3">
+            </div>
+            <button class="add-song-button">Add Song</button>
+            </div>
+
+            <button type=submit class="submit-button">Create Playlist</button>
+        </form>
+        </div>
+        </body>
+        </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Podcast Favourites</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .episode {
+            background-color: #ffffff;
+            border-bottom: 1px solid #cccccc;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .episode:last-child {
+            border-bottom: none;
+        }
+
+        .episode img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .episode-info {
+            flex: 1;
+        }
+
+        .episode-title {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #000;
+        }
+
+        .episode-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>My Favorite Episodes</h1>
+</div>
+
+<ul>
+    <li class="episode">
+        <img src="podcast_cover_1.jpg" alt="Podcast Cover">
+        <div class="episode-info">
+            <div class="episode-title">The Science of Happiness</div>
+            <div class="episode-date">March 10, 2023</div>
+        </div>
+    </li>
+    <li class="episode">
+        <img src="podcast_cover_2.jpg" alt="Podcast Cover">
+        <div class="episode-info">
+            <div class="episode-title">Exploring the Mind</div>
+            <div class="episode-date">March 5, 2023</div>
+        </div>
+    </li>
+    <li class="episode">
+        <img src="podcast_cover_3.jpg" alt="Podcast Cover">
+        <div class="episode-info">
+            <div class="episode-title">Innovations in Tech</div>
+            <div class="episode-date">February 25, 2023</div>
+        </div>
+    </li>
+    <!-- Additional episodes can be listed in a similar manner -->
+</ul>
+
+</body>
+</html>

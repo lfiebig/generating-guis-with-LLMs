@@ -1,0 +1,133 @@
+UI Components:
+1. A toggle switch for 'Skip silence mode'.
+2. A dropdown or selection control for 'Sample rate (quality)'.
+3. A button or input field for changing the 'Location of recordings'.
+4. A checkbox for enabling or disabling 'Datetime file naming'.
+5. A section or button that opens 'Dialogs and confirmations' settings.
+6. A slide control or input field for 'Microphone adjustment'.
+7. An expandable section or button for 'Advanced' settings.
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recording Settings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: auto;
+        }
+        .settings-item {
+            background: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .settings-title {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        select, input[type="text"], input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #4CAF50;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Voice Recording Settings</h1>
+    
+    <div class="settings-item">
+        <label class="settings-title">Skip silence mode</label>
+        <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <div class="settings-item">
+        <label for="sample-rate" class="settings-title">Sample rate (quality)</label>
+        <select id="sample-rate">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+    </div>
+    
+    <div class="settings-item">
+        <label class="settings-title">Location of recordings</label>
+        <input type="text" placeholder="Folder path">
+    </div>
+    
+    <div class="settings-item">
+        <label for="datetime-naming" class="settings-title">Datetime file naming</label>
+        <input id="datetime-naming" type="checkbox">
+    </div>
+    
+    <div class="settings-item">
+        <label class="settings-title">Dialogs and confirmations</label>
+        <button>Configure</button>
+    </div>
+    
+    <div class="settings-item">
+        <label class="settings-title">Microphone adjustment</label>
+        <input type="range" min="1" max="100">
+    </div>
+    
+    <div class="settings-item">
+        <label class="settings-title">Advanced</label>
+        <button>Expand</button>
+    </div>
+</body>
+</html>
+```
+
+This code provides the necessary structure and inline CSS for the required UI elements without any interactive functionality, as JavaScript is not being used as per the request.

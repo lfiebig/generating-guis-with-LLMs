@@ -1,0 +1,129 @@
+Below is the static HTML structure for a simple mobile page, based on the given description, with some inline CSS styling for a religious app with settings including prayer and fajr alarm options:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religious App Settings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>App Settings</h1>
+    
+    <!-- Prayer settings section -->
+    <div class="settings-section">
+        <label for="prayer-toggle">Prayer Notifications:</label>
+        <label class="switch">
+            <input id="prayer-toggle" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- Fajr alarm settings section -->
+    <div class="settings-section">
+        <label for="fajr-alarm-toggle">Fajr Alarm:</label>
+        <label class="switch">
+            <input id="fajr-alarm-toggle" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+</div>
+
+</body>
+</html>
+```
+
+This code snippet provides the structure of a mobile page that contains settings for enabling or disabling prayer notifications and fajr alarm. The switches make use of a slider toggle effect using CSS only, with no need for JavaScript. The UI design is catered for simplicity and focuses on the functional aspects of the settings.

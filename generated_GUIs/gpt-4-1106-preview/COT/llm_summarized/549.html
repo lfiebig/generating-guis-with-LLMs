@@ -1,0 +1,172 @@
+UI Components:
+1. A toggle switch to change the time format between 12-hour and 24-hour.
+2. A checkbox for enabling or disabling prayer notifications.
+3. A toggle switch for activating or deactivating vibration for notifications.
+4. A dropdown menu for selecting a notification tone.
+5. A checkbox for enabling or disabling the Fajr alarm.
+6. An element to simulate accessing a sub-menu for adjusting the Fajr alarm time (a placeholder in the context of this task).
+7. A toggle switch for activating vibration for the Fajr alarm.
+8. A dropdown menu for selecting a Fajr alarm tone.
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 0;
+}
+
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.settings-item {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.settings-item label {
+    margin-right: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+.select-tone {
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+</style>
+</head>
+<body>
+
+<div class="settings-item">
+    <label for="time-format-toggle">Time Format:</label>
+    <label class="toggle-switch">
+        <input type="checkbox" id="time-format-toggle">
+        <span class="slider"></span>
+    </label>
+    <span>24-hour</span>
+</div>
+
+<div class="settings-item">
+    <input type="checkbox" id="prayer-notifications">
+    <label for="prayer-notifications">Prayer Notifications</label>
+</div>
+
+<div class="settings-item">
+    <label for="notification-vibration-toggle">Notification Vibration:</label>
+    <label class="toggle-switch">
+        <input type="checkbox" id="notification-vibration-toggle">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="settings-item">
+    <label for="notification-tone">Notification Tone:</label> 
+    <select class="select-tone" id="notification-tone">
+        <option value="tone1">Tone 1</option>
+        <option value="tone2">Tone 2</option>
+    </select>
+</div>
+
+<div class="section-title">Fajr Alarm</div>
+
+<div class="settings-item">
+    <input type="checkbox" id="fajr-alarm">
+    <label for="fajr-alarm">Enable Fajr Alarm</label>
+</div>
+
+<div class="settings-item">
+    <label>Fajr Alarm Time:</label> 
+    <button>Set Alarm Time</button> <!-- Placeholder for a sub-menu -->
+</div>
+
+<div class="settings-item">
+    <label for="fajr-vibration-toggle">Fajr Vibration:</label>
+    <label class="toggle-switch">
+        <input type="checkbox" id="fajr-vibration-toggle">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="settings-item">
+    <label for="fajr-tone">Fajr Alarm Tone:</label> 
+    <select class="select-tone" id="fajr-tone">
+        <option value="tone1">Tone 1</option>
+        <option value="tone2">Tone 2</option>
+    </select>
+</div>
+
+</body>
+</html>
+```
+This HTML provides a basic styling and layout for the settings related to the prayer alarm and the Fajr alarm. The time format toggle simulates the change between 12-hour and 24-hour modes visually. Please note that functionality like setting the alarm time and interacting with system tones would typically require backend support or additional JavaScript implementation, which isn't included in this solution as per the guidelines.

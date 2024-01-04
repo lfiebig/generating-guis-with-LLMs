@@ -1,0 +1,79 @@
+ 
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delete Confirmation</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .description {
+            margin-bottom: 20px;
+        }
+
+        .subheading {
+            margin-bottom: 10px;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .cancel-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .delete-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        </style>
+        </head>
+        <body>
+        <div class="container">
+        <h2>Delete Episode(s)</h2>
+        <p class="description">Are you sure you want to delete these episodes?</p>
+        <p class="subheading">The following episodes will be deleted permanently:</p>
+        <p>Episode 1</p>
+        <p>Episode 2</p>
+        <p>Episode 3</p>
+        <div class="buttons-container">
+            <button class="button cancel-button">Cancel</button>
+            <button class="button delete-button">Delete</button>
+        </div>
+        </div>
+
+        </body>
+        </html>

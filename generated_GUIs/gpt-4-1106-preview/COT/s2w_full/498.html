@@ -1,0 +1,89 @@
+functionalities:
+1. Display a message alerting the user they are about to delete a podcast or its episodes.
+2. Offer options to either proceed with the deletion or cancel the action.
+3. Include an option that enables the user to toggle whether to ask for deletion confirmation in the future.
+
+UI Components:
+1. A text message explaining the action that is about to be performed.
+2. Button for confirming the deletion action.
+3. Button for canceling the deletion action.
+4. A checkbox or toggle switch for the user to enable or disable future delete confirmations.
+
+HTML Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Deletion Confirmation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .popup {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .popup-message {
+            margin-bottom: 20px;
+        }
+        .popup-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .popup-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .confirm-button {
+            background-color: #f44336;
+            color: white;
+        }
+        .cancel-button {
+            background-color: #cccccc;
+            color: #333;
+        }
+        .disable-confirmation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .disable-confirmation input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .disable-confirmation label {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup-message">
+            Are you sure you want to delete this podcast and all its episodes?
+        </div>
+        <div class="popup-buttons">
+            <button class="popup-button confirm-button">Delete</button>
+            <button class="popup-button cancel-button">Cancel</button>
+        </div>
+        <div class="disable-confirmation">
+            <input type="checkbox" id="disable-confirmation-checkbox">
+            <label for="disable-confirmation-checkbox">Do not ask me again</label>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+functionalities:
+1. Provide an interface for the user to select the number of copies to print.
+2. Enable selection of color options, such as black & white or color printing.
+3. Offer a choice between different print quality settings, like draft, standard, or high quality.
+4. Include options to choose paper size, such as A4, A5, Letter, or Legal.
+5. Allow for configuration of orientation, portrait or landscape.
+6. Include a submit button for the user to apply the selected print settings.
+
+UI Components:
+1. A number input field for the number of copies.
+2. Radio buttons for color options.
+3. Dropdown menu for print quality selection.
+4. Dropdown menu for paper size selection.
+5. Radio buttons for orientation choice.
+6. A submit button to confirm selections.
+
+HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Printer App – Advanced Options</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 400px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    input, select, button {
+        width: calc(100% - 10px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ced4da;
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <label for="copies">Number of Copies:</label>
+    <input type="number" id="copies" name="copies" min="1" value="1">
+    
+    <label>Color Options:</label>
+    <input type="radio" id="blackWhite" name="color" value="blackWhite" checked>
+    <label for="blackWhite">Black & White</label>
+    <input type="radio" id="color" name="color" value="color">
+    <label for="color">Color</label>
+    
+    <label for="printQuality">Print Quality:</label>
+    <select id="printQuality" name="printQuality">
+        <option value="draft">Draft</option>
+        <option value="standard">Standard</option>
+        <option value="high">High Quality</option>
+    </select>
+    
+    <label for="paperSize">Paper Size:</label>
+    <select id="paperSize" name="paperSize">
+        <option value="A4">A4</option>
+        <option value="A5">A5</option>
+        <option value="Letter">Letter</option>
+        <option value="Legal">Legal</option>
+    </select>
+    
+    <label>Orientation:</label>
+    <input type="radio" id="portrait" name="orientation" value="portrait" checked>
+    <label for="portrait">Portrait</label>
+    <input type="radio" id="landscape" name="orientation" value="landscape">
+    <label for="landscape">Landscape</label>
+    
+    <button type="submit">Print</button>
+</div>
+</body>
+</html>
+```
+
+This HTML structure covers all the functionalities and UI components listed, using basic inline CSS for styling. The form elements such as input fields, radio buttons, dropdown menus, and buttons allow for a user to interact with the page and specify their desired print options.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational JavaScript Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .feedback {
+            color: #d9534f;
+            font-weight: bold;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .feedback .symbol {
+            font-size: 24px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .comment-count {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .action-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            width: 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e2e6ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <div class="question">
+            What is the use of the Array method `map()`?
+        </div>
+        <form>
+            <ul class="options">
+                <li>
+                    <label>
+                        <input type="radio" name="option" value="a"> Changes every element in an array based on a transformation function.
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="option" value="b"> Projects each element of an array into a new array.
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="option" value="c"> Applies a function against an accumulator to reduce the array to a single value.
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="option" value="d"> Filters out all elements in an array that do not satisfy a condition.
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Submit Answer</button>
+            <div class="feedback">
+                <span class="symbol">X</span> Wrong
+            </div>
+            <div class="comment-count">
+                26 COMMENTS
+            </div>
+            <div class="action-buttons">
+                <button type="button">Back</button>
+                <button type="button">Try Again</button>
+            </div>
+        </form>
+        <div class="bottom-actions">
+            <button type="button">Unlock</button>
+            <button type="button">Share</button>
+        </div>
+    </div>
+</body>
+</html>
