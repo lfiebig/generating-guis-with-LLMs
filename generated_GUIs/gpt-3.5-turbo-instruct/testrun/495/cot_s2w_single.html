@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Podcast Episodes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        #search-bar-container {
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .episode-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .episode-list-item {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .details {
+            flex-grow: 1;
+        }
+        .play-button, .remove-button {
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .remove-button {
+            background-color: #f44336;
+        }
+        .back-button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-button">&#8592; Back</button>
+        <h2>Liked Episodes</h2>
+    </header>
+
+    <div id="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search episodes">
+    </div>
+
+    <ul class="episode-list">
+        <li class="episode-list-item">
+            <img src="thumbnail.jpg" alt="Podcast Thumbnail" class="thumbnail">
+            <div class="details">
+                <div>Episode Title</div>
+                <div>Podcast Name</div>
+                <div>Duration: 30 minutes</div>
+            </div>
+            <button class="play-button">Play</button>
+            <button class="remove-button">Remove</button>
+        </li>
+        <!-- Add more list items for each episode -->
+    </ul>
+</body>
+</html>

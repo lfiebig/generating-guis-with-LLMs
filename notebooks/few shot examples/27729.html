@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Language Translation Practice</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .progress-bar {
+    height: 5px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .translation-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .audio-button {
+    background-color: #eee;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .sentence {
+    flex-grow: 1;
+  }
+
+  .input-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .buttons-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* If needed */
+  }
+
+  .button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .skip-button {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .check-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="progress-bar" style="width: 25%;"></div>
+  <div class="title">Translate this sentence</div>
+  <div class="translation-section">
+    <button class="audio-button">
+      &#9658;
+    </button>
+    <div class="sentence">Mis animales, mi tortuga, mi cangrejo.</div>
+  </div>
+  <input class="input-field" type="text" placeholder="Type the English translation">
+  <div class="buttons-container">
+    <button class="button skip-button">Skip</button>
+    <button class="button check-button">Check</button>
+  </div>
+</div>
+
+</body>
+</html>

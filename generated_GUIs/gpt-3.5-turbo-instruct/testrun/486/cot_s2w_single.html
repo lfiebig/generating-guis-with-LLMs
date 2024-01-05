@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+
+  .share-options-container {
+    padding: 20px;
+    background: #fff;
+  }
+
+  .share-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .share-option:last-child {
+    margin-bottom: 0;
+  }
+
+  .share-option img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .share-option-label {
+    font-size: 16px;
+  }
+
+  .close-button {
+    display: block;
+    background: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="share-options-container">
+  <div class="share-option">
+    <img src="social-icon.png" alt="Social Media Icon">
+    <span class="share-option-label">Social Media</span>
+  </div>
+  <div class="share-option">
+    <img src="email-icon.png" alt="Email Icon">
+    <span class="share-option-label">Email</span>
+  </div>
+  <div class="share-option">
+    <img src="messaging-icon.png" alt="Messaging App Icon">
+    <span class="share-option-label">Messaging App</span>
+  </div>
+  <!-- More share options as needed -->
+</div>
+
+<a class="close-button" href="#close">Close</a>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Episodes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            padding: 16px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-align: center;
+            background-color: #004d99;
+            color: white;
+            padding: 10px;
+        }
+        .episode-list, .favorite-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .episode, .favorite-episode {
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+            padding: 16px;
+            transition: background-color 0.3s;
+        }
+        .episode:hover, .favorite-episode:hover {
+            background-color: #efefef;
+        }
+        .episode-title, .favorite-episode-title {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+        }
+        .episode-description, .favorite-episode-description {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Podcast Episodes</div>
+
+        <div class="episode-list-container">
+            <h2>All Episodes</h2>
+            <ul class="episode-list">
+                <!-- Replace with dynamic content -->
+                <li class="episode">
+                    <p class="episode-title">Episode 1: The Journey Begins</p>
+                    <p class="episode-description">In this first episode, we explore the origins of our podcast.</p>
+                </li>
+                <li class="episode">
+                    <p class="episode-title">Episode 2: Deep Dive into History</p>
+                    <p class="episode-description">Join us as we delve into the historical aspects of our topic.</p>
+                </li>
+                <!-- More episodes... -->
+            </ul>
+        </div>
+
+        <div class="favorite-list-container" style="margin-top:24px;">
+            <h2>Favorite Episodes</h2>
+            <ul class="favorite-list">
+                <!-- Replace with user's favorite episodes -->
+                <li class="favorite-episode">
+                    <p class="favorite-episode-title">Episode 4: Unforgettable Moments</p>
+                    <p class="favorite-episode-description">A look back at the most memorable parts of the series.</p>
+                </li>
+                <!-- More favorite episodes... -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

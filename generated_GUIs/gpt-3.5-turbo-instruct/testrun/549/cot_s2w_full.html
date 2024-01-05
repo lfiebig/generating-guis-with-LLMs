@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Religious Prayer Settings</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .container {
+        padding: 20px;
+    }
+    .setting-item {
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toggle-switch {
+        float: right;
+    }
+    .setting-title {
+        margin: 0;
+        padding: 0;
+    }
+    .input-time {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-top: 5px;
+    }
+    .volume-slider {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .dropdown {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-top: 5px;
+    }
+    label {
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="setting-item">
+            <h2 class="setting-title">Prayer Alarm</h2>
+            <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span>Enabled</span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <h2 class="setting-title">Fajr Alarm</h2>
+            <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span>Enabled</span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <label for="fajr-time">Fajr Time</label>
+            <input class="input-time" type="time" id="fajr-time" value="05:00">
+        </div>
+        <div class="setting-item">
+            <label for="prayer-method">Prayer Time Calculation Method</label>
+            <select class="dropdown" id="prayer-method">
+                <option value="method1">Method 1</option>
+                <option value="method2">Method 2</option>
+                <option value="method3">Method 3</option>
+            </select>
+        </div>
+        <div class="setting-item">
+            <label for="alarm-volume">Alarm Volume</label>
+            <input class="volume-slider" type="range" id="alarm-volume" min="0" max="100" value="50">
+        </div>
+    </div>
+</body>
+</html>

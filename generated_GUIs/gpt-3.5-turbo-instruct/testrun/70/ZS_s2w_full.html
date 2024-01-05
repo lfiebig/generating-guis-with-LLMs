@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science and News Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background: #009688;
+            color: white;
+        }
+        .video-list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .video-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .video-item:last-child {
+            border-bottom: none;
+        }
+        .thumbnail {
+            width: 30%;
+            margin-right: 10px;
+        }
+        .thumbnail img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .description {
+            width: 70%;
+        }
+        .description h3 {
+            margin: 0;
+            font-size: 1em;
+        }
+        .description p {
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Science & News Videos</h1>
+        </div>
+        <ul class="video-list">
+            <li class="video-item">
+                <div class="thumbnail">
+                    <img src="thumbnail1.jpg" alt="Video Title 1"/>
+                </div>
+                <div class="description">
+                    <h3>Amazing Science Facts</h3>
+                    <p>Discover incredible facts about the world of science.</p>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="thumbnail">
+                    <img src="thumbnail2.jpg" alt="Video Title 2"/>
+                </div>
+                <div class="description">
+                    <h3>Latest Tech Innovations</h3>
+                    <p>Explore the latest breakthroughs in technology.</p>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="thumbnail">
+                    <img src="thumbnail3.jpg" alt="Video Title 3"/>
+                </div>
+                <div class="description">
+                    <h3>Global News Update</h3>
+                    <p>Stay informed with the latest global news headlines.</p>
+                </div>
+            </li>
+            <!-- You can add more video items here -->
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podcast App Settings Popup</title>
+<style>
+  .popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .close-button {
+    float: right;
+    cursor: pointer;
+  }
+  .options {
+    margin-top: 20px;
+  }
+  .option {
+    margin-bottom: 15px;
+  }
+  .option label {
+    margin-right: 10px;
+  }
+  .option button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 2px 5px;
+    cursor: pointer;
+  }
+  .delete-podcast-button {
+    background-color: #ff3b30;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="popup-wrapper">
+  <div class="popup">
+    <span class="close-button">X</span>
+    <div class="options">
+      <div class="option">
+        <label for="toggle-delete">Delete Played Episodes</label>
+        <input type="checkbox" id="toggle-delete">
+      </div>
+      <div class="option">
+        <label for="keep-downloads">Keep</label>
+        <button>-</button>
+        <input type="number" id="keep-downloads" value="1" readonly style="width: 40px; text-align: center;">
+        <button>+</button>
+        Auto-downloads
+      </div>
+      <button class="delete-podcast-button">Delete Podcast</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

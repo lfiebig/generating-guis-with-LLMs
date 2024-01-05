@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Application</title>
+    <style type="text/css">
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .option-group {
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            padding: 15px;
+        }
+        .option {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .option:last-child {
+            border-bottom: 0;
+        }
+        .label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .advanced-options {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            display: block;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .connectivity {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Printing Options</h1>
+        </div>
+
+        <!-- Basic Options -->
+        <div class="option-group">
+            <div class="option">
+                <span class="label">Number of Copies:</span>
+                <input type="number" value="1" min="1" />
+            </div>
+            <div class="option">
+                <span class="label">Color Options:</span>
+                <select>
+                    <option value="color">Color</option>
+                    <option value="black-and-white">Black & White</option>
+                </select>
+            </div>
+            <div class="option">
+                <span class="label">Paper Size:</span>
+                <select>
+                    <option value="A4">A4</option>
+                    <option value="A3">A3</option>
+                    <option value="Letter">Letter</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Advanced Options -->
+        <div class="option-group advanced-options">
+            <div class="header">
+                <h2>Advanced Categories</h2>
+            </div>
+            <div class="option">
+                <span class="label">Duplex Printing:</span>
+                <input type="checkbox" />
+            </div>
+            <div class="option">
+                <span class="label">Orientation:</span>
+                <select>
+                    <option value="portrait">Portrait</option>
+                    <option value="landscape">Landscape</option>
+                </select>
+            </div>
+            <div class="option">
+                <span class="label">Print Quality:</span>
+                <select>
+                    <option value="draft">Draft</option>
+                    <option value="normal">Normal</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Connectivity -->
+        <div class="connectivity">
+            <a href="#" class="button">Connect to Printer</a>
+        </div>
+    </div>
+</body>
+</html>

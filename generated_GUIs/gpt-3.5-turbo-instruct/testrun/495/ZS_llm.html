@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Episodes I Like</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    .back-arrow {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .title {
+        flex-grow: 1;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .podcast-list {
+        margin-top: 20px;
+    }
+    .podcast {
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+        display: flex;
+    }
+    .artwork {
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+    }
+    .details {
+        flex-grow: 1;
+    }
+    .title {
+        font-size: 16px;
+        margin: 0;
+    }
+    .metadata {
+        color: #666;
+        font-size: 12px;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .social-icon {
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <span class="back-arrow">&larr;</span>
+    <span class="title">Episodes I Like</span>
+</div>
+<div class="podcast-list">
+    <div class="podcast">
+        <img src="artwork1.jpg" alt="podcast artwork" class="artwork">
+        <div class="details">
+            <p class="title">Case #6 Kotter</p>
+            <p class="metadata">Jul 30, 2015 | 01:17:46</p>
+            <div class="social-icons">
+                <img src="facebook.png" alt="Share on Facebook" class="social-icon">
+                <img src="whatsapp.png" alt="Share on WhatsApp" class="social-icon">
+                <img src="twitter.png" alt="Share on Twitter" class="social-icon">
+            </div>
+        </div>
+    </div>
+    <!-- Repeat above div for each podcast episode -->
+</div>
+</body>
+</html>

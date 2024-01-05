@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podcast Episodes</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .episodes-list, .favorite-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .episode-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .episode-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .play-button {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .favorite-button {
+    border: none;
+    background: none;
+    color: #ff4081;
+    cursor: pointer;
+  }
+
+  .episode-text {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+
+  .episode-title {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .episode-description {
+    font-size: 14px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <section class="episodes-section">
+    <h2>All Episodes</h2>
+    <ul class="episodes-list">
+      <li class="episode-item">
+        <div class="episode-text">
+          <div class="episode-title">Episode 1: The Journey Begins</div>
+          <div class="episode-description">Join us on the introductory episode of our podcast series.</div>
+        </div>
+        <button class="play-button">Play</button>
+      </li>
+      <!-- Repeat for each episode -->
+    </ul>
+  </section>
+
+  <section class="favorites-section">
+    <h2>Favorite Episodes</h2>
+    <ul class="favorite-list">
+      <!-- Favorite episodes go here -->
+    </ul>
+  </section>
+
+</div>
+
+</body>
+</html>

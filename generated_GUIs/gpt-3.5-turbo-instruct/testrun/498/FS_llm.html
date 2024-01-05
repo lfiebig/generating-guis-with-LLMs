@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podcast App Settings</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .popup {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 400px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        z-index: 10;
+    }
+    .popup header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+    }
+    .popup header button {
+        border: none;
+        background: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .setting-item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .toggle-setting {
+        display: flex;
+        align-items: center;
+    }
+    .toggle-setting input {
+        margin-right: 10px;
+    }
+    .auto-download-setting {
+        display: flex;
+        align-items: center;
+    }
+    .auto-download-setting button {
+        border: 1px solid #ccc;
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .delete-button {
+        background-color: #d9534f;
+        color: white;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+
+<div class="popup">
+    <header>
+        <button title="Close">&#10005;</button>
+    </header>
+    <div class="settings">
+        <div class="setting-item toggle-setting">
+            <label for="delete-played">Delete Played Episodes</label>
+            <input type="checkbox" id="delete-played">
+        </div>
+        <div class="setting-item auto-download-setting">
+            <label for="auto-downloads">Keep</label>
+            <button id="decrement">-</button>
+            <span id="auto-downloads">1</span>
+            <button id="increment">+</button>
+            <span>Auto-downloads</span>
+        </div>
+        <button class="delete-button">Delete Podcast</button>
+    </div>
+</div>
+
+</body>
+</html>

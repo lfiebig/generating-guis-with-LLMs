@@ -1587,7 +1587,6 @@ A: Let's think step by step.
 """
 )
 
-
 SUMMARY_PROMPT = PromptTemplate(
     input_variables=["summaries"],
     template="""Given a collection of Screensummaries, which descripe the same screen:

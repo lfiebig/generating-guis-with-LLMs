@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recording App Settings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .settings-item {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 15px;
+        }
+        .settings-title {
+            padding: 10px 15px;
+            background-color: #e9ecef;
+            border-bottom: 1px solid #ddd;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        .settings-section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .toggle input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recording Settings</h1>
+    </header>
+    
+    <main>
+        <!-- Skip Silence Mode -->
+        <section class="settings-section">
+            <h2 class="settings-title">Recording</h2>
+            <div class="settings-item">
+                <label for="skip-silence">Skip Silence Mode</label>
+                <label class="toggle">
+                    <input type="checkbox" id="skip-silence">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+            <!-- Sample Rate (Quality) -->
+            <div class="settings-item">
+                <label for="sample-rate">Sample Rate (Quality)</label>
+                <select id="sample-rate">
+                    <option value="low">Low (8 kHz)</option>
+                    <option value="medium" selected>Medium (22 kHz)</option>
+                    <option value="high">High (44 kHz)</option>
+                </select>
+            </div>
+            
+            <!-- Location of Recordings -->
+            <div class="settings-item">
+                <label for="file-location">Location of Recordings</label>
+                <input type="text" id="file-location" value="/storage/emulated/0/Recordings"/>
+            </div>
+            
+            <!-- Datetime File Naming -->
+            <div class="settings-item">
+                <label for="datetime-naming">Datetime File Naming</label>
+                <label class="toggle">
+                    <input type="checkbox" id="datetime-naming" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+        
+        <!-- Dialogs and Confirmations -->
+        <section class="settings-section">
+            <h2 class="settings-title">Interactivity</h2>
+            <div class="settings-item">
+                <label for="dialogs-confirmations">Dialogs and Confirmations</label>
+                <label class="toggle">
+                    <input type="checkbox" id="dialogs-confirmations" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+        
+        <!-- Microphone Adjustment -->
+        <section class="settings-section">
+            <h2 class="settings-title">Audio Input</h2>
+            <div class="settings-item">
+                <label for="mic-adjustment">Microphone Adjustment</label>
+                <input type="range" id="mic-adjustment" min="0" max="100" value="50"/>
+            </div>
+        </section>
+        
+        <!-- Advanced Settings -->
+        <section class="settings-section">
+            <h2 class="settings-title">Advanced</h2>
+            <div class="settings-item">
+                <button id="advanced-settings">Advanced Settings</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

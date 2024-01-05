@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Settings</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: #fff;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+    }
+    .header .back-button {
+        font-size: 18px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .settings-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .settings-list li {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .settings-list li:last-child {
+        border-bottom: none;
+    }
+    .settings-list .icon {
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <button class="back-button">&lt; Back</button>
+        <h1 style="margin-left: 20px;">Settings</h1>
+    </header>
+    <ul class="settings-list">
+        <li><span class="icon">&#9881;</span> Account Settings</li>
+        <li><span class="icon">&#128276;</span> Notification Preferences</li>
+        <li><span class="icon">&#128274;</span> Privacy Settings</li>
+        <li><span class="icon">&#9881;</span> General App Settings</li>
+    </ul>
+</body>
+</html>

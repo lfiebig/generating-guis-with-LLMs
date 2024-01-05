@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .settings-container {
+        max-width: 400px;
+        margin: 20px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .settings-header {
+        background-color: #4CAF50;
+        color: #ffffff;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .settings-option {
+        padding: 15px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .settings-option:last-child {
+        border-bottom: none;
+    }
+
+    .settings-option h2 {
+        margin: 0;
+        font-size: 16px;
+        color: #333333;
+    }
+
+    .settings-option p {
+        font-size: 14px;
+        color: #666666;
+        margin-top: 5px;
+    }
+
+    .settings-option input[type="checkbox"] {
+        float: right;
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="settings-container">
+    <div class="settings-header">
+        <h1>Settings</h1>
+    </div>
+    <div class="settings-list">
+        <div class="settings-option">
+            <h2>Wi-Fi</h2>
+            <p>Manage Wi-Fi networks and settings</p>
+        </div>
+        <div class="settings-option">
+            <h2>Bluetooth</h2>
+            <p>Manage Bluetooth devices and settings</p>
+        </div>
+        <div class="settings-option">
+            <h2>Notifications</h2>
+            <p>Manage notification preferences</p>
+        </div>
+        <div class="settings-option">
+            <h2>Do Not Disturb</h2>
+            <p>Silences calls and notifications</p>
+            <input type="checkbox">
+        </div>
+        <div class="settings-option">
+            <h2>Display & Brightness</h2>
+            <p>Adjust screen brightness and colors</p>
+        </div>
+        <div class="settings-option">
+            <h2>Privacy</h2>
+            <p>Manage apps' access to your information</p>
+        </div>
+        <div class="settings-option">
+            <h2>Security</h2>
+            <p>Configure lock screen, passwords, and more</p>
+        </div>
+        <div class="settings-option">
+            <h2>Software Update</h2>
+            <p>Check for system updates</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

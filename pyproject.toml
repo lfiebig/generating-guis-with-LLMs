@@ -13,6 +13,7 @@ pandas = "^2.1.2"
 python-dotenv = "^1.0.0"
 matplotlib = "^3.8.2"
 langfuse = "^2.0.1"
+imgkit = "^1.2.3"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .video-item {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .video-title {
+            margin-top: 5px;
+        }
+
+        .bottom-info {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Icons can be represented using Unicode or placeholders */
+        .icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-color: #888;
+            margin: 0 5px;
+        }
+
+        .search-icon:before {
+            content: "\1F50D"; /* Unicode for magnifying glass */
+            display: inline-block;
+        }
+
+        .more-icon:before {
+            content: "\2630"; /* Unicode for stacked lines */
+            display: inline-block;
+        }
+
+        .back-icon:before {
+            content: "\2190"; /* Unicode for left-pointing arrow */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="back-icon icon"></div>
+        <div>
+            <div class="icon">FB</div>
+            <div class="icon">TW</div>
+            <div class="icon">IG</div>
+        </div>
+        <div>
+            <div class="search-icon icon"></div>
+            <div class="more-icon icon"></div>
+        </div>
+    </div>
+    
+    <div class="video-grid">
+        <!-- Repeat this div for each video in the collection -->
+        <div class="video-item">
+            <div style="background-image: url('thumbnail.jpg'); height: 100px; background-size: cover;"></div>
+            <div class="video-title">Video Title</div>
+        </div>
+        <!-- End of repeat -->
+    </div>
+
+    <div class="bottom-info">
+        Showing 1 of 14072 Videos
+    </div>
+</body>
+</html>
