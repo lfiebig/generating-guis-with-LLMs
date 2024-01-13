@@ -1057,7 +1057,7 @@ HTML Code:
 Q: Based on the provided list of functional Requirements of a mobile page:
 
 Requirements:
-	1. Provide a section for saved locations with the option to add a new location.
+	    1. Provide a section for saved locations with the option to add a new location.
         2. Offer tabs for different types of forecasts, such as "7 Day Forecast", "Hourly Forecast", and "Weather Details".
         3. Include the ability to switch temperature units between Fahrenheit (F°) and Celsius (C°).
 
@@ -1595,7 +1595,7 @@ SUMMARY_PROMPT = PromptTemplate(
         Extract the provided information of the screen and formulate a new description"""
 )
 
-SUMMARY_PROMPT_FS = PromptTemplate(
+SUMMARY_PROMPT_FS_FILTERED = PromptTemplate(
     input_variables= ["summaries"],
     template="""
         Q: Given a collection of Screensummaries, which descripe the same screen:
@@ -1604,7 +1604,7 @@ SUMMARY_PROMPT_FS = PromptTemplate(
         Summary 2: page displaying to start exercise
         Summary 3: page displaying to start workout
                 
-        Extract the provided information of the screen and formulate a new description.
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
 
         A: The Screen displays different workout options to set, alongside the feature to start the workout.
 
@@ -1615,7 +1615,7 @@ SUMMARY_PROMPT_FS = PromptTemplate(
         Summary 4: page to translate the text
         Summary 5: screen page of language translator application.
                 
-        Extract the provided information of the screen and formulate a new description.
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
 
         A: The mobile screen is part of a language translator application that asks the user to translate a given text sentence. 
 
@@ -1627,7 +1627,7 @@ SUMMARY_PROMPT_FS = PromptTemplate(
         Summary 4: setting page displaying various options in weather application.
         Summary 5: settings page displaying various options in weather application.
                 
-        Extract the provided information of the screen and formulate a new description.
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
 
         A: The mobile screen is a display page in a weather forecast app that shows various options.
 
@@ -1635,7 +1635,56 @@ SUMMARY_PROMPT_FS = PromptTemplate(
 
         {summaries}
                 
-        Extract the provided information of the screen and formulate a new description.
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
+
+        A: 
+        """
+        )
+
+SUMMARY_PROMPT_FS_FULL = PromptTemplate(
+    input_variables= ["summaries"],
+    template="""
+        Q: Given a collection of Screensummaries, which descripe the same screen:
+
+        Summary 1: page displaying different workout options to set
+        Summary 2: page displaying to start exercise
+        Summary 3: page displaying to start workout
+        Summary 4: pop-up displaying about body work outs
+        Summary 5: timer and different features of a fitness app are displaying
+                
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
+
+        A: The Screen displays different workout options to set, alongside the feature to start the workout.
+
+        Q: Given a collection of Screensummaries, which descripe the same screen:
+
+        Summary 1: app asking to translate the given sentence
+        Summary 2: page displaying about translating the sentence
+        Summary 3: page displaying the translation
+        Summary 4: page to translate the text
+        Summary 5: screen page of language translator application.
+        
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
+
+        A: The mobile screen is part of a language translator application that asks the user to translate a given text sentence. 
+
+        Q: Given a collection of Screensummaries, which descripe the same screen:
+
+        Summary 1: display page showing various options in weather forecast app.
+        Summary 2: page displaying various settings.
+        Summary 3: screen displaying multiple setting options in a weather forecast application.
+        Summary 4: setting page displaying various options in weather application.
+        Summary 5: settings page displaying various options in weather application.
+                
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
+
+        A: The mobile screen is a display page in a weather forecast app that shows various options.
+
+        Q: Given a collection of Screensummaries, which descripe the same screen:
+
+        {summaries}
+                
+        Extract the provided information of the screen and formulate a new description. Don't add any Information, that is not part of the provided summaries.
 
         A: 
         """
