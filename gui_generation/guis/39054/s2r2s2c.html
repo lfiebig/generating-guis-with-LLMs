@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding: 10px;
+  }
+  .header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .form-section {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .photo-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .thumbnail {
+    margin-right: 5px;
+    position: relative;
+  }
+  .remove-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+  }
+  .action-buttons {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Create Product Listing</h1>
+  </div>
+
+  <div class="form-section">
+    <input type="text" placeholder="Product Title">
+    <textarea rows="4" placeholder="Product Description"></textarea>
+  </div>
+
+  <div class="form-section">
+    <select>
+      <option>Category</option>
+      <option>Electronics</option>
+      <option>Clothing</option>
+    </select>
+    <select>
+      <option>Condition</option>
+      <option>New</option>
+      <option>Used</option>
+    </select>
+  </div>
+
+  <div class="form-section">
+    <input type="number" placeholder="Price">
+    <input type="number" placeholder="Stock Quantity">
+  </div>
+
+  <div class="form-section">
+    <button>Upload Photos</button>
+    <button>Add More Photos</button>
+    <div class="photo-thumbnails">
+      <!-- Example thumbnails -->
+      <div class="thumbnail">
+        <img src="path-to-thumbnail.jpg" alt="thumbnail">
+        <button class="remove-photo">X</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <select>
+      <option>Shipping Option</option>
+      <option>Standard</option>
+      <option>Express</option>
+    </select>
+    <input type="text" placeholder="Item Weight">
+    <input type="text" placeholder="Length">
+    <input type="text" placeholder="Width">
+    <input type="text" placeholder="Height">
+  </div>
+
+  <div class="form-section">
+    <input type="text" placeholder="Brand">
+    <input type="text" placeholder="Model/Serial Number">
+    <input type="text" placeholder="SKU">
+  </div>
+
+  <div class="form-section">
+    <button>Scan Barcode</button>
+  </div>
+
+  <div class="action-buttons">
+    <button>Save as Draft</button>
+    <button>Preview</button>
+    <button>Publish</button>
+    <button>Cancel</button>
+  </div>
+</div>
+
+</body>
+</html>

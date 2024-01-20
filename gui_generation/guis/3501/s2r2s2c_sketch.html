@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .header {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .product-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .product-image {
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    margin-right: 10px;
+  }
+  .title, .price {
+    margin-right: 10px;
+  }
+  .preview-area {
+    width: 100%;
+    height: 150px;
+    background: #eee;
+    margin: 10px 0;
+  }
+  .input-field, .dropdown, .checkbox-container, .button-container {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .input-field input, .dropdown select, .checkbox-container input, .button-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  .checkbox-container label {
+    margin-left: 5px;
+  }
+  .social-media, .sharing-options, .contact-list, .messenger-apps, .sharing-methods, .referral-section, .analytics, .action-buttons {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .button-container button, .social-media button, .sharing-options button, .contact-list button, .messenger-apps button, .sharing-methods button, .action-buttons button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .success-message {
+    padding: 10px;
+    background: #dff0d8;
+    color: #3c763d;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  .close-button {
+    width: 100%;
+    padding: 10px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Product Share Screen</div>
+  
+  <div class="product-info">
+    <div class="product-image"></div>
+    <div class="title">Product Title</div>
+    <div class="price">$99.99</div>
+  </div>
+  
+  <div class="preview-area"></div>
+  
+  <div class="input-field">
+    <input type="text" placeholder="Custom Message">
+  </div>
+  
+  <div class="dropdown">
+    <select>
+      <option>Template 1</option>
+      <option>Template 2</option>
+      <option>Template 3</option>
+    </select>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="personalize">
+    <label for="personalize">Personalization</label>
+  </div>
+  
+  <div class="button-container">
+    <button>Native Sharing</button>
+    <button>Copy Link</button>
+    <button>Generate QR</button>
+  </div>
+  
+  <div class="social-media">
+    <button>Facebook</button>
+    <button>Twitter</button>
+    <button>Instagram</button>
+    <button>More</button>
+  </div>
+  
+  <div class="sharing-options">
+    <button>Instagram Stories</button>
+    <button>Facebook Feed</button>
+  </div>
+  
+  <div class="contact-list">
+    <button>Search Contacts</button>
+    <button>Select All</button>
+  </div>
+  
+  <div class="messenger-apps">
+    <button>Messenger</button>
+    <button>Telegram</button>
+    <button>Signal</button>
+    <button>More</button>
+  </div>
+  
+  <div class="sharing-methods">
+    <button>SMS</button>
+    <button>Email</button>
+    <button>Bluetooth</button>
+    <button>AirDrop</button>
+  </div>
+  
+  <div class="referral-section">
+    <div class="input-field">
+      <input type="text" placeholder="Referral Code">
+    </div>
+    <div>Incentives Information</div>
+  </div>
+  
+  <div class="analytics">Tracking Info</div>
+  
+  <div class="action-buttons">
+    <button>Share</button>
+    <button>Cancel</button>
+  </div>
+  
+  <div class="success-message">Success/Confirmation Message</div>
+  
+  <button class="close-button">Close</button>
+</div>
+
+</body>
+</html>

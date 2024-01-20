@@ -1,0 +1,157 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Information Screen</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .album-art {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .album-art img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ddd;
+  }
+  .track-details {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .controls button {
+    background: none;
+    border: none;
+  }
+  .scrub-bar, .volume-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .scrub-bar span, .volume-slider span {
+    flex-grow: 1;
+    background-color: #ddd;
+    height: 3px;
+    margin: 0 5px;
+    position: relative;
+  }
+  .scrub-bar span::after, .volume-slider span::after {
+    content: '';
+    position: absolute;
+    background-color: #333;
+    height: 3px;
+    width: 50%; /* Assuming 50% progress */
+    left: 0;
+  }
+  .social-interaction, .music-discovery, .personalization, .additional-options, .connectivity, .accessibility {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .list {
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="header">HEADER</div>
+<div class="menu">
+  <button>[Back]</button>
+  Track Information Screen
+  <button>[≡]</button>
+</div>
+<div class="album-art">
+  <img src="album-cover.jpg" alt="Album Cover Art">
+</div>
+<div class="track-details">
+  <div>Track Name</div>
+  <div>Artist Name</div>
+</div>
+<div class="controls">
+  <button><</button>
+  <button>[Play/Pause]</button>
+  <button>></button>
+  <div>
+    <button>[Shuffle]</button>
+    <button>[Repeat]</button>
+  </div>
+</div>
+<div class="scrub-bar">
+  <span></span>
+  <div>0:00 - 3:45</div>
+</div>
+<div class="volume-slider">
+  <span></span>
+  <button>[Mute Button]</button>
+</div>
+<div class="social-interaction">
+  <button>[Share]</button>
+  <button>[Like]</button>
+  <button>[Comment]</button>
+</div>
+<div class="music-discovery">
+  Next Up:
+  <div class="list">
+    <div>1. Next Track Name</div>
+    <div>2. Next Track Name</div>
+  </div>
+  More from this Artist:
+  <div class="list">
+    <div>1. Track Name</div>
+  </div>
+  Listeners also like:
+  <div class="list">
+    <div>1. Track Name</div>
+  </div>
+</div>
+<div class="personalization">
+  <button>[Save to Playlist]</button>
+  <button>[Download]</button>
+  <button>[Favorites]</button>
+</div>
+<div class="additional-options">
+  <button>[Lyrics]</button>
+  <button>[Ringtone]</button>
+  <button>[Info/Credits]</button>
+</div>
+<div class="connectivity">
+  <button>[Speaker/Bluetooth]</button>
+  <button>[Cast]</button>
+</div>
+<div class="accessibility">
+  <button>[Text Size]</button>
+  <button>[High Contrast Mode]</button>
+</div>
+<div class="footer">FOOTER</div>
+</body>
+</html>
+```

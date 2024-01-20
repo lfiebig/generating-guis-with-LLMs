@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Music App</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+  }
+  .album-art {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .track-info {
+    padding: 15px;
+    text-align: center;
+  }
+  .track-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .track-artist {
+    font-size: 16px;
+    color: #555;
+  }
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  .control-button {
+    background: none;
+    border: none;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Album Art -->
+  <img src="album-art.jpg" alt="Album Art" class="album-art">
+
+  <!-- Track Info -->
+  <div class="track-info">
+    <div class="track-title">Track Title</div>
+    <div class="track-artist">Artist Name</div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button class="control-button">&#9664;&#9664;</button> <!-- Previous -->
+    <button class="control-button">&#9654;</button> <!-- Play/Pause -->
+    <button class="control-button">&#9654;&#9654;</button> <!-- Next -->
+  </div>
+</div>
+</body>
+</html>
