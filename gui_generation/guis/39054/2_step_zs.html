@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing Page</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+  .header { padding: 10px; border-bottom: 1px solid #ccc; display: flex; align-items: center; }
+  .back-button { width: 24px; height: 24px; margin-right: 10px; }
+  .help-button { margin-left: auto; }
+  .section { padding: 10px; border-bottom: 1px solid #ccc; }
+  .input-label { display: block; margin-top: 5px; }
+  .input-text { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+  .description-input { height: 60px; }
+  .dropdown { width: 100%; padding: 8px; margin-top: 5px; }
+  .radio-buttons label { margin-right: 10px; }
+  .action-buttons { display: flex; justify-content: space-between; padding: 10px; }
+  .button { padding: 10px 15px; border: 1px solid #ccc; background-color: #f8f8f8; cursor: pointer; }
+  .image-upload-section { text-align: center; padding: 10px; }
+  .image-thumbnails { display: flex; overflow-x: scroll; padding: 5px; }
+  .thumbnail { width: 50px; height: 50px; margin-right: 5px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="back-icon.png" alt="Back" class="back-button"/>
+  <h1>Sell Your Product</h1>
+  <button class="help-button">?</button>
+</div>
+
+<div class="image-upload-section">
+  <button class="button">[Upload Image]</button>
+  <div class="image-thumbnails">
+    <img src="placeholder.png" alt="Image 1" class="thumbnail"/>
+    <img src="placeholder.png" alt="Image 2" class="thumbnail"/>
+    <button class="button">[+]</button>
+  </div>
+</div>
+
+<div class="section">
+  <label for="product-title" class="input-label">Product Title:</label>
+  <input type="text" id="product-title" class="input-text"/>
+  
+  <label for="description" class="input-label">Description:</label>
+  <textarea id="description" class="input-text description-input"></textarea>
+
+  <label for="category" class="input-label">Category:</label>
+  <select id="category" class="dropdown">
+    <option value="">Select Category</option>
+    <!-- Add more options here -->
+  </select>
+</div>
+
+<div class="section">
+  <label for="price" class="input-label">Price:</label>
+  <input type="text" id="price" class="input-text" style="width: 48%; display: inline-block;"/>
+  
+  <label for="quantity" class="input-label" style="display: inline-block; width: 48%; text-align: right;">Quantity:</label>
+  <input type="number" id="quantity" class="input-text" style="width: 48%; display: inline-block;"/>
+  
+  <fieldset class="radio-buttons">
+    <legend class="input-label">Condition:</legend>
+    <label><input type="radio" name="condition" value="new" checked> New</label>
+    <label><input type="radio" name="condition" value="used"> Used</label>
+    <label><input type="radio" name="condition" value="refurbished"> Refurbished</label>
+  </fieldset>
+</div>
+
+<div class="section">
+  <label for="size" class="input-label">Size:</label>
+  <select id="size" class="dropdown">
+    <option value="">Select Size</option>
+    <!-- Add more options here -->
+  </select>
+
+  <label for="color" class="input-label">Color:</label>
+  <input type="text" id="color" class="input-text"/>
+
+  <label for="tags" class="input-label">Tags:</label>
+  <input type="text" id="tags" class="input-text"/>
+  <button class="button" style="width: auto; padding: 5px 10px; margin-top: 5px;">[+]</button>
+</div>
+
+<div class="action-buttons">
+  <button class="button">Save Draft</button>
+  <button class="button">Preview</button>
+  <button class="button">List Item</button>
+</div>
+
+<!-- This would typically be hidden until needed -->
+<div class="loading-indicator" style="display: none;">
+  <img src="spinner.gif" alt="Loading"/>
+</div>
+
+<footer class="section">
+  <button class="button">Help or Contact Support</button>
+</footer>
+
+</body>
+</html>
