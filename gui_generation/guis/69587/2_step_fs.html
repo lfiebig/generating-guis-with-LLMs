@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            width: 375px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .page-title {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+        .menu-button, .search-button {
+            font-size: 24px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .emails-list {
+            overflow-y: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            height: calc(100vh - 140px);
+        }
+        .email-item {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+        .unread-indicator {
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+        }
+        .sender-name {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .email-subject {
+            margin-left: 20px;
+            color: #555;
+        }
+        .email-preview {
+            margin-left: 20px;
+            color: #777;
+        }
+        .timestamp {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #777;
+            font-size: 12px;
+        }
+        .compose-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .bottom-navigation {
+            position: fixed;
+            bottom: 0;
+            width: 375px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            box-sizing: border-box;
+            border-top: 1px solid #e0e0e0;
+        }
+        .bottom-navigation div {
+            cursor: pointer;
+        }
+        .active-tab {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="menu-button">&#9776;</button>
+    <div class="page-title">Inbox</div>
+    <button class="search-button">&#128269;</button>
+</div>
+
+<div class="emails-list">
+    <!-- Email item 1 - Unread -->
+    <div class="email-item">
+        <div class="unread-indicator"></div>
+        <div class="sender-name">John Doe</div>
+        <div class="email-subject">Meeting Tomorrow</div>
+        <div class="email-preview">Hey, don't forget about the meeting tomorrow at 10am...</div>
+        <div class="timestamp">10:15 AM</div>
+    </div>
+    <!-- Email item 2 - Read -->
+    <div class="email-item">
+        <div class="sender-name">Amazon</div>
+        <div class="email-subject">Your Order Has Shipped</div>
+        <div class="email-preview">Your recent order has been shipped. Track your package...</div>
+        <div class="timestamp">Yesterday</div>
+    </div>
+    <!-- Email item 3 - Read -->
+    <div class="email-item">
+        <div class="sender-name">GitHub</div>
+        <div class="email-subject">New Login Attempt</div>
+        <div class="email-preview">We noticed a new login attempt from a new device...</div>
+        <div class="timestamp">2 Days Ago</div>
+    </div>
+</div>
+
+<button class="compose-button">+</button>
+
+<div class="bottom-navigation">
+    <div class="active-tab">Inbox</div>
+    <div>Sent</div>
+    <div>Drafts</div>
+    <div>Trash</div>
+</div>
+
+</body>
+</html>

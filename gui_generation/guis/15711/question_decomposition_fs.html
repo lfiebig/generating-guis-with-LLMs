@@ -1,0 +1,125 @@
+ww
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .album-artwork {
+            width: 80%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+        .track-name {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .artist-name {
+            font-size: 18px;
+            color: #666;
+        }
+        .seek-bar {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .playback-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .playback-button {
+            font-size: 24px;
+            padding: 15px;
+            margin: 0 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .volume-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .volume-slider {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+        .repeat-shuffle-buttons {
+            font-size: 18px;
+            padding: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .bottom-button {
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="back-button">&larr;</button>
+    <img src="album-artwork.jpg" alt="Album Artwork" class="album-artwork">
+    <div class="track-name">Track Title</div>
+    <div class="artist-name">Artist Name</div>
+</div>
+
+<div class="seek-bar">
+    <input type="range" min="0" max="100" value="50">
+</div>
+
+<div class="playback-controls">
+    <button class="playback-button">&#9664;&#9664;</button>
+    <button class="playback-button">&#9654; / &#10074;&#10074;</button>
+    <button class="playback-button">&#9654;&#9654;</button>
+</div>
+
+<div class="volume-controls">
+    <button class="repeat-shuffle-buttons">&#10226;</button>
+    <input type="range" class="volume-slider" min="0" max="100" value="80">
+    <button class="repeat-shuffle-buttons">&#128256;</button>
+</div>
+
+<div class="bottom-section">
+    <button class="bottom-button">&#10084;</button>
+    <button class="bottom-button">&#128214;</button>
+    <button class="bottom-button">&#8681;</button>
+    <button class="bottom-button">&#10150;</button>
+    <button class="bottom-button">&#8942;</button>
+</div>
+
+</body>
+</html>
