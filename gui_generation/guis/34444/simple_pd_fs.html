@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental Listings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            width: 375px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            padding: 10px;
+            background-color: #fff;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .filter-sort-button {
+            padding: 10px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .listings-container {
+            padding: 10px;
+            box-sizing: border-box;
+            height: calc(100vh - 190px);
+            overflow-y: auto;
+        }
+        .listing {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            display: flex;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+        }
+        .listing img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .listing-details {
+            flex-grow: 1;
+        }
+        .favorites-icon,
+        .quick-contact-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .quick-contact-button {
+            bottom: 10px;
+            top: auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .bottom-navigation-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+        .navigation-icon {
+            text-align: center;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="search-bar">
+            <input type="text" placeholder="Search properties...">
+        </div>
+        <button class="filter-sort-button">&#x1F50D; Filter/Sort</button>
+        <button class="map-view-toggle">&#x1F5FA;</button>
+    </div>
+    <div class="listings-container">
+        <div class="listing">
+            <img src="property1.jpg" alt="Property Thumbnail">
+            <div class="listing-details">
+                <strong>2 Bedroom Apartment</strong>
+                <p>$1200/month</p>
+                <p>Downtown</p>
+                <p>Modern apartment with all amenities included.</p>
+            </div>
+            <button class="favorites-icon">&#x2764;</button>
+            <button class="quick-contact-button">Contact</button>
+        </div>
+        <!-- Repeat for other listings -->
+    </div>
+    <div class="bottom-navigation-bar">
+        <div class="navigation-icon">&#x1F3E0; Home</div>
+        <div class="navigation-icon">&#x1F3E1; Listings</div>
+        <div class="navigation-icon">&#x2764; Favorites</div>
+        <div class="navigation-icon">&#x1F464; Profile</div>
+    </div>
+</body>
+</html>

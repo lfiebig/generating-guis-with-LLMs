@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate App</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+<!-- Header Section -->
+<header style="background-color: #f8f9fa; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    <img src="logo.png" alt="Real Estate App Logo" style="height: 30px;">
+  </div>
+  <div>
+    <img src="menu-icon.png" alt="Menu" style="height: 30px;">
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div style="padding: 10px; background-color: #e9ecef;">
+  <input type="text" placeholder="Search by keywords, addresses, ZIP..." style="width: calc(100% - 20px); padding: 10px; margin-bottom: 5px; border: 1px solid #ced4da; border-radius: 5px;">
+  <button style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Advanced Filters</button>
+</div>
+
+<!-- Property Listings -->
+<div style="padding: 10px;">
+  <div style="margin-bottom: 20px; border: 1px solid #dee2e6; border-radius: 5px; overflow: hidden;">
+    <img src="property-thumbnail.jpg" alt="Property" style="width: 100%; height: auto;">
+    <div style="padding: 10px;">
+      <h3 style="margin-top: 0;">123 Main Street</h3>
+      <p style="margin-bottom: 5px;">3 beds • 2 baths</p>
+      <p style="font-weight: bold;">$350,000</p>
+      <button style="width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px;">Contact Realtor</button>
+    </div>
+  </div>
+  <!-- Repeat the above block for each property listing -->
+</div>
+
+<!-- Sort Options -->
+<div style="padding: 10px; background-color: #e9ecef;">
+  <label for="sort">Sort by:</label>
+  <select id="sort" name="sort" style="width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 5px;">
+    <option value="relevance">Relevance</option>
+    <option value="price">Price</option>
+    <option value="newest">Newest</option>
+  </select>
+</div>
+
+<!-- Pagination or Infinite Scroll -->
+<div style="padding: 10px; text-align: center;">
+  <button style="padding: 10px; background-color: #17a2b8; color: white; border: none; border-radius: 5px;">Load More</button>
+</div>
+
+<!-- Footer Section -->
+<footer style="padding: 10px; background-color: #343a40; color: white; text-align: center;">
+  <p>Quick Links | Privacy Policy | Terms of Service</p>
+</footer>
+
+<!-- Floating Action Button -->
+<div style="position: fixed; bottom: 20px; right: 20px;">
+  <button style="width: 50px; height: 50px; border-radius: 50%; background-color: #ffc107; color: white; border: none;">
+    <img src="fab-icon.png" alt="FAB" style="height: 30px;">
+  </button>
+</div>
+
+</body>
+</html>

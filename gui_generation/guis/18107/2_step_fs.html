@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Details</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .company-name {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .back-button,
+        .favorite-button {
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .stock-details {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .current-price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .price-change {
+            color: green; /* or red if the stock is down */
+        }
+        .stock-chart {
+            background-color: #ddd;
+            height: 200px; /* Placeholder height, in actual implementation this would be replaced by the chart */
+            margin: 20px 0;
+        }
+        .trading-options {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .trading-options button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+        }
+        .sell-button {
+            background-color: #F44336;
+        }
+        .quantity-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .additional-info {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+        .additional-info div {
+            text-align: center;
+        }
+        .bottom-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10px;
+        }
+        .bottom-buttons button {
+            flex-basis: 48%;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #2196F3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="back-button">&larr;</button>
+    <div class="company-name">Company Name</div>
+    <button class="favorite-button">&#9733;</button>
+</div>
+
+<div class="stock-details">
+    <div class="current-price">$123.45</div>
+    <div class="price-change">+1.23 (2.5%)</div>
+    <div class="stock-chart">Stock Chart Placeholder</div>
+</div>
+
+<div class="trading-options">
+    <button class="buy-button">Buy</button>
+    <input class="quantity-input" type="number" placeholder="Qty">
+    <button class="sell-button">Sell</button>
+</div>
+
+<div class="additional-info">
+    <div>
+        <div>Open: $120.00</div>
+        <div>Close: $123.45</div>
+    </div>
+    <div>
+        <div>Volume: 1M</div>
+    </div>
+    <div>
+        <div>Market Cap: $500B</div>
+    </div>
+</div>
+
+<div class="bottom-buttons">
+    <button class="news-button">News</button>
+    <button class="details-button">Details</button>
+</div>
+
+</body>
+</html>

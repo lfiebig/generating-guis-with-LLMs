@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Playlist</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        height: 100%;
+        background-color: #fff;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background: #f8f8f8;
+        font-size: 16px;
+    }
+    .header .back {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .header .title {
+        font-weight: bold;
+    }
+    .middle-section {
+        padding: 16px;
+    }
+    .input-field {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .add-songs {
+        background: #007bff;
+        color: white;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 16px;
+    }
+    .song-list {
+        overflow-y: auto;
+        max-height: 200px; /* Adjust height based on available screen space */
+        margin-bottom: 16px;
+    }
+    .song-item {
+        background: #eee;
+        margin-bottom: 8px;
+        padding: 8px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .no-songs {
+        text-align: center;
+        color: #999;
+    }
+    .bottom-section {
+        padding: 16px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #f8f8f8;
+        box-sizing: border-box;
+    }
+    .save-button {
+        background: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 70%;
+    }
+    .cancel-button {
+        background: transparent;
+        color: #999;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+    }
+    .public-private-toggle {
+        margin-bottom: 16px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="back">&#8592;</div>
+    <div class="title">New Playlist</div>
+    <div></div> <!-- Placeholder for equal spacing -->
+</div>
+
+<div class="middle-section">
+    <input type="text" class="input-field" placeholder="Playlist Name">
+    <button class="add-songs">+ Add Songs</button>
+    <div class="song-list">
+        <!-- Placeholder for no songs -->
+        <div class="no-songs">No songs added yet. Tap "+ Add Songs" to start.</div>
+    </div>
+</div>
+
+<div class="bottom-section">
+    <div class="public-private-toggle">
+        <label>
+            <input type="checkbox"> Public/Private
+        </label>
+    </div>
+    <button class="save-button">Save</button>
+    <button class="cancel-button">Cancel</button>
+</div>
+
+</body>
+</html>

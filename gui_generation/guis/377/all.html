@@ -1,0 +1,704 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Flights</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .title {
+            font-size: 24px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+        }
+        .search-section {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .input-field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .input-field input {
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            flex-grow: 1;
+            background-color: transparent;
+        }
+        .input-field img {
+            width: 24px;
+            height: 24px;
+        }
+        .search-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 18px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+        }
+        .quick-options {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .option {
+            flex: none;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .option img {
+            width: 100px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #fff;
+            position: relative;
+        }
+        .help-button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="Logo" width="50" height="50">
+    <div class="title">Search Flights</div>
+    <img src="profile-icon.png" alt="Profile" width="40" height="40">
+</div>
+
+<div class="search-section">
+    <div class="input-field">
+        <img src="takeoff-icon.png" alt="Departure">
+        <input type="text" placeholder="Departure Airport">
+    </div>
+    <div class="input-field">
+        <img src="landing-icon.png" alt="Destination">
+        <input type="text" placeholder="Destination Airport">
+    </div>
+    <div class="input-field">
+        <img src="calendar-icon.png" alt="Departure Date">
+        <input type="date" placeholder="Departure Date">
+    </div>
+    <div class="input-field">
+        <img src="calendar-icon.png" alt="Return Date">
+        <input type="date" placeholder="Return Date">
+    </div>
+    <div class="input-field">
+        <select>
+            <option>1 Passenger</option>
+            <option>2 Passengers</option>
+            <option>3 Passengers</option>
+        </select>
+    </div>
+    <div class="input-field">
+        <select>
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
+    </div>
+</div>
+
+<div class="quick-options">
+    <div class="option">
+        <img src="destination1.jpg" alt="Destination">
+        <div>Paris</div>
+        <div>Special $499</div>
+    </div>
+    <div class="option">
+        <img src="destination2.jpg" alt="Destination">
+        <div>London</div>
+        <div>Offer $349</div>
+    </div>
+    <div class="option">
+        <img src="destination3.jpg" alt="Destination">
+        <div>New York</div>
+        <div>Deal $299</div>
+    </div>
+</div>
+
+<button class="search-button">Search</button>
+
+<div class="footer">
+    <div>Recent Searches</div>
+    <!-- Collapsible content for recent searches would go here -->
+    <div class="help-button">?</div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Search</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+  }
+  .search-section {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .search-section input,
+  .search-section select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .toggle input[type="radio"] {
+    margin-right: 5px;
+  }
+  .search-button {
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .advanced-options,
+  .recent-searches,
+  .special-offers {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .footer {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .footer div {
+    text-align: center;
+  }
+  .loading-indicator,
+  .error-message {
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>Logo</div>
+  <div>Search Flights</div>
+  <div>Icon</div>
+</div>
+
+<div class="search-section">
+  <input type="text" placeholder="From:" />
+  <input type="text" placeholder="To:" />
+  <input type="date" placeholder="Departure Date" />
+  <input type="date" placeholder="Return Date" />
+  <select>
+    <option value="1">1 Passenger</option>
+    <option value="2">2 Passengers</option>
+    <option value="3">3 Passengers</option>
+    <option value="4">4 Passengers</option>
+  </select>
+  
+  <div class="toggle">
+    <label><input type="radio" name="tripType" value="one-way" /> One-Way</label>
+    <label><input type="radio" name="tripType" value="round-trip" checked /> Round-Trip</label>
+  </div>
+  
+  <button class="search-button">Search Flights</button>
+</div>
+
+<div class="advanced-options">
+  Advanced Options
+</div>
+
+<div class="recent-searches">
+  Recent Searches / Shortcuts
+</div>
+
+<div class="special-offers">
+  Special Offers Section
+</div>
+
+<div class="footer">
+  <div>Home</div>
+  <div>Bookings</div>
+  <div>Offers</div>
+  <div>Profile</div>
+</div>
+
+<div class="loading-indicator" style="display: none;">
+  Loading...
+</div>
+
+<div class="error-message" style="display: none;">
+  Error message goes here.
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Search</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .container {
+    max-width: 375px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Flight Search</h1>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="from">From:</label>
+      <input type="text" id="from" name="from" placeholder="Departure City">
+    </div>
+    <div class="form-group">
+      <label for="to">To:</label>
+      <input type="text" id="to" name="to" placeholder="Destination City">
+    </div>
+    <div class="form-group">
+      <label for="departure-date">Departure Date:</label>
+      <input type="date" id="departure-date" name="departure-date">
+    </div>
+    <div class="form-group">
+      <label for="return-date">Return Date:</label>
+      <input type="date" id="return-date" name="return-date">
+    </div>
+    <input type="submit" value="Search Flights">
+  </form>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+        .search-form {
+            padding: 15px;
+            background-color: #fff;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .recent-searches,
+        .promotional-offers,
+        .help-button {
+            padding: 15px;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .help-button {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button>&#8962; Home</button>
+    <button>&#9776; Menu</button>
+</div>
+
+<div class="search-form">
+    <div class="input-group">
+        <label for="from">From</label>
+        <input type="text" id="from" placeholder="Departure Location">
+    </div>
+    <div class="input-group">
+        <label for="to">To</label>
+        <input type="text" id="to" placeholder="Arrival Location">
+    </div>
+    <div class="input-group">
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date">
+    </div>
+    <div class="input-group">
+        <label for="return-date">Return Date</label>
+        <input type="date" id="return-date">
+    </div>
+    <div class="input-group">
+        <label for="passengers">Passengers</label>
+        <input type="number" id="passengers" placeholder="Number of Passengers">
+    </div>
+    <button class="search-button">&#128269; Search Flights</button>
+</div>
+
+<div class="recent-searches">
+    <p>Recent Searches</p>
+    <!-- List recent searches here -->
+</div>
+
+<div class="promotional-offers">
+    <p>Promotional Offers</p>
+    <!-- Insert promotional banners/cards here -->
+</div>
+
+<div class="help-button">
+    <button>Help / Support</button>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Page Example</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 375px; margin: 0 auto;">
+
+<!-- Header and Navigation -->
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f8f8f8; border-bottom: 1px solid #ddd;">
+    <button style="border: none; background: none; padding: 5px; font-size: 16px;">&#8592; Back</button>
+    <div>
+        <a href="#" style="padding: 5px; font-size: 16px;">Account</a>
+    </div>
+</header>
+
+<!-- Search Area -->
+<div style="padding: 15px; background-color: #fff;">
+    <input type="search" placeholder="Search flights" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd;"/>
+    <input type="date" style="width: 48%; padding: 10px; border: 1px solid #ddd; margin-right: 4%;"/>
+    <input type="date" style="width: 48%; padding: 10px; border: 1px solid #ddd;"/>
+    
+    <!-- Passenger Selector (simplified) -->
+    <label for="passengers" style="display: block; margin-top: 10px;">Passengers:</label>
+    <select id="passengers" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd;">
+        <option>1 Adult</option>
+        <option>2 Adults</option>
+        <option>3 Adults</option>
+    </select>
+</div>
+
+<!-- Filter and Sorting Area -->
+<div style="padding: 10px; background-color: #f0f0f0; display: flex; justify-content: space-between; border-top: 1px solid #ddd;">
+    <button style="border: none; background: none; padding: 5px; font-size: 16px;">Filter</button>
+    <button style="border: none; background: none; padding: 5px; font-size: 16px;">Sort</button>
+</div>
+
+<!-- Content Area -->
+<div style="padding: 15px;">
+    <div style="margin-bottom: 15px; border: 1px solid #ddd; padding: 10px;">
+        <h2>Flight ABC123</h2>
+        <p>Details about the flight...</p>
+        <button style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; margin-top: 10px;">Book Now</button>
+    </div>
+    <!-- Repeat similar blocks for other flight options -->
+</div>
+
+<!-- Additional Services (simplified) -->
+<div style="padding: 15px; background-color: #f8f8f8;">
+    <h3>Additional Services</h3>
+    <p>Integrate with car rentals, hotels, etc.</p>
+</div>
+
+<!-- Footer and Additional Access -->
+<footer style="padding: 15px; background-color: #f0f0f0; border-top: 1px solid #ddd;">
+    <button style="border: none; background: none; padding: 5px; font-size: 16px;">Help/Support</button>
+    <button style="border: none; background: none; padding: 5px; font-size: 16px;">Notifications</button>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .search-container {
+            padding: 15px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .search-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Flight Search
+</div>
+
+<div class="search-container">
+    <div class="input-group">
+        <label for="departure">Departure</label>
+        <input type="text" id="departure" placeholder="Enter departure location">
+    </div>
+    <div class="input-group">
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="Enter destination">
+    </div>
+    <div class="input-group">
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date">
+    </div>
+    <div class="input-group">
+        <label for="return-date">Return Date</label>
+        <input type="date" id="return-date">
+    </div>
+    <div class="input-group">
+        <label for="passengers">Passengers</label>
+        <input type="number" id="passengers" min="1" value="1">
+    </div>
+    <div class="input-group">
+        <label for="class">Class</label>
+        <select id="class">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first">First Class</option>
+        </select>
+    </div>
+    <button class="search-btn">Search Flights</button>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking App - Flight Search</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+  header { background-color: #007bff; color: #ffffff; padding: 10px; text-align: center; }
+  .search-form { padding: 20px; }
+  .input-field { width: 100%; padding: 10px; margin-bottom: 10px; }
+  .search-button { width: 100%; padding: 15px; background-color: #28a745; color: white; border: none; }
+  .results { padding: 20px; }
+  .card { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+  nav { background-color: #f8f9fa; padding: 10px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Flight Search</h1>
+</header>
+
+<nav>
+  <!-- Navigation items like Home, Flights, Hotels, etc. -->
+</nav>
+
+<div class="search-form">
+  <input type="text" class="input-field" placeholder="From" />
+  <input type="text" class="input-field" placeholder="To" />
+  <input type="date" class="input-field" placeholder="Departure Date" />
+  <input type="date" class="input-field" placeholder="Return Date" />
+  <input type="number" class="input-field" placeholder="Passengers" min="1" />
+  <button class="search-button">Search Flights</button>
+</div>
+
+<div class="results">
+  <!-- This will be populated with flight results based on the search -->
+</div>
+
+<footer>
+  <!-- Footer content -->
+</footer>
+
+</body>
+</html>

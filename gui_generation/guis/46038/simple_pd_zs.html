@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        background-color: #fff;
+    }
+    .back-button {
+        font-size: 16px;
+        color: #007BFF;
+        border: none;
+        background: none;
+        margin-right: 16px;
+    }
+    .movie-poster {
+        width: 100%;
+        display: block;
+        margin-top: 8px;
+    }
+    .movie-info {
+        padding: 16px;
+        background-color: #fff;
+        text-align: center;
+    }
+    .movie-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .genre-tags {
+        margin: 8px 0;
+    }
+    .tag {
+        display: inline-block;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    .rating {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    .release-date {
+        font-size: 14px;
+    }
+    .section {
+        padding: 16px;
+        background-color: #fff;
+        margin-top: 8px;
+    }
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .synopsis {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .cast-list {
+        display: flex;
+        overflow-x: auto;
+        margin-bottom: 16px;
+    }
+    .cast-member {
+        margin-right: 16px;
+        text-align: center;
+    }
+    .cast-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background-color: #ddd;
+        margin-bottom: 8px;
+    }
+    .rating-stars {
+        font-size: 16px;
+        color: #FFD700;
+        margin-bottom: 4px;
+    }
+    .reviews-count {
+        font-size: 14px;
+        color: #666;
+    }
+    .review-button {
+        display: block;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 8px;
+        text-align: center;
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 16px 0;
+    }
+    .review-preview {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+    .read-more {
+        font-size: 14px;
+        color: #007BFF;
+        text-decoration: none;
+    }
+    .details-item {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .related-movies {
+        display: flex;
+        overflow-x: auto;
+    }
+    .related-movie-poster {
+        width: 100px;
+        margin-right: 16px;
+        background-color: #ddd;
+    }
+    .footer {
+        padding: 16px;
+        text-align: center;
+        background-color: #fff;
+        margin-top: 8px;
+    }
+    .social-button {
+        margin-right: 8px;
+    }
+    .official-link {
+        color: #007BFF;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        padding: 8px 0;
+        color: #fff;
+    }
+    .nav-item {
+        text-align: center;
+        font-size: 14px;
+    }
+    .floating-action-button {
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        background-color: #FFD700;
+        color: #333;
+        padding: 16px;
+        border-radius: 30px;
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <button class="back-button">Back</button>
+  <h1>Movie Details</h1>
+</div>
+
+<div class="movie-info">
+  <img class="movie-poster" src="movie-poster.jpg" alt="Movie Poster">
+  <h2 class="movie-title">Movie Title</h2>
+  <div class="genre-tags">
+    <span class="tag">Action</span>
+    <span class="tag">Drama</span>
+  </div>
+  <div class="rating">Rating: PG-13</div>
+  <div class="release-date">Release Date: 2023-01-01</div>
+</div>
+
+<div class="section">
+  <h3 class="section-title">Synopsis</h3>
+  <p class="synopsis">Here is a brief summary of the plot...</p>
+</div>
+
+<div class="section">
+  <h3 class="section-title">Cast & Crew</h3>
+  <div class="cast-list">
+    <div class="cast-member">
+      <div class="cast-photo"></div>
+      <div>Actor Name</div>
+    </div>
+    <!-- Repeat for each cast member -->
+  </div>
+</div>
+
+<div class="section">
+  <h3 class="section-title">Rating and Reviews</h3>
+  <div class="rating-stars">★★★★☆</div>
+  <div class="reviews-count">123 reviews</div>
+  <a href="#" class="review-button">Write a Review</a>
+  <div class="review-preview">"An amazing movie with a thrilling plot..." - Reviewer</div>
+  <a href="#" class="read-more">Read More</a>
+</div>
+
+<div class="section">
+  <h3 class="section-title">Additional Details</h3>
+  <div class="details-item">Runtime: 120 minutes</div>
+  <div class="details-item">Language: English</div>
+  <div class="details-item">Budget: $100 million</div>
+  <div class="details-item">Box Office: $500 million</div>
+  <div class="details-item">Trivia: This movie was filmed in 6 different countries.</div>
+</div>
+
+<div class="section">
+  <h3 class="section-title">You Might Also Like</h3>
+  <div class="related-movies">
+    <div class="related-movie-poster"></div>
+    <!-- Repeat for each related movie -->
+  </div>
+</div>
+
+<div class="footer">
+  <span class="social-button">FB</span>
+  <span class="social-button">TW</span>
+  <span class="social-button">IG</span>
+  <br>
+  <a href="#" class="official-link">Official Website</a>
+</div>
+
+<div class="navbar">
+  <div class="nav-item">Home</div>
+  <div class="nav-item">Search</div>
+  <div class="nav-item">Favorites</div>
+  <div class="nav-item">Profile</div>
+</div>
+
+<div class="floating-action-button">
+  Play Trailer
+</div>
+
+</body>
+</html>

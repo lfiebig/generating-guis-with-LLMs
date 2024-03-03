@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking App - Hotels</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+  }
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .filter-sort-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: white;
+    margin-top: 10px;
+  }
+  .hotel-card {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .hotel-image {
+    width: 100%;
+    height: auto;
+  }
+  .hotel-info {
+    padding: 10px 0;
+  }
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+  }
+  .floating-action-button {
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Logo" style="width: 50px; height: 50px;">
+  <input type="text" placeholder="Search hotels" class="search-bar">
+  <img src="profile-icon.png" alt="Profile" style="width: 30px; height: 30px;">
+</div>
+
+<div class="filter-sort-bar">
+  <button>Filter</button>
+  <button>Sort</button>
+</div>
+
+<div class="hotel-card">
+  <img src="hotel-image.jpg" alt="Hotel Image" class="hotel-image">
+  <div class="hotel-info">
+    <h3>Hotel Name</h3>
+    <p>★★★★☆</p>
+    <p>Amenities: Free Wi-Fi, Breakfast, Pool</p>
+    <p>Price: $120/night</p>
+    <p>User Ratings: 4.5 (200 reviews)</p>
+    <button>Book Now</button>
+  </div>
+</div>
+
+<!-- Additional hotel cards would go here -->
+
+<div class="bottom-nav">
+  <img src="home-icon.png" alt="Home" style="width: 30px; height: 30px;">
+  <img src="categories-icon.png" alt="Categories" style="width: 30px; height: 30px;">
+  <img src="favorites-icon.png" alt="Favorites" style="width: 30px; height: 30px;">
+  <img src="bookings-icon.png" alt="Bookings" style="width: 30px; height: 30px;">
+</div>
+
+<div class="floating-action-button">
+  ?
+</div>
+
+</body>
+</html>

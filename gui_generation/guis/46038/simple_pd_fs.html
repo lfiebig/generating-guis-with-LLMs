@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            width: 375px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .back-button,
+        .share-button {
+            font-size: 24px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .movie-title {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .movie-poster {
+            display: flex;
+            justify-content: center;
+        }
+        .movie-poster img {
+            width: 200px;
+            height: auto;
+            margin: 10px 0;
+        }
+        .rating {
+            text-align: center;
+            font-size: 18px;
+        }
+        .details-section {
+            padding: 10px;
+        }
+        .sub-header {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .synopsis,
+        .additional-info {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .cast-list {
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 10px;
+        }
+        .cast-member {
+            text-align: center;
+            margin-right: 10px;
+        }
+        .cast-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+        }
+        .watch-trailer-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .favorites-button,
+        .book-tickets-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="back-button">&#8592; Back</button>
+    <button class="share-button">&#x1F4E4;</button>
+</div>
+
+<div class="movie-title">
+    Movie Title
+</div>
+
+<div class="movie-poster">
+    <img src="movie-poster.jpg" alt="Movie Poster">
+</div>
+
+<div class="rating">
+    &#9733; &#9733; &#9733; &#9733; &#9733; 9.5/10
+</div>
+
+<div class="details-section">
+    <div class="sub-header">Synopsis</div>
+    <div class="synopsis">
+        Here is the synopsis of the movie...
+    </div>
+
+    <div class="sub-header">Cast</div>
+    <div class="cast-list">
+        <div class="cast-member">
+            <img src="actor1.jpg" alt="Actor 1">
+            <div>Actor 1</div>
+        </div>
+        <div class="cast-member">
+            <img src="actor2.jpg" alt="Actor 2">
+            <div>Actor 2</div>
+        </div>
+        <div class="cast-member">
+            <img src="actor3.jpg" alt="Actor 3">
+            <div>Actor 3</div>
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <div>Director: John Doe</div>
+        <div>Genre: Action, Adventure</div>
+        <div>Release Date: 2023-04-15</div>
+    </div>
+
+    <button class="watch-trailer-button">Watch Trailer</button>
+</div>
+
+<div class="bottom-nav">
+    <button class="favorites-button">&#10084; Add to Favorites</button>
+    <button class="book-tickets-button">Book Tickets</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .profile-picture-area {
+            text-align: center;
+            position: relative;
+        }
+        .profile-picture-area img {
+            width: 100%;
+            max-width: 375px;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .additional-pictures-indicator {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .user-info {
+            padding: 16px;
+            background-color: white;
+        }
+        .user-info h1 {
+            margin: 0;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        .user-info p {
+            margin: 4px 0;
+            color: #666;
+        }
+        .bio-text {
+            margin: 16px 0;
+            padding: 16px;
+            background-color: white;
+            overflow-y: auto;
+            max-height: 150px;
+        }
+        .interests-tags {
+            padding: 16px;
+            background-color: white;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #eee;
+            padding: 8px 16px;
+            margin-right: 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        .details {
+            padding: 16px;
+            background-color: white;
+            border-top: 1px solid #ddd;
+        }
+        .details p {
+            margin: 4px 0;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 16px;
+            background-color: white;
+            border-top: 1px solid #ddd;
+        }
+        .action-buttons button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #ddd;
+            padding: 8px 0;
+        }
+        .bottom-nav button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button>&#8592;</button>
+    <button>&#8942;</button>
+</div>
+
+<div class="profile-picture-area">
+    <img src="profile-picture.jpg" alt="Profile Picture">
+    <div class="additional-pictures-indicator">
+        &#8226; &#8226; &#8226;
+    </div>
+</div>
+
+<div class="user-info">
+    <h1>Alex, 29</h1>
+    <p>About 5 miles away</p>
+</div>
+
+<div class="bio-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+</div>
+
+<div class="interests-tags">
+    <div class="tag">Music</div>
+    <div class="tag">Photography</div>
+    <div class="tag">Travel</div>
+    <!-- Add more tags as needed -->
+</div>
+
+<div class="details">
+    <p>Occupation: Software Developer</p>
+    <p>Education: Bachelor's in Computer Science</p>
+    <!-- Add more personal details as needed -->
+</div>
+
+<div class="action-buttons">
+    <button>&#10084;</button>
+    <button>&#10006;</button>
+    <button>&#11088;</button>
+    <button>&#128233;</button>
+</div>
+
+<div class="bottom-nav">
+    <button>&#8962;</button>
+    <button>&#128269;</button>
+    <button>&#128172;</button>
+    <button>&#128100;</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Translation App</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 375px; margin: 0 auto;">
+
+<!-- Header Section -->
+<header style="background-color: #f8f9fa; padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">
+  <h1 style="margin: 0; font-size: 20px;">Translation App</h1>
+  <div style="position: absolute; top: 15px; right: 15px;">☰</div>
+</header>
+
+<!-- Language Selectors -->
+<section style="padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    From: <select style="padding: 5px;">
+      <option>English</option>
+      <!-- Other language options here -->
+    </select>
+  </div>
+  <div>
+    To: <select style="padding: 5px;">
+      <option>Spanish</option>
+      <!-- Other language options here -->
+    </select>
+  </div>
+</section>
+
+<!-- Input Area for Text -->
+<section style="padding: 10px;">
+  <textarea placeholder="Enter text here or tap the mic" rows="6" style="width: 100%; padding: 10px; border: 1px solid #ddd;"></textarea>
+</section>
+
+<!-- Translation Controls -->
+<section style="padding: 10px; display: flex; justify-content: space-between;">
+  <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Translate</button>
+  <button style="padding: 10px; border: none; background: none;">Clear</button>
+</section>
+
+<!-- Output Area for Translated Text -->
+<section style="padding: 10px;">
+  <textarea readonly rows="6" style="width: 100%; padding: 10px; border: 1px solid #ddd; background-color: #f3f3f3;"></textarea>
+</section>
+
+<!-- Additional Features -->
+<section style="padding: 10px; display: flex; justify-content: space-around;">
+  <button style="border: none; background: none;">♡</button>
+  <button style="border: none; background: none;">🔄</button>
+  <button style="border: none; background: none;">📋</button>
+  <button style="border: none; background: none;">🔊</button>
+</section>
+
+<!-- Navigation/Footer -->
+<footer style="background-color: #f8f9fa; padding: 10px; text-align: center; border-top: 1px solid #ddd;">
+  <nav style="display: flex; justify-content: space-between;">
+    <a href="#" style="text-decoration: none; color: #007bff;">Home</a>
+    <a href="#" style="text-decoration: none; color: #007bff;">Dictionary</a>
+    <a href="#" style="text-decoration: none; color: #007bff;">Phrases</a>
+    <a href="#" style="text-decoration: none; color: #007bff;">Settings</a>
+  </nav>
+</footer>
+
+</body>
+</html>

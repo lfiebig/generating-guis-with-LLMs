@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Search App</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  .logo {
+    max-height: 40px;
+  }
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+  }
+  .filter-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .job-card {
+    background-color: #ffffff;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .company-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+  }
+  .quick-apply-button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .floating-action-button {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Company Logo" class="logo">
+  <input type="text" class="search-bar" placeholder="Search jobs...">
+  <img src="filter-icon.png" alt="Filter/Sort Icon" class="filter-icon">
+</div>
+
+<div class="main-content-area">
+  <!-- Repeat this job-card block for each job listing -->
+  <div class="job-card">
+    <img src="company-thumbnail.png" alt="Company Thumbnail" class="company-thumbnail">
+    <h2>Job Title</h2>
+    <p>Company Name</p>
+    <p>Location</p>
+    <p>Posted 1 day ago</p>
+    <button class="quick-apply-button">Quick Apply</button>
+  </div>
+  <!-- End job-card block -->
+</div>
+
+<div class="footer">
+  <button>Home</button>
+  <button>Saved Jobs</button>
+  <button>Applications</button>
+  <button>Profile</button>
+</div>
+
+<button class="floating-action-button">+</button>
+
+</body>
+</html>

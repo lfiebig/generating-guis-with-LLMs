@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Flights</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .title {
+            font-size: 24px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+        }
+        .search-section {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .input-field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .input-field input {
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            flex-grow: 1;
+            background-color: transparent;
+        }
+        .input-field img {
+            width: 24px;
+            height: 24px;
+        }
+        .search-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 18px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+        }
+        .quick-options {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .option {
+            flex: none;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .option img {
+            width: 100px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #fff;
+            position: relative;
+        }
+        .help-button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="Logo" width="50" height="50">
+    <div class="title">Search Flights</div>
+    <img src="profile-icon.png" alt="Profile" width="40" height="40">
+</div>
+
+<div class="search-section">
+    <div class="input-field">
+        <img src="takeoff-icon.png" alt="Departure">
+        <input type="text" placeholder="Departure Airport">
+    </div>
+    <div class="input-field">
+        <img src="landing-icon.png" alt="Destination">
+        <input type="text" placeholder="Destination Airport">
+    </div>
+    <div class="input-field">
+        <img src="calendar-icon.png" alt="Departure Date">
+        <input type="date" placeholder="Departure Date">
+    </div>
+    <div class="input-field">
+        <img src="calendar-icon.png" alt="Return Date">
+        <input type="date" placeholder="Return Date">
+    </div>
+    <div class="input-field">
+        <select>
+            <option>1 Passenger</option>
+            <option>2 Passengers</option>
+            <option>3 Passengers</option>
+        </select>
+    </div>
+    <div class="input-field">
+        <select>
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
+    </div>
+</div>
+
+<div class="quick-options">
+    <div class="option">
+        <img src="destination1.jpg" alt="Destination">
+        <div>Paris</div>
+        <div>Special $499</div>
+    </div>
+    <div class="option">
+        <img src="destination2.jpg" alt="Destination">
+        <div>London</div>
+        <div>Offer $349</div>
+    </div>
+    <div class="option">
+        <img src="destination3.jpg" alt="Destination">
+        <div>New York</div>
+        <div>Deal $299</div>
+    </div>
+</div>
+
+<button class="search-button">Search</button>
+
+<div class="footer">
+    <div>Recent Searches</div>
+    <!-- Collapsible content for recent searches would go here -->
+    <div class="help-button">?</div>
+</div>
+
+</body>
+</html>

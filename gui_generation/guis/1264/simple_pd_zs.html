@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Workout</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+    .header {
+        background: #f8f8f8;
+        padding: 10px 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+    .back-button {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .content {
+        padding: 15px;
+    }
+    .section {
+        margin-bottom: 15px;
+    }
+    select, input[type="text"], input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        background: #ddd;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .checkbox-group, .toggle-group {
+        padding: 10px 0;
+    }
+    .start-button {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .footer {
+        background: #f8f8f8;
+        padding: 10px 15px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        position: relative;
+    }
+    .help-button, .settings-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .help-button {
+        left: 15px;
+    }
+    .settings-button {
+        right: 15px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="back-button">&lt; Back</div>
+    Start Workout
+</div>
+
+<div class="content">
+    <div class="section">
+        <label for="workout-type">Choose Workout Type:</label>
+        <select id="workout-type">
+            <option>Cardio</option>
+            <option>Strength</option>
+            <option>HIIT</option>
+            <option>Yoga</option>
+        </select>
+    </div>
+    
+    <div class="section">
+        <label for="intensity-level">Intensity Level:</label>
+        <input type="range" id="intensity-level" class="slider" min="1" max="3">
+    </div>
+    
+    <div class="section">
+        <label for="duration">Duration:</label>
+        <input type="number" id="duration" placeholder="Enter duration in minutes">
+    </div>
+    
+    <div class="section">
+        <div class="checkbox-group">
+            Equipment:
+            <label><input type="checkbox"> Dumbbells</label>
+            <label><input type="checkbox"> Kettlebells</label>
+            <label><input type="checkbox"> None</label>
+        </div>
+    </div>
+    
+    <div class="section">
+        <label for="set-goals">Set Goals:</label>
+        <input type="text" id="set-goals" placeholder="Enter your goals">
+    </div>
+    
+    <div class="section">
+        <div class="toggle-group">
+            Music Preferences:
+            <label><input type="checkbox"> On</label>
+            <label><input type="checkbox"> Off</label>
+        </div>
+    </div>
+    
+    <div class="section">
+        <label for="trainer-voice">Trainer Voice:</label>
+        <select id="trainer-voice">
+            <option>Trainer 1</option>
+            <option>Trainer 2</option>
+            <option>None</option>
+        </select>
+    </div>
+    
+    <div class="section">
+        <button class="start-button">Start Workout</button>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="help-button">?</div>
+    <div class="settings-button">&#9881;</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Details - Trading App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+        .back-button {
+            font-size: 16px;
+        }
+        .company-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .stock-info {
+            background: #fff;
+            padding: 10px;
+            margin-top: 1px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .price-change {
+            color: #4CAF50; /* Green for positive, red for negative */
+        }
+        .chart {
+            background: #fff;
+            padding: 10px;
+            margin-top: 1px;
+        }
+        .detailed-info, .trading-options, .news, .footer {
+            background: #fff;
+            padding: 10px;
+            margin-top: 1px;
+        }
+        .buy-button, .sell-button {
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            margin: 5px 0;
+            width: 100%;
+        }
+        .sell-button {
+            background: #F44336;
+        }
+        .trade-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2196F3;
+            color: #fff;
+            padding: 15px;
+            border-radius: 50%;
+        }
+        .footer-button {
+            background: #fff;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="back-button">&lt; Back</span>
+        <span class="company-name">Company XYZ</span>
+        <span class="logo-icon">🏢</span>
+    </div>
+    <div class="stock-info">
+        <div>
+            <div>Ticker: XYZ</div>
+            <div>Price: $123.45</div>
+        </div>
+        <div class="price-change">
+            +$1.23 (1.00%)
+        </div>
+    </div>
+    <div class="chart">
+        <!-- Placeholder for chart -->
+        Interactive Chart Here
+    </div>
+    <div class="detailed-info">
+        <div>Open: $120.00</div>
+        <div>High/Low: $125.00/$119.00</div>
+        <div>Volume: 1M</div>
+        <div>Market Cap: $500B</div>
+        <div>P/E Ratio: 25</div>
+        <div>Dividend Yield: 1.5%</div>
+    </div>
+    <div class="trading-options">
+        <button class="buy-button">Buy</button>
+        <button class="sell-button">Sell</button>
+        <input type="number" placeholder="Quantity" style="width: 100%; padding: 10px; margin-top: 5px;">
+        <select style="width: 100%; padding: 10px; margin-top: 5px;">
+            <option value="market">Market</option>
+            <option value="limit">Limit</option>
+            <option value="stop_loss">Stop Loss</option>
+        </select>
+    </div>
+    <div class="news">
+        Latest News and Updates Here
+    </div>
+    <div class="footer">
+        <button class="footer-button">Home</button>
+        <button class="footer-button">Portfolio</button>
+        <button class="footer-button">Watchlist</button>
+        <button class="footer-button">Settings/More</button>
+    </div>
+    <button class="trade-now">Trade Now</button>
+</body>
+</html>

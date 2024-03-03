@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 667px;
+            width: 375px;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #eeeeee;
+        }
+        .app-logo {
+            flex: 1;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .settings-button {
+            position: absolute;
+            right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 10px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .text-input-field {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .translate-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .translation-output {
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .additional-features {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #eeeeee;
+        }
+        .footer .button {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-logo">TransApp</div>
+    <div class="settings-button">&#9881;</div>
+</div>
+
+<div class="main-content">
+    <select id="source-language">
+        <option>English</option>
+        <option>Spanish</option>
+        <option>French</option>
+    </select>
+    <select id="target-language">
+        <option>Spanish</option>
+        <option>English</option>
+        <option>French</option>
+    </select>
+    <textarea class="text-input-field" placeholder="Enter text here"></textarea>
+    <div class="additional-features">
+        <div class="button">&#x1F50E;</div>
+        <div class="button">&#x1F4CB;</div>
+        <div class="button">&#x1F4E4;</div>
+    </div>
+    <button class="translate-button">Translate</button>
+    <textarea class="translation-output" readonly></textarea>
+</div>
+
+<div class="footer">
+    <div class="button">Recent</div>
+    <div class="button">Favorites</div>
+</div>
+
+</body>
+</html>

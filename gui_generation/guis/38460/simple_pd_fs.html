@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            width: 375px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            box-sizing: border-box;
+        }
+        .header .app-logo {
+            font-size: 24px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .search-button,
+        .menu-button {
+            font-size: 24px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .featured-movie-section {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+        .featured-movie-section .movie-slide {
+            display: inline-block;
+            width: 200px;
+            margin-right: 10px;
+            position: relative;
+        }
+        .featured-movie-section img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .featured-movie-section .movie-title {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        .featured-movie-section .release-date {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .movie-listings-section {
+            overflow-y: auto;
+            padding: 0 10px 60px; /* Extra padding for the fixed footer */
+        }
+        .movie-listings-section .movie-list-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .movie-listings-section .movie-poster-thumbnail {
+            width: 50px;
+            height: 75px;
+            margin-right: 10px;
+        }
+        .movie-listings-section .movie-info {
+            flex-grow: 1;
+        }
+        .movie-listings-section .movie-title {
+            font-weight: bold;
+        }
+        .movie-listings-section .rating-indicator {
+            text-align: right;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .footer .nav-item.active {
+            border-top: 2px solid white;
+        }
+        .floating-action-button {
+            position: fixed;
+            bottom: 70px; /* Above footer */
+            right: 15px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 24px;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="menu-button">&#9776;</button>
+    <div class="app-logo">MovieApp</div>
+    <button class="search-button">&#128269;</button>
+</div>
+
+<div class="featured-movie-section">
+    <!-- Repeat for each featured movie, just a single example here -->
+    <div class="movie-slide">
+        <img src="featured-movie-poster.jpg" alt="Movie Poster">
+        <div class="movie-title">Movie Title</div>
+        <div class="release-date">Release Date</div>
+    </div>
+    <!-- ... -->
+</div>
+
+<div class="movie-listings-section">
+    <!-- Repeat for each movie listing -->
+    <div class="movie-list-item">
+        <img class="movie-poster-thumbnail" src="movie-poster.jpg" alt="Movie Poster">
+        <div class="movie-info">
+            <div class="movie-title">Movie Title</div>
+            <div class="release-date">Release Date</div>
+            <div class="synopsis-snippet">A brief summary of the movie...</div>
+            <div class="rating-indicator">★★★★☆</div>
+        </div>
+    </div>
+    <!-- ... -->
+</div>
+
+<div class="footer">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item">Favorites</div>
+    <div class="nav-item">Profile</div>
+</div>
+
+<button class="floating-action-button">&#x21bb;</button>
+
+</body>
+</html>

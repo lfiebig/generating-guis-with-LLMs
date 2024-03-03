@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Activity</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    position: relative;
+  }
+  .navigation-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 10px auto;
+    display: block;
+  }
+  .activity-summary {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .activity-detail {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .quick-log-buttons, .historical-data, .social-sharing {
+    margin: 10px;
+    text-align: center;
+  }
+  .quick-log-buttons button,
+  .historical-data button,
+  .social-sharing button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .floating-action-button {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="navigation-icon">&#9776;</div>
+  Daily Activity
+</div>
+
+<div class="activity-summary">
+  <img src="profile-placeholder.png" alt="Profile Picture" class="profile-picture">
+  <div>Current Date: <strong>April 1, 2023</strong></div>
+  <div>Total Steps: <strong>5,432</strong></div>
+  <div>Calories Burned: <strong>345</strong></div>
+  <div>Active Time: <strong>1h 45m</strong></div>
+</div>
+
+<div class="activity-detail">
+  <p><strong>Hourly Steps:</strong></p>
+  <div><!-- Graph or Progress Bars Here --></div>
+  <p><strong>Activity Types:</strong></p>
+  <div><!-- Icons or Labels Here --></div>
+  <p><strong>Goals Progress:</strong></p>
+  <div><!-- Display of Progress Here --></div>
+</div>
+
+<div class="quick-log-buttons">
+  <button>Add Activity</button>
+  <button>Start Activity</button>
+</div>
+
+<div class="historical-data">
+  <button>Calendar</button>
+  <button>Trends/Insights</button>
+</div>
+
+<div class="social-sharing">
+  <button>Share</button>
+  <button>Challenges</button>
+</div>
+
+<div class="footer">
+  <a href="#">Home</a>
+  <a href="#">Activity</a>
+  <a href="#">Challenges</a>
+  <a href="#">Profile</a>
+  <a href="#">More</a>
+</div>
+
+<div class="floating-action-button">+</div>
+
+</body>
+</html>

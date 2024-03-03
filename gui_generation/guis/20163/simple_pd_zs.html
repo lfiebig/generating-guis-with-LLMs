@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty and Skincare Shop</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  .logo {
+    width: 50px; /* Example size, adjust as needed */
+  }
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .menu-icon {
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  .filter-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #eeeeee;
+    padding: 10px 0;
+  }
+  .filter-bar button {
+    display: inline-block;
+    margin: 0 10px;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+  }
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 5px;
+  }
+  .product {
+    width: 48%; /* For a 2-column grid */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+  }
+  .bottom-nav div {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  .floating-action-button {
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Logo" class="logo">
+  <input type="search" class="search-bar" placeholder="Search products...">
+  <div class="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+</div>
+
+<div class="filter-bar">
+  <!-- Example category buttons -->
+  <button>Skin Care</button>
+  <button>Makeup</button>
+  <button>Hair Care</button>
+</div>
+
+<div class="product-grid">
+  <!-- Example product -->
+  <div class="product">
+    <img src="product1.jpg" alt="Product 1">
+    <p>Product 1</p>
+    <p>$19.99</p>
+    <p>&#9733; &#9733; &#9733; &#9734; &#9734;</p> <!-- Star rating -->
+    <button>Add to Cart</button>
+    <div>&hearts;</div> <!-- Wishlist icon -->
+  </div>
+  <!-- Add more products as needed -->
+</div>
+
+<div class="bottom-nav">
+  <div>&#8962;</div> <!-- Home icon -->
+  <div>&#9776;</div> <!-- Categories icon -->
+  <div>&#128722; (0)</div> <!-- Cart icon with item count -->
+  <div>&#128100;</div> <!-- Account icon -->
+</div>
+
+<button class="floating-action-button">&#128722;</button> <!-- Shopping cart icon -->
+
+<div class="footer">
+  <p>Terms of Service | Privacy Policy</p>
+  <p>&#x25b2; Social Media Icons &#x25b2;</p>
+  <!-- Add actual social media icons -->
+</div>
+
+</body>
+</html>

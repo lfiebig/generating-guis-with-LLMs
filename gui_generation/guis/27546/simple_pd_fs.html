@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget Summary</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+        }
+        .header .settings-button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .summary-cards-container {
+            overflow-y: auto;
+            padding: 10px;
+            margin-bottom: 60px;
+        }
+        .budget-card {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .budget-card .category-icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .budget-card .category-name {
+            flex-grow: 1;
+        }
+        .budget-card .budget-amount {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .budget-card .progress-bar-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .progress-bar {
+            height: 5px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            width: 50%; /* Example progress */
+        }
+        .add-budget-button {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .bottom-navigation {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-item {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .total-budget-overview {
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+        .total-label {
+            color: #555;
+        }
+        .total-amount {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Monthly Budget Summary</h1>
+        <button class="settings-button">&#9881;</button>
+    </div>
+    <div class="total-budget-overview">
+        <div>
+            <div class="total-label">Total Monthly Budget</div>
+            <div class="total-label">Total Spent</div>
+        </div>
+        <div>
+            <div class="total-amount">$2000.00</div>
+            <div class="total-amount">$1230.50</div>
+        </div>
+    </div>
+    <div class="summary-cards-container">
+        <!-- Repeat this card for each budget category -->
+        <div class="budget-card">
+            <div class="category-icon">&#127968;</div>
+            <div class="category-name">Groceries</div>
+            <div class="budget-amount">$500.00</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <!-- ... other cards ... -->
+    </div>
+    <button class="add-budget-button">+</button>
+    <div class="bottom-navigation">
+        <div class="nav-item">&#8962;</div>
+        <div class="nav-item">&#128202;</div>
+        <div class="nav-item">&#9881;</div>
+    </div>
+</body>
+</html>

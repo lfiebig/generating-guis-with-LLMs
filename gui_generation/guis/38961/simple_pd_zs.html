@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recent Transactions</title>
+<style>
+    /* Inline styles are generally not recommended, but used here for simplicity */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .header {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .search-filter-bar {
+        background-color: #ffffff;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-field {
+        border: 1px solid #d0d0d0;
+        padding: 8px;
+        width: 70%;
+        border-radius: 4px;
+    }
+    .filter-icon {
+        /* Placeholder for filter icon style */
+    }
+    .balance-overview {
+        background-color: #ffffff;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .transaction-list {
+        background-color: #ffffff;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .transaction-item {
+        padding: 5px 0;
+    }
+    .income {
+        color: green;
+    }
+    .expense {
+        color: red;
+    }
+    .action-buttons {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .button {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+    .footer {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+    .footer a {
+        padding: 5px;
+        text-decoration: none;
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Recent Transactions</h1>
+</div>
+<div class="search-filter-bar">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="filter-icon">☰ Filter</button>
+</div>
+<div class="balance-overview">
+    <p>Current Balance: $3,250.00</p>
+    <p>Income: <span class="income">+$750.00</span> Expense: <span class="expense">-$180.50</span></p>
+</div>
+<div class="transaction-list">
+    <div class="transaction-item">
+        <div>Date | Description | $Amount</div>
+    </div>
+    <div class="transaction-item">
+        <div>02/20 | Grocery | <span class="expense">-$50.00</span></div>
+    </div>
+    <div class="transaction-item">
+        <div>02/19 | Salary | <span class="income">+$500.00</span></div>
+    </div>
+    <div class="transaction-item">
+        <div>02/18 | Coffee | <span class="expense">-$3.50</span></div>
+    </div>
+</div>
+<div class="action-buttons">
+    <button class="button">Add Transaction</button>
+    <button class="button">Export</button>
+</div>
+<div class="footer">
+    <a href="#">Home</a> | <a href="#">Reports</a> | <a href="#">Budget</a> | <a href="#">Settings</a>
+</div>
+</body>
+</html>

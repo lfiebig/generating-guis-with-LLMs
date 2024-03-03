@@ -1,0 +1,131 @@
+.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  .header, .footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+  }
+  .album-artwork {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .album-artwork img {
+    max-width: 90%;
+    border-radius: 5px;
+  }
+  .track-info {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .bar {
+    height: 4px;
+    background-color: #ddd;
+    flex-grow: 1;
+    margin: 0 10px;
+    position: relative;
+  }
+  .bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 50%; /* This should be dynamic based on the song progress */
+    background-color: #007bff;
+  }
+  .playback-controls, .additional-controls {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #dddddd;
+  }
+  button {
+    border: none;
+    background: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  button:focus {
+    outline: none;
+  }
+  .volume-slider input {
+    width: 100%;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <button>&lt;-</button>
+  Now Playing
+</div>
+
+<div class="album-artwork">
+  <img src="album-artwork.jpg" alt="Album Artwork">
+</div>
+
+<div class="track-info">
+  <div><strong>Title:</strong> Song Title</div>
+  <div><strong>Artist:</strong> Artist Name</div>
+  <div><strong>Album:</strong> Album Name</div>
+</div>
+
+<div class="progress-bar">
+  <span>0:00</span>
+  <div class="bar"></div>
+  <span>3:45</span>
+</div>
+
+<div class="playback-controls">
+  <button>Prev</button>
+  <button>Play/Pause</button>
+  <button>Next</button>
+  <button>Shuffle</button>
+  <button>Repeat</button>
+</div>
+
+<div class="additional-controls">
+  <div class="volume-slider">
+    <input type="range" min="0" max="100">
+  </div>
+  <button>Lyrics</button>
+  <button>More</button>
+</div>
+
+<div class="footer">
+  <div class="footer-nav">
+    <a href="#">Home</a>
+    <a href="#">Search</a>
+    <a href="#">Library</a>
+  </div>
+</div>
+
+</body>
+</html>

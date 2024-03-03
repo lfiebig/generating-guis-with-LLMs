@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Activity Tracker</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .header-title {
+        font-size: 1.2em;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .settings-button {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .activity-summary {
+        text-align: center;
+        padding: 1em 0;
+    }
+    .date-display {
+        font-size: 1em;
+        color: #666;
+    }
+    .total-steps {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 0.5em 0;
+    }
+    .steps-progress {
+        background: #e6e6e6;
+        border-radius: 10px;
+        height: 20px;
+        position: relative;
+    }
+    .steps-progress::after {
+        content: '';
+        display: block;
+        background: #4caf50;
+        width: 70%; /* Assuming 70% is the progress */
+        height: 100%;
+        border-radius: 10px;
+    }
+    .activity-breakdown {
+        flex-grow: 1;
+        overflow-y: scroll;
+    }
+    .activity-card {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        margin: 0.5em;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .activity-icon {
+        font-size: 2em;
+        margin-right: 1em;
+    }
+    .activity-info {
+        text-align: left;
+    }
+    .add-activity-button {
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        background: #4caf50;
+        color: #fff;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+    }
+    .bottom-navigation {
+        display: flex;
+        justify-content: space-evenly;
+        background: #fff;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        padding: 1em 0;
+    }
+    .nav-button {
+        text-align: center;
+        flex-grow: 1;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    .nav-button.active {
+        color: #4caf50;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-title">Daily Activity</div>
+    <span class="settings-button">&#9881;</span>
+</div>
+
+<div class="activity-summary">
+    <div class="date-display">April 10, 2023</div>
+    <div class="total-steps">7,830</div>
+    <div class="steps-progress"></div>
+</div>
+
+<div class="activity-breakdown">
+    <div class="activity-card">
+        <span class="activity-icon">&#x1F6B6;</span> <!-- Walking icon -->
+        <div class="activity-info">
+            <div>Walking</div>
+            <div>Duration: 45 mins</div>
+            <div>Distance: 3 km</div>
+        </div>
+    </div>
+    <div class="activity-card">
+        <span class="activity-icon">&#x1F3C3;</span> <!-- Running icon -->
+        <div class="activity-info">
+            <div>Running</div>
+            <div>Duration: 30 mins</div>
+            <div>Distance: 5 km</div>
+        </div>
+    </div>
+    <div class="activity-card">
+        <span class="activity-icon">&#x1F6B4;</span> <!-- Cycling icon -->
+        <div class="activity-info">
+            <div>Cycling</div>
+            <div>Duration: 1 hour</div>
+            <div>Distance: 15 km</div>
+        </div>
+    </div>
+    <button class="add-activity-button">Add Activity</button>
+</div>
+
+<div class="bottom-navigation">
+    <div class="nav-button">&#8962;</div> <!-- Home icon -->
+    <div class="nav-button active">&#x1F3C3;</div> <!-- Activity icon -->
+    <div class="nav-button">&#x1F464;</div> <!-- Profile icon -->
+</div>
+
+</body>
+</html>

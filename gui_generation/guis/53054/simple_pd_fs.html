@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15px;
+            margin-bottom: 10px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .search-bar input {
+            border: none;
+            background: none;
+            padding-left: 10px;
+            height: 30px;
+            width: 100%;
+            outline: none;
+        }
+        .filter-sort-btn {
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+        .job-listings {
+            overflow-y: auto;
+            padding: 0 15px;
+            margin-bottom: 60px; /* Height of the navigation bar */
+        }
+        .job-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .location {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .location-icon {
+            margin-right: 5px;
+        }
+        .apply-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        .footer-icon {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .floating-action-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 70px; /* Above the navigation bar */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 1.5em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>JobFinder</h1>
+    <div class="search-container">
+        <div class="search-bar">
+            <span>&#x1F50D;</span>
+            <input type="text" placeholder="Search jobs...">
+        </div>
+        <button class="filter-sort-btn">Filter</button>
+    </div>
+</div>
+
+<div class="job-listings">
+    <div class="job-card">
+        <div class="job-title">Software Engineer</div>
+        <div>at TechCorp</div>
+        <div class="location"><span class="location-icon">&#x1F4CD;</span>New York, NY</div>
+        <div>$80k-$100k</div>
+        <div>Brief job description...</div>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+    <div class="job-card">
+        <div class="job-title">Marketing Manager</div>
+        <div>at Creative Solutions</div>
+        <div class="location"><span class="location-icon">&#x1F4CD;</span>San Francisco, CA</div>
+        <div>$60k-$85k</div>
+        <div>Brief job description...</div>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+    <div class="job-card">
+        <div class="job-title">Data Analyst</div>
+        <div>at DataGen Inc.</div>
+        <div class="location"><span class="location-icon">&#x1F4CD;</span>Austin, TX</div>
+        <div>$70k-$90k</div>
+        <div>Brief job description...</div>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-icon">&#x1F3E0;</div>
+    <div class="footer-icon">&#x1F516;</div>
+    <div class="footer-icon">&#x1F464;</div>
+</div>
+
+<button class="floating-action-btn">&#x2b;</button>
+
+</body>
+</html>

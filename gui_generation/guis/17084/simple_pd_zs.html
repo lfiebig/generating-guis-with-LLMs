@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Review App</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        overflow-x: hidden;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .restaurant-info {
+        background: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+    .restaurant-info img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    .tabs {
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+        margin-top: 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .tab {
+        padding: 10px;
+        flex-grow: 1;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+    }
+    .tab.active {
+        border-bottom-color: #007bff;
+        font-weight: bold;
+    }
+    .content {
+        padding: 15px;
+        background: #fff;
+        margin-top: 10px;
+    }
+    .fab {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background: #007bff;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <button style="background:none;border:none;">&#8592;</button>
+    <h1 style="font-size:1.2em;">Restaurant Name</h1>
+    <button style="background:none;border:none;">&#9733;</button>
+</div>
+
+<div class="restaurant-info">
+    <img src="cover-image.jpg" alt="Restaurant Cover Image">
+    <p>&#9733;&#9733;&#9733;&#9733;&#9734; (4.0)</p>
+    <p>$$ - $$$</p>
+    <p>Italian Cuisine</p>
+    <p style="color: green;">Open Now</p>
+    <a href="https://maps.google.com">View Address on Maps</a>
+    <button style="display:block;margin-top:10px;">Contact</button>
+    <button style="display:block;margin-top:10px;">Reserve Table</button>
+</div>
+
+<div class="tabs">
+    <div class="tab active">Overview</div>
+    <div class="tab">Menu</div>
+    <div class="tab">Reviews</div>
+</div>
+
+<div class="content">
+    <p>Brief description of the restaurant, its ambiance, history, or unique selling points.</p>
+    <ul>
+        <li>Delivery</li>
+        <li>Parking</li>
+        <li>Wi-Fi</li>
+    </ul>
+    <p>Opening Hours:</p>
+    <ul>
+        <li>Monday - Friday: 9am - 11pm</li>
+        <li>Saturday - Sunday: 10am - 12am</li>
+    </ul>
+</div>
+
+<!-- The Menu and Reviews content would be placed here, hidden initially and shown when the respective tab is clicked -->
+
+<div class="fab">&#10148;</div>
+
+<div class="footer">
+    <button style="background:none;border:none;">Share</button>
+    <button style="background:none;border:none;">Report</button>
+</div>
+
+<div class="nav">
+    <button style="background:none;border:none;">Home</button>
+    <button style="background:none;border:none;">Search</button>
+    <button style="background:none;border:none;">Profile</button>
+</div>
+
+</body>
+</html>

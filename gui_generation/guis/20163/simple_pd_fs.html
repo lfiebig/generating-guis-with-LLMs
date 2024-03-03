@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beauty Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            width: 375px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #eee;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+        input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+        }
+        .cart-icon, .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .promotional-banner {
+            width: 100%;
+            overflow: hidden;
+        }
+        .promotional-banner img {
+            width: 100%;
+            display: block;
+        }
+        .category-section {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+            white-space: nowrap;
+        }
+        .category-item {
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+        }
+        .category-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .product-item {
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .add-to-cart {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: #4CAF50;
+            color: white;
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .bottom-navigation-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+        .nav-item {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .floating-action-button {
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="menu-icon">&#9776;</div>
+    <div class="search-bar">
+        <input type="search" placeholder="Search beauty products">
+    </div>
+    <div class="cart-icon">&#x1F6D2;</div>
+</div>
+
+<div class="promotional-banner">
+    <img src="promo1.jpg" alt="Promotion 1">
+    <!-- Additional images for slider can be added here -->
+</div>
+
+<div class="category-section">
+    <div class="category-item">
+        <img src="skincare.jpg" alt="Skincare">
+        <span>Skincare</span>
+    </div>
+    <div class="category-item">
+        <img src="makeup.jpg" alt="Makeup">
+        <span>Makeup</span>
+    </div>
+    <div class="category-item">
+        <img src="haircare.jpg" alt="Haircare">
+        <span>Haircare</span>
+    </div>
+    <!-- Add more categories as needed -->
+</div>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img src="product1.jpg" alt="Hydrating Face Cream">
+        <span>Hydrating Face Cream</span>
+        <span>$25.99</span>
+        <div class="add-to-cart">&#x1F6D2;</div>
+    </div>
+    <!-- More product items -->
+</div>
+
+<div class="bottom-navigation-bar">
+    <div class="nav-item">Home</div>
+    <div class="nav-item">Categories</div>
+    <div class="nav-item">Offers</div>
+    <div class="nav-item">Profile</div>
+</div>
+
+<div class="floating-action-button">&#x1F4AC;</div>
+
+</body>
+</html>

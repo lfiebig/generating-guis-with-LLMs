@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #EFEFEF;
+            color: #333;
+            width: 375px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .location-display {
+            flex-grow: 2;
+            text-align: center;
+        }
+        .button {
+            border: none;
+            background: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .current-weather {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .temperature-display {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .weather-description {
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .details {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .details > div {
+            margin: 5px 0;
+        }
+        .hourly-forecast, .daily-forecast {
+            background-color: #FFFFFF;
+            margin: 10px 0;
+            padding: 10px;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        .hour-block, .day-block {
+            display: inline-block;
+            margin-right: 15px;
+            text-align: center;
+        }
+        .day-block {
+            width: 100%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-right: 0;
+            margin-bottom: 5px;
+            padding: 10px 0;
+        }
+        .last-updated {
+            text-align: center;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        .add-location-button {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="button">&#9881;</button>
+    <div class="location-display">New York City, NY</div>
+    <button class="button">&#x21bb;</button>
+</div>
+
+<div class="current-weather">
+    <div class="weather-icon">&#9728;</div>
+    <div class="temperature-display">23°</div>
+    <div class="weather-description">Sunny</div>
+</div>
+
+<div class="details">
+    <div><strong>Feels Like:</strong> 21°</div>
+    <div><strong>Wind:</strong> NE 10 mph</div>
+    <div><strong>Humidity:</strong> 65%</div>
+</div>
+
+<div class="hourly-forecast">
+    <div class="hour-block">
+        <div>10 AM</div>
+        <div>&#9728;</div>
+        <div>22°</div>
+    </div>
+    <div class="hour-block">
+        <div>11 AM</div>
+        <div>&#9728;</div>
+        <div>24°</div>
+    </div>
+    <div class="hour-block">
+        <div>12 PM</div>
+        <div>&#9729;</div>
+        <div>25°</div>
+    </div>
+</div>
+
+<div class="daily-forecast">
+    <div class="day-block">
+        <div>Monday</div>
+        <div>&#9728;</div>
+        <div>High: 28° Low: 18°</div>
+    </div>
+    <div class="day-block">
+        <div>Tuesday</div>
+        <div>&#9729;</div>
+        <div>High: 22° Low: 16°</div>
+    </div>
+    <div class="day-block">
+        <div>Wednesday</div>
+        <div>&#9728;</div>
+        <div>High: 30° Low: 20°</div>
+    </div>
+</div>
+
+<div class="last-updated">
+    Last Updated: 10:45 AM
+</div>
+
+<button class="add-location-button">&#43;</button>
+
+</body>
+</html>

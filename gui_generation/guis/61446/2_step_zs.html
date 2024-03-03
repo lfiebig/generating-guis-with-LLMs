@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Forecast</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .header, .footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  .current-weather {
+    text-align: center;
+  }
+  .weather-icon {
+    font-size: 48px;
+  }
+  .temperature {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .weather-description {
+    font-size: 24px;
+  }
+  .additional-info {
+    font-size: 16px;
+  }
+  .hourly-forecast, .daily-forecast {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .forecast-item {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+  }
+  .forecast-icon {
+    font-size: 24px;
+  }
+  .forecast-temp {
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <span>Current Location</span>
+  <button onclick="location.reload();">Refresh</button>
+  <button>Settings</button>
+</div>
+
+<div class="main-content">
+  <div class="current-weather">
+    <div class="weather-icon">☀️</div>
+    <div class="temperature">23°C</div>
+    <div class="weather-description">Partly Cloudy</div>
+    <div class="additional-info">Wind: 10 km/h | Humidity: 55% | Precip: 0%</div>
+  </div>
+
+  <div class="hourly-forecast">
+    <div class="forecast-item">
+      <div>10 AM</div>
+      <div class="forecast-icon">☀️</div>
+      <div class="forecast-temp">22°C</div>
+    </div>
+    <!-- Repeat forecast-item for each hour -->
+  </div>
+
+  <div class="daily-forecast">
+    <div class="forecast-item">
+      <div>Monday</div>
+      <div class="forecast-icon">☔️</div>
+      <div class="forecast-temp">18°C / 10°C</div>
+    </div>
+    <!-- Repeat forecast-item for each day -->
+  </div>
+</div>
+
+<div class="footer">
+  <nav>
+    <button>Radar</button>
+    <button>Alerts</button>
+    <button>Settings</button>
+  </nav>
+</div>
+
+</body>
+</html>

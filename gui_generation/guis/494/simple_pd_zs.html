@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create New Playlist</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  .main-content {
+    padding: 16px;
+  }
+  .input-label {
+    display: block;
+    margin: 8px 0;
+  }
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .cover-image-section {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .cover-image-placeholder {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #e9e9e9;
+    margin-right: 16px;
+  }
+  .upload-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .add-songs-button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .footer {
+    background-color: #fff;
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  }
+  .save-button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cancel-button {
+    padding: 8px 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <button onclick="history.back();">&lt; Back</button>
+  <h1 style="font-size: 18px; margin: 0;">Create New Playlist</h1>
+  <button class="save-button">Save</button>
+</div>
+<div class="main-content">
+  <label for="playlist-name" class="input-label">Playlist Name:</label>
+  <input type="text" id="playlist-name" class="input-field" placeholder="Enter playlist name">
+
+  <label for="playlist-description" class="input-label">Description (optional):</label>
+  <textarea id="playlist-description" class="input-field" placeholder="Enter description"></textarea>
+
+  <div class="cover-image-section">
+    <div class="cover-image-placeholder"></div>
+    <button class="upload-button">Upload</button>
+  </div>
+
+  <button class="add-songs-button">Add Songs</button>
+</div>
+<div class="footer">
+  <button class="save-button">Save</button>
+  <button class="cancel-button">Cancel</button>
+</div>
+</body>
+</html>

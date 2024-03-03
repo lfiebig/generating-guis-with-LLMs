@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Budget Summary</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .header {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+    }
+    .budget-overview {
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .progress-bar {
+        background-color: #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .progress-bar-inner {
+        background-color: #4caf50;
+        height: 10px;
+        width: 50%; /* Example percentage */
+    }
+    .category-list {
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .category-item {
+        margin-bottom: 10px;
+    }
+    .fab {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: #2196f3;
+        color: #fff;
+        padding: 15px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 24px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .quick-summary-cards {
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card {
+        background-color: #fff;
+        flex: 1;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .navigation-bar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        padding: 10px 0;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .footer {
+        background-color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Monthly Budget Summary</h1>
+    <p>April 2023</p> <!-- Current Month Indicator -->
+</div>
+
+<div class="budget-overview">
+    <h2>Total Budget: $3000</h2>
+    <p>Total Spent: $1500</p>
+    <p>Remaining Balance: $1500</p>
+    <div class="progress-bar">
+        <div class="progress-bar-inner"></div>
+    </div>
+</div>
+
+<div class="category-list">
+    <div class="category-item">
+        <h3>Groceries - $400 / $500</h3>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+    </div>
+    <!-- Repeat for other categories -->
+</div>
+
+<div class="fab">+</div> <!-- Add Transaction Button -->
+
+<div class="quick-summary-cards">
+    <div class="card" style="background-color: #ffeb3b;">
+        <p>Largest Expense</p>
+        <h3>Groceries</h3>
+    </div>
+    <div class="card" style="background-color: #4caf50;">
+        <p>Budget Health</p>
+        <h3>Good</h3>
+    </div>
+</div>
+
+<div class="navigation-bar">
+    <div class="nav-item">
+        <p>📝</p>
+        <p>Transactions</p>
+    </div>
+    <div class="nav-item">
+        <p>📊</p>
+        <p>Reports</p>
+    </div>
+    <div class="nav-item">
+        <p>⚙️</p>
+        <p>Settings</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Need help? <a href="#">Click here for tips on budgeting.</a></p>
+</div>
+
+</body>
+</html>

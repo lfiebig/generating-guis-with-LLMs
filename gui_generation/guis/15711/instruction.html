@@ -1,6 +1,4 @@
-Below is an example of a simple HTML page with inline CSS that represents a track playing in a music application. This page should display well in Google Chrome Developer Tools when simulating a device with a mobile screen size of 375 x 667 pixels.
-
-```html
+.
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,84 +6,78 @@ Below is an example of a simple HTML page with inline CSS that represents a trac
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Music Player</title>
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f3f4f6;
-        overflow-x: hidden;
-    }
-    .container {
-        max-width: 375px;
-        margin: auto;
-        background-color: #fff;
-        min-height: 100vh;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .track-image {
-        width: 100%;
-        height: 200px;
-        background: url('track-image.jpg') center center no-repeat;
-        background-size: cover;
-    }
-    .track-details {
-        padding: 20px;
-        text-align: center;
-    }
-    .track-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .track-artist {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 20px;
-    }
-    .controls {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .control-button {
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
-    .play-button {
-        color: #4caf50;
-    }
-    .other-buttons {
-        color: #555;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .player-container {
+    width: 100%;
+    max-width: 375px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .album-art {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .song-title {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .artist-name {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .play-pause {
+    width: 50px;
+    height: 50px;
+  }
 </style>
 </head>
 <body>
-<div class="container">
-    <div class="track-image"></div>
-    <div class="track-details">
-        <div class="track-title">Song Title</div>
-        <div class="track-artist">Artist Name</div>
-    </div>
-    <div class="controls">
-        <button class="control-button other-buttons">&#9664;&#9664;</button>
-        <button class="control-button play-button">&#9654;</button>
-        <button class="control-button other-buttons">&#9654;&#9654;</button>
-    </div>
+<div class="player-container">
+  <img src="album-art.jpg" alt="Album Artwork" class="album-art">
+  <div class="song-info">
+    <div class="song-title">Song Title</div>
+    <div class="artist-name">Artist Name</div>
+  </div>
+  <div class="controls">
+    <button class="button" onclick="alert('Previous Song')">
+      <img src="prev-icon.png" alt="Previous" class="control-icon">
+    </button>
+    <button class="button" onclick="alert('Play/Pause')">
+      <img src="play-pause-icon.png" alt="Play/Pause" class="play-pause">
+    </button>
+    <button class="button" onclick="alert('Next Song')">
+      <img src="next-icon.png" alt="Next" class="control-icon">
+    </button>
+  </div>
 </div>
 </body>
 </html>
-```
-
-Please note that you'll need to provide your own track image link in `url('track-image.jpg')` for the `.track-image` class. Also, this code doesn't include any actual functionality for playing music; it's only a static mock-up. For interactivity, you would need to incorporate JavaScript and additional HTML elements.
-
-To test this page in Google Chrome Developer Tools:
-
-1. Save the above code as an HTML file (e.g., `music-player.html`).
-2. Open the file in Google Chrome.
-3. Right-click anywhere on the page and select "Inspect" or press `Ctrl+Shift+I` (Cmd+Option+I on Mac) to open Developer Tools.
-4. Click the "Toggle Device Toolbar" button to simulate mobile devices or press `Ctrl+Shift+M` (Cmd+Shift+M on Mac).
-5. Select the device with a screen size of 375 x 667 pixels from the dropdown menu at the top of the screen, or manually set the dimensions.
-
-The page should now display as it would on a mobile device with the specified screen size.

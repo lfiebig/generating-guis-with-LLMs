@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audiobook Selection</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .search-bar input {
+    width: 100%;
+    padding: 5px;
+  }
+  .nav-icon {
+    font-size: 24px;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  .featured-section,
+  .audiobook-categories,
+  .audiobook-list {
+    margin-bottom: 20px;
+  }
+  .audiobook-categories {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .category {
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+  }
+  .audiobook-item {
+    margin-bottom: 10px;
+  }
+  .audiobook-cover {
+    width: 100px;
+    height: 150px;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  .audiobook-info {
+    display: flex;
+  }
+  .audiobook-details {
+    flex-grow: 1;
+  }
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+  }
+  .bottom-nav a {
+    text-decoration: none;
+    color: black;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Audiobooks App</div>
+  <div class="search-bar"><input type="search" placeholder="Search audiobooks..."></div>
+  <div class="nav-icon">&#9776;</div>
+</header>
+
+<div class="main-content">
+  <div class="featured-section">
+    <!-- Placeholder for featured audiobook carousel/slider -->
+    <p>Featured Audiobook Carousel</p>
+  </div>
+
+  <div class="audiobook-categories">
+    <!-- Placeholder for categories -->
+    <span class="category">Fiction</span>
+    <span class="category">Non-Fiction</span>
+    <span class="category">Self-Help</span>
+  </div>
+
+  <div class="audiobook-list">
+    <!-- Placeholder for audiobook list -->
+    <div class="audiobook-item">
+      <div class="audiobook-info">
+        <div class="audiobook-cover"></div>
+        <div class="audiobook-details">
+          <h3>Title</h3>
+          <p>Author: Author Name</p>
+          <p>Narrator: Narrator Name</p>
+          <p>Rating: ★★★★☆</p>
+          <p>Duration: 8h 30m</p>
+          <p>Price: $14.99</p>
+        </div>
+      </div>
+      <button>Play</button>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <a href="#">Home</a>
+  <a href="#">Categories</a>
+  <a href="#">My Library</a>
+  <a href="#">Profile</a>
+</div>
+
+<footer>
+  <span>Pagination or Infinite Scroll Indicator</span>
+  <p>© 2023 Audiobooks App, All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

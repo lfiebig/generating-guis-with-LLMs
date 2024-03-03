@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Hotel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 15px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header .back-button {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        header .search {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .filters-sort {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .filters-sort button {
+            border: none;
+            background: none;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hotel-list {
+            margin-top: 10px;
+            padding: 0 15px;
+        }
+        .hotel-entry {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-entry img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+        .hotel-info {
+            flex: 1;
+        }
+        .hotel-name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .hotel-rating {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .hotel-price {
+            font-size: 14px;
+            text-align: right;
+        }
+        .hotel-description {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .view-details {
+            text-align: right;
+            font-size: 12px;
+            color: #1a73e8;
+            cursor: pointer;
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .bottom-nav button {
+            flex: 1;
+            border: none;
+            background: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .bottom-nav .book-now {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <button class="back-button">&#x2190;</button>
+    <h1>Select Your Hotel</h1>
+    <button class="search">&#x1F50D;</button>
+</header>
+
+<div class="filters-sort">
+    <button class="filters">Filters</button>
+    <button class="sort-by">Sort By</button>
+</div>
+
+<div class="hotel-list">
+    <!-- Repeat this block for each hotel entry -->
+    <div class="hotel-entry">
+        <img src="hotel-thumbnail.jpg" alt="Hotel Image">
+        <div class="hotel-info">
+            <div class="hotel-name">Hotel Name</div>
+            <div class="hotel-rating">Rating: ★★★★☆</div>
+            <div class="hotel-description">Brief description of the hotel...</div>
+            <div class="hotel-price">$99/night</div>
+        </div>
+        <div class="view-details">&#x279C;</div>
+    </div>
+    <!-- End of hotel entry block -->
+</div>
+
+<div class="bottom-nav">
+    <button class="map-view">Map View</button>
+    <button class="bookmarks">Favorites</button>
+    <button class="book-now">Book Now</button>
+</div>
+
+</body>
+</html>

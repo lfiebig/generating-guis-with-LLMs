@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .product-carousel {
+    text-align: center;
+    background-color: #fff;
+  }
+  .product-carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+  .product-info {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  .product-description {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  .button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .reviews {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  .suggested-products {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  .suggested-products img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .footer {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <span>&lt; Back</span>
+  <span>Product Details</span>
+  <span>Cart</span>
+</div>
+
+<div class="product-carousel">
+  <!-- Static images for demo purposes -->
+  <img src="tshirt-front.jpg" alt="T-shirt Front">
+  <img src="tshirt-back.jpg" alt="T-shirt Back">
+</div>
+
+<div class="product-info">
+  <h2>Classic T-shirt</h2>
+  <p><strong>Price:</strong> $19.99</p>
+  <!-- Size and color selectors would require JavaScript for full functionality -->
+  <label for="size">Size:</label>
+  <select id="size">
+    <option value="s">Small</option>
+    <option value="m">Medium</option>
+    <option value="l">Large</option>
+    <option value="xl">Extra Large</option>
+  </select>
+  <p>Color: <button style="background-color: red;"></button><button style="background-color: blue;"></button><button style="background-color: green;"></button></p>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+</div>
+
+<div class="product-description">
+  <p>This classic t-shirt is made from 100% cotton. It features a comfortable fit and is machine washable.</p>
+  <!-- Expandable section would require JavaScript -->
+</div>
+
+<a href="#" class="button">Add to Cart</a>
+<a href="#" class="button" style="background-color: #f60;">Buy Now</a>
+
+<div class="reviews">
+  <p>4.5 Stars (23 Reviews)</p>
+  <!-- Static review examples -->
+  <p>"Great quality!" - Jane Doe</p>
+  <p>"Loved the fit." - John Smith</p>
+</div>
+
+<div class="suggested-products">
+  <!-- Horizontal scroll for suggested products -->
+  <img src="tshirt2.jpg" alt="Suggested T-shirt">
+  <img src="tshirt3.jpg" alt="Suggested T-shirt">
+  <img src="tshirt4.jpg" alt="Suggested T-shirt">
+</div>
+
+<div class="footer">
+  <p>Customer Service | Shipping Information | Return Policy</p>
+  <!-- Social media icons would typically be added with an image or font library -->
+  <p>Social Media Icons</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alarm Clock Settings</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .container {
+    max-width: 375px;
+    margin: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  .header {
+    padding: 10px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .header .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .header .back-button {
+    font-size: 16px;
+  }
+  .section {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .section:last-child {
+    border-bottom: none;
+  }
+  .section label {
+    margin-right: 10px;
+  }
+  .section input[type='radio'],
+  .section input[type='checkbox'],
+  .section input[type='range'],
+  .section select {
+    margin-right: 10px;
+  }
+  .footer {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  .footer a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+  }
+  .footer button {
+    padding: 5px 15px;
+    margin: 0 5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="back-button">&lt; Back</div>
+    <div class="title">Settings</div>
+    <div><!-- Placeholder for alignment --></div>
+  </div>
+  <div class="section">
+    <label>Time Format:</label>
+    <input type="radio" name="time-format" id="12-hour" value="12-hour"><label for="12-hour">12-hour</label>
+    <input type="radio" name="time-format" id="24-hour" value="24-hour" checked><label for="24-hour">24-hour</label>
+  </div>
+  <div class="section">
+    <label>Alarm Sound:</label>
+    <button>Preview</button>
+    <select>
+      <option selected>Tone 1</option>
+      <option>Tone 2</option>
+      <option>Tone 3</option>
+    </select>
+  </div>
+  <div class="section">
+    <label>Snooze Options:</label>
+    <input type="checkbox" id="enable-snooze" checked><label for="enable-snooze">Enable Snooze</label>
+    <select>
+      <option>5 minutes</option>
+      <option selected>10 minutes</option>
+      <option>15 minutes</option>
+    </select>
+  </div>
+  <div class="section">
+    <label>Vibration:</label>
+    <input type="checkbox" id="enable-vibration" checked><label for="enable-vibration">Enable Vibration</label>
+  </div>
+  <div class="section">
+    <label>Volume:</label>
+    <input type="range" min="0" max="100" value="50">
+    <input type="checkbox" id="gradual-increase" checked><label for="gradual-increase">Gradual Increase</label>
+  </div>
+  <div class="section">
+    <label>Alarm Dismissal Methods:</label>
+    <input type="checkbox" id="swipe" checked><label for="swipe">Swipe</label>
+    <input type="checkbox" id="button-press"><label for="button-press">Button Press</label>
+    <input type="checkbox" id="solving-math"><label for="solving-math">Solving a Math Problem</label>
+  </div>
+  <div class="section">
+    <label>Alarm Fade-in:</label>
+    <input type="checkbox" id="enable-fade-in" checked><label for="enable-fade-in">Enable Fade-in</label>
+    <input type="range" min="0" max="60" value="30">
+  </div>
+  <div class="section">
+    <label>Bedtime Reminder:</label>
+    <input type="checkbox" id="enable-reminder"><label for="enable-reminder">Enable Reminder</label>
+    <input type="time" value="22:00">
+  </div>
+  <div class="footer">
+    <button>Save</button>
+    <button>Cancel</button>
+  </div>
+  <div class="footer">
+    <a href="#">Help</a> | <a href="#">Feedback</a> | <a href="#">TOS</a>
+  </div>
+</div>
+</body>
+</html>

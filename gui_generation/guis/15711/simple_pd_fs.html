@@ -1,0 +1,153 @@
+.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1e;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 16px;
+        }
+        .header .back-button {
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .cover-art-section {
+            text-align: center;
+            padding: 16px;
+        }
+        .cover-art-section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .track-info {
+            text-align: center;
+            margin: 16px 0;
+        }
+        .track-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .artist-name {
+            font-size: 1em;
+            color: #a7a7a7;
+        }
+        .progress-section {
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+        }
+        .progress-bar {
+            flex-grow: 1;
+            margin: 0 8px;
+            height: 4px;
+            background: #404040;
+            border-radius: 2px;
+            position: relative;
+        }
+        .progress-bar::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background-color: #09f;
+            border-radius: 2px;
+        }
+        .time {
+            font-size: 0.75em;
+            color: #a7a7a7;
+        }
+        .playback-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+        .playback-controls button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .play-pause-button {
+            font-size: 32px;
+        }
+        .volume-control {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+        }
+        .volume-slider {
+            flex-grow: 1;
+            margin-left: 8px;
+        }
+        .volume-slider input {
+            width: 100%;
+        }
+        .additional-controls {
+            text-align: right;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="back-button">&#9664;</div>
+    <div class="page-title">Now Playing</div>
+</div>
+
+<div class="cover-art-section">
+    <img src="album-artwork.jpg" alt="Album Art">
+</div>
+
+<div class="track-info">
+    <div class="track-title">Track Title</div>
+    <div class="artist-name">Artist Name</div>
+</div>
+
+<div class="progress-section">
+    <div class="time">0:00</div>
+    <div class="progress-bar"></div>
+    <div class="time">-3:45</div>
+</div>
+
+<div class="playback-controls">
+    <button class="shuffle-button">&#128256;</button>
+    <button class="prev-track-button">&#9194;</button>
+    <button class="play-pause-button">&#9654;</button>
+    <button class="next-track-button">&#9193;</button>
+    <button class="repeat-button">&#128257;</button>
+</div>
+
+<div class="volume-control">
+    <div class="volume-icon">&#128266;</div>
+    <div class="volume-slider">
+        <input type="range" min="0" max="100" value="50">
+    </div>
+</div>
+
+<div class="additional-controls">
+    <button class="lyrics-button">Lyrics</button>
+    <button class="queue-button">Queue</button>
+</div>
+
+</body>
+</html>

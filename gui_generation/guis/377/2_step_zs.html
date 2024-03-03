@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Search</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+  }
+  .search-section {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .search-section input,
+  .search-section select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .toggle input[type="radio"] {
+    margin-right: 5px;
+  }
+  .search-button {
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .advanced-options,
+  .recent-searches,
+  .special-offers {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .footer {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .footer div {
+    text-align: center;
+  }
+  .loading-indicator,
+  .error-message {
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>Logo</div>
+  <div>Search Flights</div>
+  <div>Icon</div>
+</div>
+
+<div class="search-section">
+  <input type="text" placeholder="From:" />
+  <input type="text" placeholder="To:" />
+  <input type="date" placeholder="Departure Date" />
+  <input type="date" placeholder="Return Date" />
+  <select>
+    <option value="1">1 Passenger</option>
+    <option value="2">2 Passengers</option>
+    <option value="3">3 Passengers</option>
+    <option value="4">4 Passengers</option>
+  </select>
+  
+  <div class="toggle">
+    <label><input type="radio" name="tripType" value="one-way" /> One-Way</label>
+    <label><input type="radio" name="tripType" value="round-trip" checked /> Round-Trip</label>
+  </div>
+  
+  <button class="search-button">Search Flights</button>
+</div>
+
+<div class="advanced-options">
+  Advanced Options
+</div>
+
+<div class="recent-searches">
+  Recent Searches / Shortcuts
+</div>
+
+<div class="special-offers">
+  Special Offers Section
+</div>
+
+<div class="footer">
+  <div>Home</div>
+  <div>Bookings</div>
+  <div>Offers</div>
+  <div>Profile</div>
+</div>
+
+<div class="loading-indicator" style="display: none;">
+  Loading...
+</div>
+
+<div class="error-message" style="display: none;">
+  Error message goes here.
+</div>
+
+</body>
+</html>

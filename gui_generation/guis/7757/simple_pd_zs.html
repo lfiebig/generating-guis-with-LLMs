@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>News App</title>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.news-slider {
+  margin-bottom: 20px;
+}
+
+.news-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 10px;
+  flex: 1;
+}
+
+.news-headline {
+  font-weight: bold;
+  margin: 0;
+}
+
+.news-summary {
+  font-size: 14px;
+  color: #666;
+}
+
+.news-meta {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.category-tag {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #007bff;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 30px;
+  text-align: center;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.bottom-nav .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.loading-indicator,
+.error-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  color: #999;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">NewsApp</div>
+  <div>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <!-- Magnifying glass icon -->
+    </svg>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <!-- Hamburger menu icon -->
+    </svg>
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="news-slider">
+    <!-- Featured News Slider -->
+    <img src="featured-image.jpg" alt="Featured Story">
+    <h2>Breaking News Headline</h2>
+    <p>Short summary of the breaking news...</p>
+  </div>
+
+  <div class="news-item">
+    <img class="news-thumbnail" src="thumbnail-1.jpg" alt="News Story">
+    <div class="news-content">
+      <h3 class="news-headline">News Headline</h3>
+      <p class="news-summary">Brief description of the news article...</p>
+      <p class="news-meta">Published on Jan 1, 2023 by Author Name</p>
+      <span class="category-tag">Politics</span>
+    </div>
+  </div>
+  <!-- More news items here -->
+
+  <div class="loading-indicator">Loading...</div>
+  <div class="error-message">No new articles at the moment.</div>
+</div>
+
+<div class="fab">+</div>
+
+<div class="bottom-nav">
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Home icon -->
+  </svg>
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Categories icon -->
+  </svg>
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Bookmarks icon -->
+  </svg>
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Profile icon -->
+  </svg>
+</div>
+
+<div class="footer">
+  &copy; 2023 NewsApp, Inc. All rights reserved.
+</div>
+
+</body>
+</html>

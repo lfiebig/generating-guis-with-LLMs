@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Transactions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 0 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header .page-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .balance-display {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .summary-section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .transaction-list {
+            margin-top: 10px;
+            overflow-y: scroll;
+        }
+        .transaction {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 1px;
+        }
+        .transaction-icon {
+            font-size: 24px;
+        }
+        .transaction-details {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        .status-indicator {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        .floating-action-button {
+            position: fixed;
+            right: 20px;
+            bottom: 70px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .bottom-navigation {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+        }
+        .bottom-navigation .nav-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="profile-switcher icon">&#128100;</div>
+    <div class="page-title">Recent Transactions</div>
+    <div class="settings-button icon">&#9881;</div>
+</div>
+
+<div class="balance-display">
+    $3,420.75
+</div>
+
+<div class="summary-section">
+    <div>This Month’s Spend: $1,200.00</div>
+    <div>Income: $2,500.00</div>
+</div>
+
+<div class="transaction-list">
+    <!-- Repeat this block for each transaction -->
+    <div class="transaction">
+        <div class="transaction-icon">&#128179;</div>
+        <div class="transaction-details">
+            <div>Payment to Store</div>
+            <div>Apr 10, 2023</div>
+            <div>-$50.00</div>
+        </div>
+        <div class="status-indicator">&#10003;</div>
+    </div>
+    <!-- End transaction block -->
+</div>
+
+<button class="floating-action-button">+</button>
+
+<div class="bottom-navigation">
+    <div class="nav-icon">&#8962;</div>
+    <div class="nav-icon">&#x1F4C8;</div>
+    <div class="nav-icon">&#x22EE;</div>
+</div>
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 from langchain.prompts import PromptTemplate
-#Simple instruction
+
+#Zero-Shot Instruction
 SUMMARY2CODE_ZS = PromptTemplate(
     input_variables=["summary"],
     template=
@@ -9,7 +10,7 @@ Make sure, that the mobile page displays well in the Google Chrome Developer Too
 """
 )
 
-#question decomposing zero shot
+#Zero-Shot Complex Decomposition
 SUMMARY2REQUIREMENTS_ZS = PromptTemplate(
     input_variables=["summary"],
     template= """Using the provided short description of a mobile page, please analyze the content and identify the specific features that are necessary for optimal functionality and user experience. Focus solely on visible functionalities: {summary}"""
@@ -32,14 +33,14 @@ Make sure, that the mobile page displays well in the Google Chrome Developer Too
 """
 )
 
-#2 step prompt zero shot
+#Zero-Shot Simple Decomposition
 SUMMARY2STRUCTURE_ZS = PromptTemplate(
     input_variables=["summary"],
     template="""Given a short description of a mobile page, structure the UI elements, that are necessary to implement the page's intended functionality into a mobile page layout: {summary}."""
 
 )
 
-#question decomposing few shot
+#Few-Shot Complex Decomposition
 SUMMARY2REQUIRMENTS_FS = PromptTemplate(
     input_variables=["summary"],
     template= 
@@ -48,7 +49,7 @@ Q:
 
 Using the provided short description of a mobile page, please analyze the content and identify the specific features that are necessary for optimal functionality and user experience. Focus solely on visible functionalities:
 
-The mobile screen is part of a language translator application that asks the user to translate a given text sentence.
+A page from a language learning app, presenting a sentence translation task.
 
 A:
 
@@ -62,7 +63,7 @@ Q:
 
 Using the provided short description of a mobile page, please analyze the content and identify the specific features that are necessary for optimal functionality and user experience. Focus solely on visible functionalities:
 
-The screen displays a List with information about upcoming Box office movies.
+A page from an e-commerce app, presenting a list of armchairs to buy.
 
 A:
 
@@ -558,7 +559,7 @@ Make sure, that the mobile screen displays well in the Google Chrome Developer T
 A:
 """
 )
-#2 step prompt few shot
+#Few-Shot Simple Decomposition (uses the Structure2code prompt from the few-shot complex decomposition)
 SUMMARY2STRUCTURE_FS = PromptTemplate(
     input_variables=["summary"],
     template=
@@ -567,7 +568,7 @@ Q:
 
 Given a short description of a mobile page, structure the UI elements, that are necessary to implement the page’s intended functionality into a mobile page layout:
 
-The mobile screen is part of a language translator application that asks the user to translate a given text sentence.
+A page from a language learning app, presenting a sentence translation task.
 
 A:
 
@@ -594,7 +595,7 @@ Q:
 
 Given a short description of a mobile page, structure the UI elements, that are necessary to implement the page’s intended functionality into a mobile page layout:
 
-The screen displays a List with information about upcoming Box office movies.
+A page from an e-commerce app, presenting a List of armchairs to buy.
 
 A:
 
@@ -626,9 +627,10 @@ Given a short description of a mobile page, structure the UI elements, that are 
 
 A:
 """
-#All in one
+
+#Zero-Shot Chain-of-Thought
 )
-ALLINONEPROMPT_ZS = PromptTemplate(
+CoT_ZS = PromptTemplate(
     input_variables=["summary"],
     template=
 """
@@ -643,12 +645,13 @@ Based on a short description, create a mobile page, by completing the following 
 """
 
 )
-ALLINONEPROMPT_FS = PromptTemplate(
+
+#Few-Shot Chain-of-Thought
+CoT_FS = PromptTemplate(
     input_variables=["summary"],
     template=
 """
 Q:
-
 Based on a short description, create a mobile page, by following these steps:
 
 1. Using the provided short description of a mobile page, please analyze the content and identify the specific features that are necessary for optimal functionality and user experience. Focus solely on visible functionalities

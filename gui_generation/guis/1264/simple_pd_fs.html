@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Settings</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f7f7f7;
+            width: 100%;
+            max-width: 375px;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #fff;
+            padding: 15px 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .back-button {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section {
+            padding: 20px;
+            background: #fff;
+            margin-top: 10px;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-control input[type="number"],
+        .form-control select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-control input[type="range"] {
+            width: calc(100% - 20px);
+            margin: 0 10px;
+        }
+        .form-control .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        .checkbox-control {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-control input {
+            margin-right: 10px;
+        }
+        .start-button {
+            width: calc(100% - 40px);
+            padding: 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px;
+            text-align: center;
+        }
+        .bottom-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .bottom-buttons button {
+            padding: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .footer nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="back-button">&larr;</button>
+    Workout Settings
+</div>
+
+<div class="form-section">
+    <div class="form-control">
+        <label for="workout-type">Workout Type</label>
+        <select id="workout-type">
+            <option>Cardio</option>
+            <option>Strength</option>
+            <option>Yoga</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <label for="duration">Duration (minutes)</label>
+        <input type="number" id="duration" value="30">
+    </div>
+    <div class="form-control">
+        <label>Intensity</label>
+        <input type="range" min="1" max="3" value="2">
+        <div class="slider-labels">
+            <span>Low</span>
+            <span>Medium</span>
+            <span>High</span>
+        </div>
+    </div>
+    <div class="form-control">
+        <label for="goal">Goal</label>
+        <input type="text" id="goal" placeholder="e.g., Burn 500 calories">
+    </div>
+</div>
+
+<div class="form-section">
+    <div class="checkbox-control">
+        <input type="checkbox" id="music">
+        <label for="music">Music</label>
+    </div>
+    <div class="checkbox-control">
+        <input type="checkbox" id="dumbbells">
+        <label for="dumbbells">Dumbbells</label>
+    </div>
+    <div class="checkbox-control">
+        <input type="checkbox" id="yoga-mat">
+        <label for="yoga-mat">Yoga Mat</label>
+    </div>
+</div>
+
+<div class="form-section">
+    <button class="start-button">Start Workout</button>
+</div>
+
+<div class="bottom-buttons">
+    <button>History</button>
+    <button>Settings</button>
+</div>
+
+<div class="footer">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Community</a>
+    </nav>
+</div>
+
+</body>
+</html>
